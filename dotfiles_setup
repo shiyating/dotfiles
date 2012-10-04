@@ -1,0 +1,14 @@
+#!/bin/sh
+
+current="$(readlink -f $(dirname "$0"))"
+mkdir ~/dotfiles_old
+
+cd $current
+\ls | while read file;
+do 
+    [ "$file" = "dotfiles_setup" ] && continue
+    localfile="$HOME/.$file"
+dotfile="$(readlink -f "$file" )"
+    [ -e "$localfile" ] && mv -f "$localfile" ~/dotfiles_old
+    ln -vs "$dotfile" "$localfile"
+done
