@@ -136,8 +136,7 @@ function zer0prompt
 
     # prompt
     #PS1="\033k\033\\\\$zc1$zg2$zg1$zc3$zg1$zg1$zc4\$ZFILL$zc3$zg1$zg1$zg1$zg1$zc1$zg1$zg1$zg1$zc3$zg1$zg1$zc4$zg1$zg4$zi2\$ZPWD$zc4$zg5$zg1$zc2$zg1
-    PS1="\033]12;yellow1\007$zc1$zg2$zg1$zc3$zg1$zg1$zc4\$ZFILL$zc3$zg1$zg1$zg1$zg1$zc1$zg1$zg1$zg1$zc3$zg1$zg1$zc4$zg1$zg4$zi2\$ZPWD$zc4$zg5$zg1$zc2$zg1
-$zi3$ZTIME $zi1\u@\h $zi5$zg8$zc3$zi4\$ZEXIT$zc0$zg6 "
+    PS1="\[\e]0;\u@\h: \w\a\]$zc1$zg2$zg1$zc3$zg1$zg1$zc4\$ZFILL$zc3$zg1$zg1$zg1$zg1$zc1$zg1$zg1$zg1$zc3$zg1$zg1$zc4$zg1$zg4$zi2\$ZPWD$zc4$zg5$zg1$zc2$zg1$zi3$ZTIME $zi1\u@\h $zi5$zg8$zc3$zi4\$ZEXIT$zc0$zg6 "
 
     # continuation prompt
     PS2="$zc3$zg3$zc4$zg1$zg4$zi5\\\$$zc4$zg5$zc2$zg1$zc3$zg6$zc0  "

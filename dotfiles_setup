@@ -3,6 +3,9 @@
 current="$(readlink -f $(dirname "$0"))"
 mkdir ~/dotfiles_old
 
+
+cd $current/vim
+
 cd $current
 \ls | while read file;
 do 

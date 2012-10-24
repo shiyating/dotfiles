@@ -159,8 +159,10 @@ alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 # tailoring 'less'
 #-------------------------------------------------------------
 
-export LC_ALL=zh_TW.UTF-8
-#export LC_ALL=C.UTF-8
+#export LC_ALL=zh_TW.UTF-8
+export LC_ALL=C
+export LANG=C
+export LANGUAGE=C
 alias more='less'
 export EDITOR=vim
 export PAGER=less
