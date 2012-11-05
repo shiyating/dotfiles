@@ -46,10 +46,9 @@ done
 if [ -z "$INPUTRC" -a ! -f "$HOME/.inputrc" ] ; then
     INPUTRC=/etc/inputrc
 fi
-alias ss="g++ -std=c++0x -funsigned-char -fno-stack-protector  -I. -Iel/inc -O2 -msse2 -o bitcoin-miner bitcoin-miner.o bitcoin-client.o bitcoin-sha256.o bitcoin-sha256-x86x64.o sha256sse.o sha256x86.o ext-text.o ext-protocols.o ext-handlers.o ext-encoding.o threader.o regex.o ext-file.o ext-fw.o datetime.o ext-base.o ext-os.o ext-app.o ext-string.o ext-blob.o ext-stream.o ext-core.o http.o stack-trace.o "
 shopt -s histappend
 shopt -s cmdhist
-PROMPT_COMMAND="history -a"
+PROMPT_COMMAND='history -a;history -c; history -r;echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
 HISTIGNORE="&:ls:[bf]g:exit"
 HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...
@@ -75,94 +74,14 @@ if [ -x /usr/games/fortune ]; then
     /usr/games/fortune -s     # Makes our day a bit more fun.... :-)
 fi
 
-#===============================================================
-#
-# ALIASES AND FUNCTIONS
-#
-# Arguably, some functions defined here are quite big.
-# If you want to make this file smaller, these functions can
-# be converted into scripts and removed from here.
-#
-# Many functions were taken (almost) straight from the bash-2.04
-# examples.
-#
-#===============================================================
-
-#-------------------
-# Personnal Aliases
-#-------------------
-
-alias aa='vim ~/.bashrc && source ~/.bashrc'
-alias an='source ~/.bashrc'
-alias zz='vim ~/.vimrc'
-alias ze='vim ~/.zer0prompt && . ~/.bashrc'
-alias vi='vim'
-
-function adddot() 
-{
-    if [ "${1#.}" != "$1" ]; then 
-        DF=${PWD/~/home/jcppkkk/Dropbox/dotfiles}
-        echo mkdir -vp $DF
-        echo mv -v $1 $DF/${1#.}
-        echo ln -sv $DF/${1#.} $1
-    else
-        echo $1 is not dot file
-    fi 
-}
-
-alias rm='rm -ri'
-alias cp='cp -ri'
-alias mv='mv -i'
-# -> Prevents accidentally clobbering files.
-alias mkdir='mkdir -p'
-
-alias h='history'
-alias j='jobs -l'
-alias which='type -a'
-alias ..='cd ..'
-alias path='echo -e ${PATH//:/\\n}'
-alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
-
-alias du='du -kh'       # Makes a more readable output.
-alias df='df -kTh'
-
-#-------------------------------------------------------------
-# The 'ls' family (this assumes you use a recent GNU ls)
-#-------------------------------------------------------------
-if [ "$OS" == "Linux" ]; then
-    #alias ls='LC_ALL=C ls -Ah -F --color=auto'
-    #alias l="LC_ALL=C ls -l"
-    alias ls='ls -Ah -F --color=auto'
-    alias l="ls -l"
-    alias ll="ls -l"
-else
-    alias ls='ls -AhG'
-    alias l="ls -l"
-    alias ll="ls -l"
-fi
-alias la='ls'          # show hidden files
-alias lx='ls -lXB'         # sort by extension
-alias lk='ls -lSr'         # sort by size, biggest last
-alias lc='ls -ltcr'        # sort by and show change time, most recent last
-alias lu='ls -ltur'        # sort by and show access time, most recent last
-alias lt='ls -ltr'         # sort by date, most recent last
-alias lm='ls -l |more'    # pipe through 'more'
-alias lr='ls -lR'          # recursive ls
-alias tree='tree -Csu'     # nice alternative to 'recursive ls'
-
-# If your version of 'ls' doesn't support --group-directories-first try this:
-# function ll(){ ls -l "$@"| egrep "^d" ; ls -lXB "$@" 2>&-| \
-#                egrep -v "^d|total "; }
-
-
 #-------------------------------------------------------------
 # tailoring 'less'
 #-------------------------------------------------------------
-
-#export LC_ALL=zh_TW.UTF-8
-export LC_ALL=C
-export LANG=C
-export LANGUAGE=C
+if [ -z $SSH_TTY ]; then
+    export LC_ALL=C LANG=C LANGUAGE=C
+else
+    export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
+fi
 alias more='less'
 export EDITOR=vim
 export PAGER=less
@@ -616,11 +535,13 @@ complete -o default -F _meta_comp nohup \
 eval exec trace truss strace sotruss gdb
 complete -o default -F _meta_comp command type which man nice time
 
-if [ -f ~/.zer0prompt ]; then
-    source ~/.zer0prompt
-    zer0prompt
-    unset zer0prompt
-fi
-
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+source ~/.zer0prompt
+zer0prompt
+unset zer0prompt

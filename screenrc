@@ -6,7 +6,6 @@ attrcolor i "+b"
 termcapinfo * 'Co#256:AB=\033[48;5;%dm:AF=\033[38;5;%dm' 
 # erase background with current bg color 
 defbce "on" 
-term xterm
 
 # tell screen itself not to use the alternate screen
 termcapinfo xterm* ti@:te@
