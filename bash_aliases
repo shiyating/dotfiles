@@ -64,6 +64,7 @@ else
     alias ll="ls -l"
 fi
 alias la='ls -a'          # show hidden files
+alias lla='ls -la'          # show hidden files
 alias lx='ls -lXB'         # sort by extension
 alias lk='ls -lSr'         # sort by size, biggest last
 alias lc='ls -ltcr'        # sort by and show change time, most recent last

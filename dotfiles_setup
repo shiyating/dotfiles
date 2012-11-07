@@ -13,7 +13,7 @@ source ~/.bashrc
 do 
     [ "$file" = "dotfiles_setup" ] && continue
     localfile="$HOME/.$file"
-dotfile="$(readlink -f "$file" )"
+    dotfile="$(readlink -f "$file" )"
     [ -e "$localfile" ] && mv -f "$localfile" ~/dotfiles_old
     ln -vs "$dotfile" "$localfile"
 done
