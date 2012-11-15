@@ -26,6 +26,7 @@ Bundle 'OmniCppComplete'
 Bundle 'taglist.vim'
 Bundle 'errormarker.vim'
 Bundle 'renamer.vim'
+Bundle 'mfukar/robotframework-vim'
 filetype plugin indent on
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 

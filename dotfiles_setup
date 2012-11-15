@@ -1,19 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 current="$(readlink -f $(dirname "$0"))"
-mkdir ~/dotfiles_old
+dpkg -l exuberant-ctags >& /dev/null || sudo apt-get install exuberant-ctags
+[ ! -e ~/dotfiles_old ] && mkdir ~/dotfiles_old
 
 
 cd $current
 
-git clone https://github.com/gmarik/vundle.git vim/bundle/vundle
-source ~/.bashrc
+[ ! -e vim/bundle/vundle ] && git clone https://github.com/gmarik/vundle.git vim/bundle/vundle
 
 \ls | while read file;
 do 
     [ "$file" = "dotfiles_setup" ] && continue
     localfile="$HOME/.$file"
     dotfile="$(readlink -f "$file" )"
-    [ -e "$localfile" ] && mv -f "$localfile" ~/dotfiles_old
-    ln -vs "$dotfile" "$localfile"
+    [ -e "$localfile" -a ! -L "$localfile" ] && (mv -f "$localfile" ~/dotfiles_old && ln -vs "$dotfile" "$localfile")
 done
+
+vim +BundleInstall +qall
