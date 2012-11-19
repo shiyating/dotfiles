@@ -12,7 +12,7 @@ fi
 # Enable checkwinsize so that bash will check the terminal size when
 # it regains control.  #65623
 # http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
-shopt -s checkwinsize
+#shopt -s checkwinsize
 
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
@@ -104,7 +104,7 @@ if [ -z "$INPUTRC" -a ! -f "$HOME/.inputrc" ] ; then
 fi
 shopt -s histappend
 shopt -s cmdhist
-PROMPT_COMMAND='history -a;history -c; history -r;echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+PROMPT_COMMAND="history -a;history -c; history -r;$PROMPT_COMMAND"
 TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
 HISTIGNORE="&:ls:[bf]g:exit"
 HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...
