@@ -14,7 +14,8 @@ do
     [ "$file" = "dotfiles_setup" ] && continue
     localfile="$HOME/.$file"
     dotfile="$(readlink -f "$file" )"
-    [ -e "$localfile" -a ! -L "$localfile" ] && (mv -f "$localfile" ~/dotfiles_old && ln -vs "$dotfile" "$localfile")
+    [ -e "$localfile" ] && mv -f "$localfile" ~/dotfiles_old
+    ln -vs "$dotfile" "$localfile"
 done
 
 vim +BundleInstall +qall
