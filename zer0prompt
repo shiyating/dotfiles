@@ -33,8 +33,9 @@ zi5="\[\033[1;32m\]"  # user identifier ($ or #)
 zptm="24s"
 
 ## set line graphics to use
-#zg1="─"; zg2="┌"; zg3="└"; zg4="┤"; zg5="├"; zg6=">"; zg7="|"
-zg1="-"; zg2="+"; zg3="+"; zg4="|"; zg5="|"; zg6=">"; zg7="|"; zg8='\$'
+zg1="─"; zg2="┌"; zg3="└"; zg4="┤"; zg5="├"; zg6=">"; zg7="|"; zunit=3
+#zg1="-"; zg2="+"; zg3="+"; zg4="|"; zg5="|"; zg6=">"; zg7="|" zunit=1
+for i in {1..200} ;do ZFULLFILL="$ZFULLFILL$zg1" ; done
 
 
 #### code ####
@@ -44,30 +45,33 @@ shopt -s checkwinsize
 
 # if root user then colour user@host info and user identifier red.
 [ "${UID}" = 0 ] && zi1="\[\033[1;31m\]" && zi5="\[\033[1;31m\]" && zg8="#"
-
 # This function is run at every prompt update, keeping our variables updated.
 # Bash's PROMPT_COMMAND option handles this (see end of this function).
 function pre_prompt 
 {
+    ZEXIT="$?"
     OPTS="$SHELLOPTS"
     set +x
-    ZEXIT="$?"
+
+    [ "$ZEXIT" = "0" ] && ZEXIT=""
+
     ZPWD=${PWD/#$HOME/\~}  # sorten home dir to ~
 
     # set length of our important info
-    #local infolength="$(whoami)@$(hostname):$(basename $(tty))$ZPWD"
-    local infolength="$ZPWD"
+    local infolength="$(whoami)@$(hostname):$(basename $(tty))$ZPWD"
     # set length of our graphics
-    local gfxlength=18
+    local gfxlength=23
 
     # construct ZFILL size to fill terminal width (minus info/gfx lengths).
     local fillsize
+    local fillbyte
     let fillsize=${COLUMNS}-${gfxlength}-`echo "$infolength" | wc -L `
-    ZFILL=""
-    while [ "$fillsize" -gt "0" ]; do
-        ZFILL="$ZFILL$zg1"
-        let fillsize=${fillsize}-1
-    done
+    let fillbyte=($fillsize * $zunit)
+    if [ "$fillbyte" -gt "0" ]; then
+        ZFILL=$(head -c $fillbyte <<< $ZFULLFILL)
+    else
+        ZFILL=""
+    fi
 
     # determine how much to truncate ZPWD, if ZFILL can't shrink anymore.
     if [ "$fillsize" -lt "0" ]; then
@@ -129,8 +133,11 @@ function zer0prompt
     fi
 
     # prompt
-    PS1="$zc1$zg2$zg1$zc3$zg1$zg1$zc4\$ZFILL$zc3$zg1$zg1$zg1$zg1$zc1$zg1$zg1$zg1$zc3$zg1$zg1$zc4$zg1$zg4$zi2\$ZPWD$zc4$zg5$zg1$zc2$zg1\n"
-    PS1="$PS1$zi3$ZTIME $zi1\u@\h $zi5$zg8$zc3$zi4\$ZEXIT$zc0$zg6 "
+    PS1="$zc1$zg2$zg1$zc3$zg1$zc4$zg1$zg4$zi1\u@\h:\l$zc4$zg5$zg1$zc2$zg1$zg1$zc4\
+\$ZFILL$zc3$zg1$zg1$zg1$zg1$zc1$zg1$zg1$zg1$zc3$zg1$zg1$zc4$zg1$zg4$zi2\
+\$ZPWD$zc4$zg5$zg1$zc2$zg1
+$zc3$zg3$zc4$zg1$zg4$zi3$ZTIME$zc4$zg7$zi5\\\$$zc4$zg5$zi4\
+\$ZEXIT$zc2$zg1$zc3$zg6$zc0 "
 
     # continuation prompt
     PS2="$zc3$zg3$zc4$zg1$zg4$zi5\\\$$zc4$zg5$zc2$zg1$zc3$zg6$zc0  "
