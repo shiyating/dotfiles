@@ -236,14 +236,17 @@ function killps()                 # Kill by process name.
 #-------------------------------------------------------------
 for file in \
     /etc/bash_completion \
-    /usr/local/etc/bash_completion \
-    ~/.git-completion.sh \
-    ~/.bash_completion
+    ~/.git-completion.sh
 do
     if [ -f $file ]; then
         . $file
     fi
 done
+## my addition
+__expand_tilde_by_ref()
+{
+        return 0;
+}
 
 #-------------------------------------------------------------
 # customize PATH
