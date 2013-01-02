@@ -3,14 +3,14 @@
 	email = comet.jc@gmail.com
 [core]
 	editor = vim
+	autocrlf = true
+    whitespace = cr-at-eol
 [color]
 	branch = auto
 	diff = auto
 	interactive = auto
 	status = auto
 	ui = true
-[format]
-#	pretty = oneline
 [alias]
 	co = checkout
 	ci = commit
@@ -19,5 +19,7 @@
 	last = log -1 HEAD
 	unstage = reset HEAD --
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-[mergetool "mymerge"]
-	cmd = vimdiff \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
+[merge]
+        tool = meld
+[branch]
+	autosetuprebase = always
