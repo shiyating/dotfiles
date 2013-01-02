@@ -20,11 +20,3 @@ fi
 export LANG="zh_TW.utf8"
 export LANGUAGE="zh_TW:en"
 export mydroid=/mydroid/
-
-#-------------------------------------------------------------
-# Greeting, motd etc...
-#-------------------------------------------------------------
-
-if [ -x /usr/games/fortune ]; then
-    /usr/games/fortune -s     # Makes our day a bit more fun.... :-)
-fi
