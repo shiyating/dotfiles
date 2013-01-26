@@ -3,7 +3,7 @@
 	email = comet.jc@gmail.com
 [core]
 	editor = vim
-	autocrlf = true
+	autocrlf = false
     whitespace = cr-at-eol
 [color]
 	branch = auto
