@@ -27,6 +27,7 @@ Bundle 'taglist.vim'
 Bundle 'errormarker.vim'
 Bundle 'renamer.vim'
 Bundle 'mfukar/robotframework-vim'
+Bundle 'pep8'
 filetype plugin indent on
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
@@ -279,6 +280,7 @@ augroup force-cd-dot
     autocmd!
     autocmd BufEnter * :cd .
 augroup END
+set path=**;/
 
 " ===========================================================================
 " notmuch config
@@ -349,6 +351,8 @@ endif
 map Q gq
 imap [1~ <esc>^i
 nmap [1~ ^
+imap OH <esc>^i
+nmap OH ^
 
 map ZZ :wqa<CR>
 " ===========================================================================
@@ -363,12 +367,33 @@ vmap <silent>c<down>    !boxes -t 4 -r<CR>
 " Function Keys F1~F12, B, C,
 " ===========================================================================
 
+map <F2> :call FormartSrc()<CR>
+"定义FormartSrc()
+func FormartSrc()
+    exec "w"
+    if &filetype == 'c'
+        exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
+    elseif &filetype == 'cpp' || &filetype == 'hpp'
+        exec "r !astyle --style=ansi --one-line=keep-statements -a --suffix=none %> /dev/null 2>&1"
+    elseif &filetype == 'perl'
+        exec "!astyle --style=gnu --suffix=none %"
+    elseif &filetype == 'py'||&filetype == 'python'
+        exec "r !autopep8 -i --aggressive %"
+    elseif &filetype == 'java'
+        exec "!astyle --style=java --suffix=none %"
+    elseif &filetype == 'jsp'
+        exec "!astyle --style=gnu --suffix=none %"
+    elseif &filetype == 'xml'
+        exec "!astyle --style=gnu --suffix=none %"
+    endif
+    exec "e! %"
+endfunc
+"结束定义FormartSrc
 
+let g:pep8_map='<F3>'
 map <F4> :set expandtab!<BAR>set expandtab?<CR>
 map <F5> :wa<CR>
-" <F6> replace string
 map <F6> :%s/\<<c-r>=expand("<cword>")<cr>\>//g<left><left>
-
 
 " <F8> 會在 searching highlight 及非 highlight 間切換
 map <F8> :set hls!<BAR>set hls?<CR>
@@ -479,3 +504,4 @@ if has('autocmd')
     " configure various extenssions
     let git_diff_spawn_mode=2
 endif
+cscope add /home/jcppkkk/testlink/cscope.out /home/jcppkkk/testlink/testlink
