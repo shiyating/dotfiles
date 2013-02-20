@@ -43,6 +43,8 @@ alias h='history'
 alias j='jobs -l'
 alias which='type -a'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 
@@ -79,3 +81,10 @@ alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 #                egrep -v "^d|total "; }
 
 
+#-------------------------------------------------------------
+# Git alias
+#-------------------------------------------------------------
+alias st='git status'
+alias co='git ckeckout'
+alias br='git branch'
+alias ci='git commit'
