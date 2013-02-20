@@ -6,6 +6,17 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# TMUX
+if which tmux 2>&1 >/dev/null; then
+    # if no session is started, start a new session
+    test -z ${TMUX} && tmux
+
+    # when quitting tmux, try to attach
+    while test -z ${TMUX}; do
+        tmux attach || break
+    done
+fi
+
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
