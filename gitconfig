@@ -13,7 +13,7 @@
 	ui = true
 [alias]
 	co = checkout
-	ci = commit
+	ci = commit --verbose
 	st = status
 	br = branch
 	last = log -1 HEAD
