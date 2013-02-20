@@ -1,13 +1,15 @@
 #!/bin/bash
 
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dpkg -l exuberant-ctags >& /dev/null || sudo apt-get install exuberant-ctags
+which ctags >& /dev/null || sudo apt-get install exuberant-ctags
 [ ! -e ~/dotfiles_old ] && mkdir ~/dotfiles_old
 
 
 cd $current
 
 [ ! -e vim/bundle/vundle ] && git clone https://github.com/gmarik/vundle.git vim/bundle/vundle
+
+
 
 \ls | while read file;
 do 
@@ -19,3 +21,5 @@ do
 done
 
 vim +BundleInstall +qall
+
+which dos2unix &>/dev/null && find $HOME/.vim -name \*.vim -exec dos2unix {} \;
