@@ -3,7 +3,7 @@
 	email = comet.jc@gmail.com
 [core]
 	editor = vim
-	autocrlf = true
+	autocrlf = input
     whitespace = cr-at-eol
 [color]
 	branch = auto
@@ -18,8 +18,15 @@
 	br = branch
 	last = log -1 HEAD
 	unstage = reset HEAD --
-    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+    graph = log --graph --date-order --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 [merge]
         tool = meld
 [branch]
 	autosetuprebase = always
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 491x168+299+113
+	history-view-vpane-position = 591
+	file-view-vpane-position = 797
+[push]
+	default = current
