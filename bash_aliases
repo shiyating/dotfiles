@@ -84,6 +84,6 @@ alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 # Git alias
 #-------------------------------------------------------------
 alias st='git status'
-alias co='git ckeckout'
+alias co='git checkout'
 alias br='git branch'
 alias ci='git commit --verbose'
