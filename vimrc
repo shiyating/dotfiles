@@ -28,6 +28,9 @@ Bundle 'errormarker.vim'
 Bundle 'renamer.vim'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'pep8'
+Bundle 'https://github.com/tpope/vim-pathogen'
+Bundle 'https://github.com/altercation/vim-colors-solarized'
+execute pathogen#infect()
 filetype plugin indent on
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
@@ -47,8 +50,6 @@ let c_no_curly_error = 1
 " operational settings
 " ===========================================================================
 set nocompatible                " vim defaults, not vi!
-set t_Co=256
-syntax on                       " syntax on
 set hidden                      " allow editing multiple unsaved buffers
 set more                        " the 'more' prompt
 "filetype on                     " automatic file type detection
@@ -204,21 +205,13 @@ map <LocalLeader>bb :ls<cr>
 " ===========================================================================
 " setup for the visual environment
 " ===========================================================================
-"colorscheme inkpot              " 256 colour
+syntax enable                       " syntax on
+let g:solarized_termcolors=256
 
-colorscheme my_inkpot              " 256 colour
-
-if has('gui_running')
-    set bg=dark
-    set guioptions-=T
-    set guioptions-=m
-    set guioptions+=c
-    "set guifont=-schumacher-clean-medium-r-normal-*-*-120-*-*-c-*-iso646.1991-irv
-    "set guifont=Monospace\ 8,Terminal\ 8,fixed
-    set guifont=ProggyCleanTT\ 12
-else
-    set bg=light
-endif
+"set background=light
+set background=dark
+"colorscheme my_inkpot              " 256 colour
+colorscheme solarized
 
 " ===========================================================================
 " Folding for unified diffs 
