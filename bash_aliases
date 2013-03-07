@@ -21,18 +21,6 @@ alias an='source ~/.bashrc'
 alias zz='vim ~/.vimrc'
 alias ze='vim ~/.zer0prompt && . ~/.bashrc'
 
-function adddot() 
-{
-    if [ "${1#.}" != "$1" ]; then 
-        DF=${PWD/~/home/jcppkkk/Dropbox/dotfiles}
-        echo mkdir -vp $DF
-        echo mv -v $1 $DF/${1#.}
-        echo ln -sv $DF/${1#.} $1
-    else
-        echo $1 is not dot file
-    fi 
-}
-
 alias rm='rm -ri'
 alias cp='cp -ri'
 alias mv='mv -i'
