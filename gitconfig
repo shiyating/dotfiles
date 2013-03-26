@@ -20,13 +20,8 @@
 	unstage = reset HEAD --
     graph = log --graph --date-order --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 [merge]
-        tool = meld
+    tool = meld
 [branch]
 	autosetuprebase = always
-[giggle]
-	main-window-maximized = true
-	main-window-geometry = 491x168+299+113
-	history-view-vpane-position = 591
-	file-view-vpane-position = 797
 [push]
 	default = current
