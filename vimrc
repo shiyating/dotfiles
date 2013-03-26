@@ -14,25 +14,29 @@ if !exists("my_auto_commands_loaded")
     let g:LargeFile = 1024 * 1024 * 10
     augroup LargeFile
         autocmd BufReadPre * let f=expand("<afile>") | if getfsize(f) > g:LargeFile | set eventignore+=FileType | setlocal noswapfile bufhidden=unload undolevels=-1 | else | set eventignore-=FileType | endif
-        augroup END
-    endif
+    augroup END
+endif
 
 filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
 Bundle 'gmarik/vundle'
-Bundle 'errormarker.vim'
+
+" original repos on github
+Bundle 'mfukar/robotframework-vim'
+Bundle 'altercation/vim-colors-solarized'
+
+" " vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'cuteErrorMarker'
 Bundle 'OmniCppComplete'
 Bundle 'taglist.vim'
-Bundle 'errormarker.vim'
 Bundle 'renamer.vim'
-Bundle 'mfukar/robotframework-vim'
 Bundle 'pep8'
-Bundle 'https://github.com/tpope/vim-pathogen'
-Bundle 'https://github.com/altercation/vim-colors-solarized'
-execute pathogen#infect()
-filetype plugin indent on
-set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 " ===========================================================================
 " first the disabled features due to security concerns
