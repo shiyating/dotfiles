@@ -52,11 +52,7 @@ fi
 #-------------------------------------------------------------
 # Change language by terminal (local console OR ssh ?)
 #-------------------------------------------------------------
-if [ -z $SSH_TTY ]; then
-    export LC_ALL=C LANG=C LANGUAGE=C
-else
-    export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
-fi
+export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
 
 #-------------------------------------------------------------
 # Change the window title of X terminals 
