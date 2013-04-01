@@ -214,8 +214,12 @@ let g:solarized_termcolors=256
 
 "set background=light
 set background=dark
-"colorscheme my_inkpot              " 256 colour
-colorscheme solarized
+try
+    "colorscheme my_inkpot              " 256 colour
+    colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+    " deal with it
+endtry
 
 " ===========================================================================
 " Folding for unified diffs 
