@@ -8,20 +8,21 @@ sudo update-locale LANG=zh_TW.UTF-8
 
 
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+dotfiles_old="$HOME/.dotfiles_old_`date +%Y%m%d%H%M%S`"
 cd $current
 
 # prepare vim plugins
 [ ! -e vim/bundle/vundle ] && git clone https://github.com/gmarik/vundle.git vim/bundle/vundle
 
 # link dotfiles
-[ ! -e ~/dotfiles_old ] && mkdir ~/dotfiles_old
+[ ! -e "$dotfiles_old" ] && mkdir "$dotfiles_old"
 \ls | while read file;
 do 
     [ "$file" = "dotfiles_setup" ] && continue
     localfile="$HOME/.$file"
     dotfile="$(readlink -f "$file" )"
-    [ -e "$localfile" ] && mv -f "$localfile" ~/dotfiles_old
-    ln -vs "$dotfile" "$localfile"
+    [ -e "$localfile" ] && mv -f "$localfile" "$dotfiles_old"
+    ln -fvs -T "$dotfile" "$localfile"
 done
 
 vim +BundleInstall +qall
