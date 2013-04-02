@@ -6,11 +6,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# TMUX
-if [ -z "$TMUX" ]; then 
-    tmux attach
-fi
-
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
@@ -42,7 +37,6 @@ then
     export PACKAGEROOT="ftp://ftp.tw.FreeBSD.org"
 fi
 
-
 #-------------------------------------------------------------
 # Change language by terminal (local console OR ssh ?)
 #-------------------------------------------------------------
@@ -51,25 +45,22 @@ export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
 #-------------------------------------------------------------
 # Change the window title of X terminals 
 #-------------------------------------------------------------
-case ${TERM} in
-	xterm*|rxvt*|Eterm|aterm|kterm|gnome*|interix)
-		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
-		;;
-	screen)
-		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\033\\"'
-		;;
-esac
+#case ${TERM} in
+#	xterm*|rxvt*|Eterm|aterm|kterm|gnome*|interix)
+#		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+#		;;
+#	screen)
+#		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\033\\"'
+#		;;
+#esac
 
 
 #-------------------------------------------------------------
 # Set Default keybinding
 #-------------------------------------------------------------
 if [ -z "$INPUTRC" -a ! -f "$HOME/.inputrc" ] ; then
-    INPUTRC=/etc/inputrc
+    export INPUTRC=/etc/inputrc
 fi
-
-
-
 
 #-------------------------------------------------------------
 # History
@@ -78,17 +69,17 @@ fi
 shopt -s histappend
 
 shopt -s cmdhist
-if [[ -z $PROMPT_COMMAND ]]; then
-    PROMPT_COMMAND="history -a;history -c; history -r"
-elif [[ $PROMPT_COMMAND != *history* ]]; then
-    PROMPT_COMMAND="$PROMPT_COMMAND;history -a;history -c; history -r"
+if [[ $PROMPT_COMMAND != *history* ]]; then
+    export PROMPT_COMMAND="history -a;history -c; history -r;$PROMPT_COMMAND"
 fi
-TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
-HISTIGNORE="&:ls:[bf]g:exit"
-HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...
-HISTSIZE=10000
-HISTFILESIZE=10000
-HISTCONTROL=ignoreboth
+[[ "$PROMPT_COMMAND" = *\; ]] && export PROMPT_COMMAND="${PROMPT_COMMAND%;}"
+
+export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
+export HISTIGNORE="&:ls:[bf]g:exit"
+export HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 
 
 #-------------------------------------------------------------
@@ -234,7 +225,6 @@ function killps()                 # Kill by process name.
     done
 }
 
-
 #-------------------------------------------------------------
 # import completions
 #-------------------------------------------------------------
@@ -253,6 +243,15 @@ __expand_tilde_by_ref()
 }
 
 #-------------------------------------------------------------
+# Add CDPATH for local trunk
+#-------------------------------------------------------------
+if [ -d ~/trunk ] && [[ ":$CDPATH:" != *":~/trunk:"* ]]; then
+    export CDPATH="$CDPATH:~/trunk"
+fi
+# remove posfix ':'
+[[ "$CDPATH" = :* ]] && export CDPATH="${CDPATH#:}"
+
+#-------------------------------------------------------------
 # customize PATH
 #-------------------------------------------------------------
 for a in \
@@ -261,7 +260,7 @@ for a in \
     /android-sdk-linux_x86/tools
 do
     if [ -d "$a" ] && [[ ":$PATH:" != *":$a:"* ]]; then
-        PATH="$PATH:$a"
+        export PATH="$PATH:$a"
     fi
 done
 
@@ -288,8 +287,8 @@ use_color=false
 
 safe_term=${TERM//[^[:alnum:]]/?}   # sanitize TERM
 match_lhs=""
-[[ -f ~/.dir_colors   ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
+[[ -f ~/.dir_colors   ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -z ${match_lhs}    ]] \
 	&& type -P dircolors >/dev/null \
 	&& match_lhs=$(dircolors --print-database)
@@ -320,3 +319,9 @@ else
 		PS1='\u@\h \w \$ '
 	fi
 fi
+
+# TMUX
+if [ -z "$TMUX" ]; then 
+    tmux attach
+fi
+
