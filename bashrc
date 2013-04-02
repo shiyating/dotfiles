@@ -78,8 +78,11 @@ fi
 shopt -s histappend
 
 shopt -s cmdhist
-PROMPT_COMMAND="history -a;history -c; history -r;$PROMPT_COMMAND"
-PROMPT_COMMAND=${PROMPT_COMMAND%;} # remove ';' at tail if any
+if [[ -z $PROMPT_COMMAND ]]; then
+    PROMPT_COMMAND="history -a;history -c; history -r"
+elif [[ $PROMPT_COMMAND != *history* ]]; then
+    PROMPT_COMMAND="$PROMPT_COMMAND;history -a;history -c; history -r"
+fi
 TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
 HISTIGNORE="&:ls:[bf]g:exit"
 HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...

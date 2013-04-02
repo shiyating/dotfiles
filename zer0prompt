@@ -50,11 +50,11 @@ shopt -s checkwinsize
 # Bash's PROMPT_COMMAND option handles this (see end of this function).
 function pre_prompt 
 {
-    ZEXIT="$?"
+    ZEXIT=$?
     OPTS="$SHELLOPTS"
     set +x
 
-    [ "$ZEXIT" = "0" ] && ZEXIT=""
+    [ $ZEXIT = 0 ] && ZEXIT=
 
     ZPWD=${PWD/#$HOME/\~}$(__git_ps1 " (%s)")  # sorten home dir to ~
 
