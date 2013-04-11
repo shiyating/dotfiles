@@ -322,6 +322,6 @@ fi
 
 # TMUX
 if [ -z "$TMUX" ]; then 
-    tmux attach
+    which tmux > /dev/null && tmux attach
 fi
 
