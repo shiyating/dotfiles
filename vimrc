@@ -505,4 +505,3 @@ if has('autocmd')
     " configure various extenssions
     let git_diff_spawn_mode=2
 endif
-cscope add /home/jcppkkk/testlink/cscope.out /home/jcppkkk/testlink/testlink
