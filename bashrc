@@ -255,7 +255,8 @@ fi
 # customize PATH
 #-------------------------------------------------------------
 for a in \
-    ~/bin/ \
+    ~/bin \
+    ~/.bin \
     /android-cts/tools \
     /android-sdk-linux_x86/tools
 do
