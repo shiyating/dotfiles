@@ -15,7 +15,7 @@
 # Personnal Aliases
 #-------------------
 
-alias ssh='LC_ALL=en_US.UTF-8 ssh'
+alias ssh='TERM=screen LC_ALL=en_US.UTF-8 ssh'
 alias aa='vim ~/.bashrc && source ~/.bashrc'
 alias as='vim ~/.bash_aliases && source ~/.bashrc'
 alias an='source ~/.bashrc'
