@@ -6,6 +6,9 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# cd to dotfiles folder, then git pull
+[ -L ~/.bashrc ] && ( cd $(dirname $(readlink ~/.bashrc)); git pull )
+
 # TMUX
 if [ -z "$TMUX" ]; then 
     type tmux 1> /dev/null 2> /dev/null && tmux attach
@@ -13,8 +16,6 @@ else
     [ -f /var/run/motd ] && cat /var/run/motd
 fi
 
-# cd to dotfiles folder, then git pull
-[ -L ~/.bashrc ] && ( cd $(dirname $(readlink ~/.bashrc)); git pull )
 
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
