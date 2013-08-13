@@ -13,7 +13,8 @@ else
     [ -f /var/run/motd ] && cat /var/run/motd
 fi
 
-git pull
+# cd to dotfiles folder, then git pull
+[ -L ~/.bashrc ] && ( cd $(dirname $(readlink ~/.bashrc)); git pull )
 
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
