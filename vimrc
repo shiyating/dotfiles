@@ -37,6 +37,7 @@ Bundle 'OmniCppComplete'
 Bundle 'taglist.vim'
 Bundle 'renamer.vim'
 Bundle 'pep8'
+Bundle 'AutoTag'
 
 " ===========================================================================
 " first the disabled features due to security concerns
@@ -405,27 +406,13 @@ set pastetoggle=<F9>
 
 " <B> <C> this script use to excute make in vim and open quickfix window
 "let &errorformat="%f:%l:%c: %t%*[^:]:%m,%f:%l: %t%*[^:]:%m," . &errorformat 
-"nmap <silent> B :call Do_make()<cr><cr><cr>
-"nmap <silent> C :cclose<cr>
-"function Do_make2()
-"    up
-"    execute "make"
-"    execute "copen"
-"endfunction
-"
-"function Do_make()
-"    up
-"    let filename = bufname("%")
-"    let suffix_pos = strridx(filename, ".c")
-"    if suffix_pos == -1
-"        return
-"    else
-"        let target = strpart(filename,0,suffix_pos)
-"    endif
-"    let target = "make " . target
-"    execute target
-"    execute "copen"
-"endfunction
+nmap <silent> B :call Do_make()<cr><cr><cr>
+nmap <silent> C :cclose<cr>
+function Do_make()
+    up
+    execute "make"
+    execute "cwindow"
+endfunction
 
 " ===========================================================================
 " status line 
