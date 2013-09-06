@@ -326,3 +326,5 @@ if [ -z "$TMUX" ]; then
     type tmux 1> /dev/null 2> /dev/null && tmux attach
 fi
 
+
+PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
