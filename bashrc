@@ -6,6 +6,17 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# cd to dotfiles folder, then git pull
+[ -L ~/.bashrc ] && ( cd $(dirname $(readlink ~/.bashrc)); git pull )
+
+# TMUX
+if [ -z "$TMUX" ]; then 
+    type tmux 1> /dev/null 2> /dev/null && tmux attach
+else
+    [ -f /var/run/motd ] && cat /var/run/motd
+fi
+
+
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
@@ -320,11 +331,3 @@ else
 		PS1='\u@\h \w \$ '
 	fi
 fi
-
-# TMUX
-if [ -z "$TMUX" ]; then 
-    type tmux 1> /dev/null 2> /dev/null && tmux attach
-fi
-
-
-PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
