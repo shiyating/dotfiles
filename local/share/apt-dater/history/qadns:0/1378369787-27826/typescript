@@ -1,0 +1,133 @@
+Script started on 2013年09月05日 (週四) 16時29分47秒
+Welcome to Ubuntu 12.04.1 LTS (GNU/Linux 3.2.0-23-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Thu Sep  5 16:29:48 CST 2013
+
+  System load:  0.22               Users logged in:       1
+  Usage of /:   5.6% of 356.22GB   IP address for eth0:1: 192.168.49.1
+  Memory usage: 7%                 IP address for eth0:   10.20.0.32
+  Swap usage:   0%                 IP address for virbr0: 192.168.122.1
+  Processes:    98
+
+  Graph this data and manage this system at https://landscape.canonical.com/
+
+Last login: Thu Sep  5 16:28:44 2013 from 10.20.100.78
+Already up-to-date.
+no sessions
+[1;37m+-[1;33m-[0;33m-|[1;32mqaadmin@qadns:1[0;33m|-[0;37m--[0;33m-----------------------------------------[1;33m----[1;37m---[1;33m--[0;33m-|[1;35m~[0;33m|-[0;37m-
+[1;33m+[0;33m-|[1;33m16:29:52[0;33m|[1;32m$[0;33m|[1;31m[0;37m-[1;33m>[0m exec bash -i[Kapt-get update
+E: 無法開啟鎖定檔 /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+E: 無法開啟鎖定檔 /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+[1;37m+-[1;33m-[0;33m-|[1;32mqaadmin@qadns:1[0;33m|-[0;37m--[0;33m-----------------------------------------[1;33m----[1;37m---[1;33m--[0;33m-|[1;35m~[0;33m|-[0;37m-
+[1;33m+[0;33m-|[1;33m16:29:57[0;33m|[1;32m$[0;33m|[1;31m100[0;37m-[1;33m>[0m apt-get update[1@s[1@u[1@d[1@o[1@ 
+0% [工作中]              略過 http://ftp.twaren.net precise InRelease
+              10% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      略過 http://ftp.twaren.net precise-backports InRelease
+                                                      17% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     略過 http://ftp.twaren.net precise-updates InRelease
+                                                                     21% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise Release.gpg
+44% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports Release.gpg
+50% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates Release.gpg
+                                                      55% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise Release
+                                                                     55% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      55% [Release gpgv 49.6 kB] [等待標頭] [正和 security.ubuntu.com (91.189.9                                                                               已有 http://ftp.twaren.net precise-backports Release
+                                                                               已有 http://ftp.twaren.net precise-updates Release
+                                                                               55% [Release gpgv 49.6 kB] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                             26% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      26% [Release gpgv 49.6 kB] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                             已有 http://ftp.twaren.net precise/main Sources
+30% [Release gpgv 49.6 kB] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                             21% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      21% [Release gpgv 49.6 kB] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                             17% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/restricted Sources
+                                                                     19% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise/multiverse Sources
+                                                      已有 http://ftp.twaren.net precise/universe Sources
+                                                      已有 http://ftp.twaren.net precise/main amd64 Packages
+                                                      24% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/restricted amd64 Packages
+                                                                     已有 http://ftp.twaren.net precise/multiverse amd64 Packages
+27% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/universe amd64 Packages
+                                                                     29% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise/main i386 Packages
+                                                      已有 http://ftp.twaren.net precise/restricted i386 Packages
+                                                      已有 http://ftp.twaren.net precise/multiverse i386 Packages
+                                                      已有 http://ftp.twaren.net precise/universe i386 Packages
+                                                      36% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/main TranslationIndex
+                                                                     已有 http://ftp.twaren.net precise/multiverse TranslationIndex
+                                                                     已有 http://ftp.twaren.net precise/restricted TranslationIndex
+38% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/universe TranslationIndex
+                                                                     已有 http://ftp.twaren.net precise-backports/main Sources
+39% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/restricted Sources
+41% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/universe Sources
+                                                                     已有 http://ftp.twaren.net precise-backports/multiverse Sources
+                                                                     已有 http://ftp.twaren.net precise-backports/main amd64 Packages
+                                                                     已有 http://ftp.twaren.net precise-backports/restricted amd64 Packages
+47% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/universe amd64 Packages
+                                                                     48% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/multiverse amd64 Packages
+                                                      50% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/main i386 Packages
+52% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/restricted i386 Packages
+                                                                     53% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/universe i386 Packages
+                                                      已有 http://ftp.twaren.net precise-backports/multiverse i386 Packages
+56% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/main TranslationIndex
+                                                      已有 http://ftp.twaren.net precise-backports/multiverse TranslationIndex
+                                                      57% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/restricted TranslationIndex
+                                                                     58% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/universe TranslationIndex
+                                                      59% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-updates/main Sources
+                                                                     60% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/restricted Sources
+61% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/multiverse Sources
+63% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/universe Sources
+64% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/main amd64 Packages
+                                                      66% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-updates/restricted amd64 Packages
+                                                                     67% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/multiverse amd64 Packages
+69% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/universe amd64 Packages
+70% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/main i386 Packages
+71% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/restricted i386 Packages
+                                                      73% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-updates/multiverse i386 Packages
+                                                                     74% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/universe i386 Packages
+76% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/main TranslationIndex
+                                                      75% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-updates/multiverse TranslationIndex
+                                                                     74% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/restricted TranslationIndex
+                                                      75% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-updates/universe TranslationIndex
+                                                                     74% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise/main Translation-zh_TW
+                                                      已有 http://ftp.twaren.net precise/main Translation-en
+                                                      已有 http://ftp.twaren.net precise/multiverse Translation-zh_TW
+                                                      已有 http://ftp.twaren.net precise/multiverse Translation-en
+                                                      79% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/restricted Translation-en
+                                                                     81% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise/universe Translation-zh_TW
+                                                      82% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise/universe Translation-en
+                                                                     83% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/main Translation-en
+84% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/multiverse Translation-en
+                                                      86% [等待標頭] [正和 security.ubuntu.com (91.189.91.14) 連線]                                                                     已有 http://ftp.twaren.net precise-backports/restricted Translation-en
+                                                                     87% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-backports/universe Translation-en
+88% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/main Translation-zh_TW
+90% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/main Translation-en
+91% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/multiverse Translation-zh_TW
+92% [正和 security.ubuntu.com (91.189.91.14) 連線]                                                      已有 http://ftp.twaren.net precise-updates/multiverse Translation-en
+                                                      94% [等待標頭] [等待標頭]                                 已有 http://ftp.twaren.net precise-updates/restricted Translation-en
+95% [等待標頭] [等待標頭]                                 已有 http://ftp.twaren.net precise-updates/universe Translation-zh_TW
+96% [等待標頭] [等待標頭]                                 已有 http://ftp.twaren.net precise-updates/universe Translation-en
+                                 97% [等待標頭]                  略過 http://security.ubuntu.com precise-security InRelease
+                  97% [工作中]               已有 http://security.ubuntu.com precise-security Release.gpg
+97% [工作中]               已有 http://security.ubuntu.com precise-security Release
+97% [工作中]               97% [Release gpgv 49.6 kB]                          82% [工作中]               已有 http://security.ubuntu.com precise-security/main Sources
+83% [工作中]               已有 http://security.ubuntu.com precise-security/restricted Sources
+84% [工作中]               已有 http://security.ubuntu.com precise-security/multiverse Sources
+               85% [等待標頭]                  已有 http://security.ubuntu.com precise-security/universe Sources
+                  86% [工作中]               已有 http://security.ubuntu.com precise-security/main amd64 Packages
+87% [工作中]               已有 http://security.ubuntu.com precise-security/restricted amd64 Packages
+88% [工作中]               已有 http://security.ubuntu.com precise-security/multiverse amd64 Packages
+89% [工作中]               已有 http://security.ubuntu.com precise-security/universe amd64 Packages
+91% [工作中]               已有 http://security.ubuntu.com precise-security/main i386 Packages
+92% [工作中]               已有 http://security.ubuntu.com precise-security/restricted i386 Packages
+93% [工作中]               已有 http://security.ubuntu.com precise-security/multiverse i386 Packages
+94% [工作中]               已有 http://security.ubuntu.com precise-security/universe i386 Packages
+95% [工作中]               已有 http://security.ubuntu.com precise-security/main TranslationIndex
+95% [工作中]               已有 http://security.ubuntu.com precise-security/multiverse TranslationIndex
+               已有 http://security.ubuntu.com precise-security/restricted TranslationIndex
+               已有 http://security.ubuntu.com precise-security/universe TranslationIndex
+95% [工作中]               已有 http://security.ubuntu.com precise-security/main Translation-en
+               已有 http://security.ubuntu.com precise-security/multiverse Translation-en
+               已有 http://security.ubuntu.com precise-security/restricted Translation-en
+98% [工作中]               已有 http://security.ubuntu.com precise-security/universe Translation-en
+99% [工作中]               正在讀取套件清單... 0%正在讀取套件清單... 0%正在讀取套件清單... 1%正在讀取套件清單... 7%正在讀取套件清單... 7%正在讀取套件清單... 7%正在讀取套件清單... 7%正在讀取套件清單... 7%正在讀取套件清單... 7%正在讀取套件清單... 16%正在讀取套件清單... 30%正在讀取套件清單... 31%正在讀取套件清單... 31%正在讀取套件清單... 38%正在讀取套件清單... 38%正在讀取套件清單... 38%正在讀取套件清單... 38%正在讀取套件清單... 39%正在讀取套件清單... 39%正在讀取套件清單... 46%正在讀取套件清單... 62%正在讀取套件清單... 62%正在讀取套件清單... 65%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 66%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 80%正在讀取套件清單... 81%正在讀取套件清單... 84%正在讀取套件清單... 84%正在讀取套件清單... 84%正在讀取套件清單... 84%正在讀取套件清單... 84%正在讀取套件清單... 84%正在讀取套件清單... 85%正在讀取套件清單... 85%正在讀取套件清單... 89%正在讀取套件清單... 89%正在讀取套件清單... 89%正在讀取套件清單... 89%正在讀取套件清單... 89%正在讀取套件清單... 89%正在讀取套件清單... 90%正在讀取套件清單... 90%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 92%正在讀取套件清單... 94%正在讀取套件清單... 94%正在讀取套件清單... 94%正在讀取套件清單... 94%正在讀取套件清單... 94%正在讀取套件清單... 94%正在讀取套件清單... 94%正在讀取套件清單... 95%正在讀取套件清單... 95%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 97%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 99%正在讀取套件清單... 完成
+[1;37m+-[1;33m-[0;33m-|[1;32mqaadmin@qadns:1[0;33m|-[0;37m--[0;33m-----------------------------------------[1;33m----[1;37m---[1;33m--[0;33m-|[1;35m~[0;33m|-[0;37m-
+[1;33m+[0;33m-|[1;33m16:30:08[0;33m|[1;32m$[0;33m|[1;31m[0;37m-[1;33m>[0m type d[Kapt-get
+apt-get is hashed (/usr/bin/apt-get)
+[1;37m+-[1;33m-[0;33m-|[1;32mqaadmin@qadns:1[0;33m|-[0;37m--[0;33m-----------------------------------------[1;33m----[1;37m---[1;33m--[0;33m-|[1;35m~[0;33m|-[0;37m-
+[1;33m+[0;33m-|[1;33m16:30:16[0;33m|[1;32m$[0;33m|[1;31m[0;37m-[1;33m>[0m type apt-get[K[K[K[K[K[K[K[K[K[K[K[Kq[Klogout
+Connection to 10.20.0.32 closed.
+
+Script done on 2013年09月05日 (週四) 16時40分47秒

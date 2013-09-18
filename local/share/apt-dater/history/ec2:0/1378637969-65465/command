@@ -1,0 +1,1 @@
+"/usr/bin/ssh" "-t" "-l" "ubuntu" "ec2" "apt-dater-host" "upgrade" 

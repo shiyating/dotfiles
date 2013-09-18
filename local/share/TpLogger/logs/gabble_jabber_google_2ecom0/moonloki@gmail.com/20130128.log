@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="log-store-xml.xsl"?>
+<log>
+<message time='20130128T12:12:53' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='D6698B7EEEBF6775_0'>我 2/2(六) 可能會到台北的南港展覽館去看電玩展</message>
+<message time='20130128T12:13:55' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='D6698B7EEEBF6775_1'>你應該沒興趣 因為似乎沒有展示Minecraft</message>
+</log>

@@ -1,0 +1,6 @@
+[Meta]
+TS=1378644873
+Maintainer=Jethro Yu,,,
+Action=connect
+Duration=55.4602
+ERRPATTERN=(error|warning|fail)

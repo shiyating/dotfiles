@@ -9,13 +9,6 @@ fi
 # cd to dotfiles folder, then git pull
 [ -L ~/.bashrc ] && ( cd $(dirname $(readlink ~/.bashrc)); git pull )
 
-# TMUX
-if [ -z "$TMUX" ]; then 
-    type tmux 1> /dev/null 2> /dev/null && tmux attach
-else
-    [ -f /var/run/motd ] && cat /var/run/motd
-fi
-
 
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
@@ -72,26 +65,6 @@ export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
 if [ -z "$INPUTRC" -a ! -f "$HOME/.inputrc" ] ; then
     export INPUTRC=/etc/inputrc
 fi
-
-#-------------------------------------------------------------
-# History
-#-------------------------------------------------------------
-# Enable history appending instead of overwriting.  #139609
-shopt -s histappend
-
-shopt -s cmdhist
-if [[ $PROMPT_COMMAND != *history* ]]; then
-    export PROMPT_COMMAND="history -a;history -c; history -r;$PROMPT_COMMAND"
-fi
-[[ "$PROMPT_COMMAND" = *\; ]] && export PROMPT_COMMAND="${PROMPT_COMMAND%;}"
-
-export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
-export HISTIGNORE="&:ls:[bf]g:exit"
-export HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...
-export HISTSIZE=10000
-export HISTFILESIZE=10000
-export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
-
 
 #-------------------------------------------------------------
 # tailoring 'less'
@@ -268,6 +241,7 @@ fi
 for a in \
     ~/bin \
     ~/.bin \
+    ~/.local/bin \
     /android-cts/tools \
     /android-sdk-linux_x86/tools
 do
@@ -315,12 +289,6 @@ if ${use_color} ; then
 			eval $(dircolors -b /etc/DIR_COLORS)
 		fi
 	fi
-
-    . ~/.zer0prompt
-    zer0prompt
-    unset zer0prompt
-
-
 	alias ls='ls --color=auto'
 	alias grep='grep --colour=auto'
 else
@@ -330,4 +298,32 @@ else
 	else
 		PS1='\u@\h \w \$ '
 	fi
+fi
+
+
+#-------------------------------------------------------------
+# History
+#-------------------------------------------------------------
+# Enable history appending instead of overwriting.  #139609
+shopt -s histappend
+
+shopt -s cmdhist
+export PROMPT_COMMAND="history -a;history -c; history -r"
+#[[ "$PROMPT_COMMAND" = *\; ]] && export PROMPT_COMMAND="${PROMPT_COMMAND%;}"
+
+export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
+export HISTIGNORE="&:ls:[bf]g:exit"
+export HOSTFILE=$HOME/.hosts    # Put list of remote hosts in ~/.hosts ...
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+
+# Powerline prompt
+if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
+
+# TMUX
+if [ ! -z "$TMUX" ]; then 
+    [ -f /var/run/motd ] && cat /var/run/motd
 fi

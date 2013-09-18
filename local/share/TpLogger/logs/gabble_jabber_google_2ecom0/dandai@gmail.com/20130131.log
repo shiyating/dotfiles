@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="log-store-xml.xsl"?>
+<log>
+<message time='20130131T10:14:40' id='dandai@gmail.com' name='戴晨宇' token='3405cc2aa423513c65b3896671684a107034bff2' isuser='false' type='normal' message-token='F209642468CDC612_0'>不會出事</message>
+<message time='20130131T10:14:48' id='dandai@gmail.com' name='戴晨宇' token='3405cc2aa423513c65b3896671684a107034bff2' isuser='false' type='normal' message-token='F209642468CDC612_1'>丟上來吧</message>
+<message time='20130131T10:15:20' id='dandai@gmail.com' name='戴晨宇' token='3405cc2aa423513c65b3896671684a107034bff2' isuser='false' type='normal' message-token='F209642468CDC612_2'>先放 ARC04，或 03</message>
+</log>

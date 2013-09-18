@@ -1,0 +1,440 @@
+Script started on 2013年09月08日 (週日) 18時59分31秒
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  accountsservice apport apport-symptoms aptitude base-files bridge-utils
+  busybox-initramfs busybox-static cgroup-lite coreutils cron dmsetup dpkg
+  hdparm initramfs-tools initramfs-tools-bin initscripts isc-dhcp-client
+  isc-dhcp-common landscape-common language-selector-common
+  libaccountsservice0 libasound2 libc-bin libc6 libcups2 libdevmapper1.02.1
+  libglib2.0-0 libldap-2.4-2 libnih-dbus1 libnih1 libparted0debian1
+  libpciaccess0 libplymouth2 libpolkit-gobject-1-0 libpulse0 libpython2.7
+  librados2 librbd1 libsasl2-2 libsasl2-modules libsqlite3-0 libudev0 login
+  lsb-base lsb-release man-db mdadm mountall multiarch-support ntfs-3g ntpdate
+  parted passwd plymouth plymouth-theme-ubuntu-text psmisc python-apport
+  python-gi python-problem-report python2.7 python2.7-minimal resolvconf
+  seabios sysv-rc sysvinit-utils ubuntu-keyring ubuntu-minimal ubuntu-standard
+  udev unattended-upgrades update-manager-core update-notifier-common upstart
+  vim vim-common vim-runtime vim-tiny wpasupplicant xkb-data
+80 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 38.9 MB of archives.
+After this operation, 206 kB of additional disk space will be used.
+0% [Working]            0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]0% [Connecting to ftp.twaren.net]                                 Get:1 http://ftp.twaren.net/ubuntu/ precise-updates/main base-files amd64 6.5ubuntu6.5 [69.8 kB]
+                                 0% [1 base-files 4045 B/69.8 kB 6%]                                   0% [Working]            Get:2 http://ftp.twaren.net/ubuntu/ precise-updates/main sysv-rc all 2.88dsf-13.10ubuntu11.1 [44.6 kB]
+            0% [2 sysv-rc 0 B/44.6 kB 0%]                             0% [Working]            Get:3 http://ftp.twaren.net/ubuntu/ precise-updates/main plymouth amd64 0.8.2-2ubuntu31 [124 kB]
+            0% [3 plymouth 0 B/124 kB 0%]                             1% [Working]            Get:4 http://ftp.twaren.net/ubuntu/ precise-updates/main libplymouth2 amd64 0.8.2-2ubuntu31 [91.5 kB]
+            1% [4 libplymouth2 0 B/91.5 kB 0%]                                  1% [Working]            Get:5 http://ftp.twaren.net/ubuntu/ precise-updates/main initramfs-tools-bin amd64 0.99ubuntu13.1 [10.0 kB]
+            1% [5 initramfs-tools-bin 5645 B/10.0 kB 56%]                                             1% [Working]            Get:6 http://ftp.twaren.net/ubuntu/ precise-updates/main initramfs-tools all 0.99ubuntu13.1 [49.0 kB]
+            1% [6 initramfs-tools 0 B/49.0 kB 0%]                                     1% [Working]            Get:7 http://ftp.twaren.net/ubuntu/ precise-updates/main mountall amd64 2.36.4 [67.8 kB]
+            1% [7 mountall 2367 B/67.8 kB 3%]                                 1% [Working]            Get:8 http://ftp.twaren.net/ubuntu/ precise-updates/main initscripts amd64 2.88dsf-13.10ubuntu11.1 [28.1 kB]
+            1% [8 initscripts 0 B/28.1 kB 0%]                                 1% [Working]            Get:9 http://ftp.twaren.net/ubuntu/ precise-updates/main upstart amd64 1.5-0ubuntu7.2 [312 kB]
+            1% [9 upstart 2597 B/312 kB 1%]                               2% [Working]            Get:10 http://ftp.twaren.net/ubuntu/ precise-updates/main libc-bin amd64 2.15-0ubuntu10.3 [1181 kB]
+            2% [10 libc-bin 1147 B/1181 kB 0%]                                  5% [Working]                                                  325 kB/s 1min 53s                                                                               Get:11 http://ftp.twaren.net/ubuntu/ precise-updates/main libc6 amd64 2.15-0ubuntu10.3 [4653 kB]
+5% [11 libc6 4096 B/4653 kB 0%]                               325 kB/s 1min 53s12% [11 libc6 2863 kB/4653 kB 62%]                            325 kB/s 1min 44s17% [Working]                                                 325 kB/s 1min 39s                                                                               Get:12 http://ftp.twaren.net/ubuntu/ precise-updates/main sysvinit-utils amd64 2.88dsf-13.10ubuntu11.1 [60.2 kB]
+17% [12 sysvinit-utils 5447 B/60.2 kB 9%]                     325 kB/s 1min 39s17% [Working]                                                 325 kB/s 1min 39s                                                                               Get:13 http://ftp.twaren.net/ubuntu/ precise-updates/main lsb-base all 4.0-0ubuntu20.2 [10.4 kB]
+17% [13 lsb-base 0 B/10.4 kB 0%]                              325 kB/s 1min 39s17% [Working]                                                 325 kB/s 1min 39s                                                                               Get:14 http://ftp.twaren.net/ubuntu/ precise-updates/main libudev0 amd64 175-0ubuntu9.2 [29.2 kB]
+17% [14 libudev0 5495 B/29.2 kB 19%]                          325 kB/s 1min 39s17% [Working]                                                 325 kB/s 1min 39s                                                                               Get:15 http://ftp.twaren.net/ubuntu/ precise-updates/main busybox-initramfs amd64 1:1.18.5-1ubuntu4.1 [183 kB]
+17% [15 busybox-initramfs 0 B/183 kB 0%]                      325 kB/s 1min 39s18% [Working]                                                 325 kB/s 1min 38s                                                                               Get:16 http://ftp.twaren.net/ubuntu/ precise-updates/main mdadm amd64 3.2.5-1ubuntu0.2 [520 kB]
+18% [16 mdadm 4096 B/520 kB 1%]                               325 kB/s 1min 38s19% [Working]                                                 325 kB/s 1min 36s                                                                               Get:17 http://ftp.twaren.net/ubuntu/ precise-updates/main hdparm amd64 9.37-0ubuntu3.1 [92.3 kB]
+19% [17 hdparm 6942 B/92.3 kB 8%]                             325 kB/s 1min 36s19% [Working]                                                 325 kB/s 1min 36s                                                                               Get:18 http://ftp.twaren.net/ubuntu/ precise-updates/main libdevmapper1.02.1 amd64 2:1.02.48-4ubuntu7.1 [69.7 kB]
+19% [18 libdevmapper1.02.1 0 B/69.7 kB 0%]                    325 kB/s 1min 36s20% [Working]                                                 325 kB/s 1min 36s                                                                               Get:19 http://ftp.twaren.net/ubuntu/ precise-updates/main dmsetup amd64 2:1.02.48-4ubuntu7.1 [37.2 kB]
+20% [19 dmsetup 1445 B/37.2 kB 4%]                            325 kB/s 1min 36s20% [Working]                                                 325 kB/s 1min 36s                                                                               Get:20 http://ftp.twaren.net/ubuntu/ precise-updates/main libglib2.0-0 amd64 2.32.3-0ubuntu1 [1199 kB]
+20% [20 libglib2.0-0 0 B/1199 kB 0%]                          325 kB/s 1min 36s23% [Working]                                                 325 kB/s 1min 32s                                                                               Get:21 http://ftp.twaren.net/ubuntu/ precise-updates/main udev amd64 175-0ubuntu9.2 [323 kB]
+23% [21 udev 0 B/323 kB 0%]                                   325 kB/s 1min 32s24% [Working]                                                 325 kB/s 1min 31s                                                                               Get:22 http://ftp.twaren.net/ubuntu/ precise-updates/main libnih-dbus1 amd64 1.0.3-4ubuntu9.1 [16.0 kB]
+24% [22 libnih-dbus1 4096 B/16.0 kB 26%]                      325 kB/s 1min 31s24% [Working]                                                 325 kB/s 1min 31s                                                                               Get:23 http://ftp.twaren.net/ubuntu/ precise-updates/main libnih1 amd64 1.0.3-4ubuntu9.1 [54.8 kB]
+24% [23 libnih1 5495 B/54.8 kB 10%]                           325 kB/s 1min 31s24% [Working]                                                 325 kB/s 1min 31s                                                                               Get:24 http://ftp.twaren.net/ubuntu/ precise-updates/main passwd amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [959 kB]
+24% [24 passwd 4045 B/959 kB 0%]                              325 kB/s 1min 31s26% [Working]                                                 325 kB/s 1min 28s                                                                               Get:25 http://ftp.twaren.net/ubuntu/ precise-updates/main cron amd64 3.0pl1-120ubuntu4 [85.0 kB]
+26% [25 cron 4096 B/85.0 kB 5%]                               325 kB/s 1min 28s26% [Working]                                                 325 kB/s 1min 28s                                                                               Get:26 http://ftp.twaren.net/ubuntu/ precise-updates/main dpkg amd64 1.16.1.2ubuntu7.1 [1830 kB]
+26% [26 dpkg 4096 B/1830 kB 0%]                               325 kB/s 1min 28s31% [Working]                                                 325 kB/s 1min 22s                                                                               Get:27 http://ftp.twaren.net/ubuntu/ precise-updates/main coreutils amd64 8.13-3ubuntu3.2 [2222 kB]
+31% [27 coreutils 4096 B/2222 kB 0%]                          325 kB/s 1min 22s37% [Working]                                                 325 kB/s 1min 15s                                                                               Get:28 http://ftp.twaren.net/ubuntu/ precise-updates/main login amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [291 kB]
+37% [28 login 4096 B/291 kB 1%]                               325 kB/s 1min 15s38% [Working]                                                 325 kB/s 1min 14s                                                                               Get:29 http://ftp.twaren.net/ubuntu/ precise-updates/main libsqlite3-0 amd64 3.7.9-2ubuntu1.1 [349 kB]
+38% [29 libsqlite3-0 4096 B/349 kB 1%]                        325 kB/s 1min 14s38% [Working]                                                 325 kB/s 1min 13s                                                                               Get:30 http://ftp.twaren.net/ubuntu/ precise-updates/main ntpdate amd64 1:4.2.6.p3+dfsg-1ubuntu3.1 [65.1 kB]
+38% [30 ntpdate 4096 B/65.1 kB 6%]                            325 kB/s 1min 13s39% [Working]                                                 325 kB/s 1min 13s                                                                               Get:31 http://ftp.twaren.net/ubuntu/ precise-updates/main resolvconf all 1.63ubuntu16 [53.5 kB]
+39% [31 resolvconf 1151 B/53.5 kB 2%]                         325 kB/s 1min 13s39% [Working]                                                 325 kB/s 1min 13s                                                                               Get:32 http://ftp.twaren.net/ubuntu/ precise-updates/main libpciaccess0 amd64 0.12.902-1ubuntu0.1 [20.8 kB]
+39% [32 libpciaccess0 1151 B/20.8 kB 6%]                      325 kB/s 1min 13s39% [Working]                                                 325 kB/s 1min 13s                                                                               Get:33 http://ftp.twaren.net/ubuntu/ precise-updates/main libpython2.7 amd64 2.7.3-0ubuntu3.1 [1188 kB]
+39% [33 libpython2.7 4043 B/1188 kB 0%]                       325 kB/s 1min 13s42% [Working]                                                  325 kB/s 1min 9s                                                                               Get:34 http://ftp.twaren.net/ubuntu/ precise-updates/main python2.7 amd64 2.7.3-0ubuntu3.1 [2673 kB]
+42% [34 python2.7 0 B/2673 kB 0%]                              325 kB/s 1min 9s49% [Working]                                                  325 kB/s 1min 1s                                                                               Get:35 http://ftp.twaren.net/ubuntu/ precise-updates/main python2.7-minimal amd64 2.7.3-0ubuntu3.1 [1741 kB]
+49% [35 python2.7-minimal 0 B/1741 kB 0%]                      325 kB/s 1min 1s53% [Working]                                                      325 kB/s 56s                                                                               Get:36 http://ftp.twaren.net/ubuntu/ precise-updates/main accountsservice amd64 0.6.15-2ubuntu9.4 [44.1 kB]
+53% [36 accountsservice 4096 B/44.1 kB 9%]                         325 kB/s 56s53% [Working]                                                      325 kB/s 56s                                                                               Get:37 http://ftp.twaren.net/ubuntu/ precise-updates/main libaccountsservice0 amd64 0.6.15-2ubuntu9.4 [30.0 kB]
+53% [37 libaccountsservice0 0 B/30.0 kB 0%]                        325 kB/s 56s53% [Working]                                                      325 kB/s 55s                                                                               Get:38 http://ftp.twaren.net/ubuntu/ precise-updates/main libpolkit-gobject-1-0 amd64 0.104-1ubuntu1 [42.4 kB]
+53% [38 libpolkit-gobject-1-0 5495 B/42.4 kB 13%]                  325 kB/s 55s53% [Working]                                                      325 kB/s 55s                                                                               Get:39 http://ftp.twaren.net/ubuntu/ precise-updates/main language-selector-common all 0.79.1 [365 kB]
+53% [39 language-selector-common 5493 B/365 kB 2%]                 325 kB/s 55s54% [Working]                                                      325 kB/s 54s                                                                               Get:40 http://ftp.twaren.net/ubuntu/ precise-updates/main libsasl2-modules amd64 2.1.25.dfsg1-3ubuntu0.1 [63.2 kB]
+54% [40 libsasl2-modules 0 B/63.2 kB 0%]                           325 kB/s 54s55% [Working]                                                      325 kB/s 54s                                                                               Get:41 http://ftp.twaren.net/ubuntu/ precise-updates/main libsasl2-2 amd64 2.1.25.dfsg1-3ubuntu0.1 [69.1 kB]
+55% [41 libsasl2-2 0 B/69.1 kB 0%]                                 325 kB/s 54s55% [Working]                                                      325 kB/s 54s                                                                               Get:42 http://ftp.twaren.net/ubuntu/ precise-updates/main libldap-2.4-2 amd64 2.4.28-1.1ubuntu4.2 [186 kB]
+55% [42 libldap-2.4-2 5493 B/186 kB 3%]                            325 kB/s 54s55% [Working]                                                      325 kB/s 53s                                                                               Get:43 http://ftp.twaren.net/ubuntu/ precise-updates/main libparted0debian1 amd64 2.3-8ubuntu5.1 [240 kB]
+55% [43 libparted0debian1 0 B/240 kB 0%]                           325 kB/s 53s56% [Working]                                                      325 kB/s 52s                                                                               Get:44 http://ftp.twaren.net/ubuntu/ precise-updates/main ntfs-3g amd64 1:2012.1.15AR.1-1ubuntu1.2 [608 kB]
+56% [44 ntfs-3g 0 B/608 kB 0%]                                     325 kB/s 52s57% [Working]                                                      325 kB/s 51s                                                                               Get:45 http://ftp.twaren.net/ubuntu/ precise-updates/main bridge-utils amd64 1.5-2ubuntu7 [32.0 kB]
+57% [45 bridge-utils 4096 B/32.0 kB 13%]                           325 kB/s 51s57% [Working]                                                      325 kB/s 50s                                                                               Get:46 http://ftp.twaren.net/ubuntu/ precise-updates/main libasound2 amd64 1.0.25-1ubuntu10.1 [428 kB]
+57% [46 libasound2 0 B/428 kB 0%]                                  325 kB/s 50s59% [Working]                                                      325 kB/s 49s                                                                               Get:47 http://ftp.twaren.net/ubuntu/ precise-updates/main libcups2 amd64 1.5.3-0ubuntu6 [171 kB]
+59% [47 libcups2 5493 B/171 kB 3%]                                 325 kB/s 49s59% [Working]                                                      325 kB/s 49s                                                                               Get:48 http://ftp.twaren.net/ubuntu/ precise-updates/main libpulse0 amd64 1:1.1-0ubuntu15.2 [289 kB]
+59% [48 libpulse0 8482 B/289 kB 3%]                                325 kB/s 49s60% [Working]                                                      325 kB/s 48s                                                                               Get:49 http://ftp.twaren.net/ubuntu/ precise-updates/main update-notifier-common all 0.119ubuntu8.6 [222 kB]
+60% [49 update-notifier-common 0 B/222 kB 0%]                      325 kB/s 48s60% [Working]                                                      325 kB/s 47s                                                                               Get:50 http://ftp.twaren.net/ubuntu/ precise-updates/main ubuntu-keyring all 2011.11.21.1 [16.7 kB]
+60% [50 ubuntu-keyring 4096 B/16.7 kB 24%]                         325 kB/s 47s60% [Working]                                                      325 kB/s 47s                                                                               Get:51 http://ftp.twaren.net/ubuntu/ precise-updates/main multiarch-support amd64 2.15-0ubuntu10.3 [4480 B]
+60% [51 multiarch-support 3312 B/4480 B 74%]                       325 kB/s 47s60% [Working]                                                      325 kB/s 47s                                                                               Get:52 http://ftp.twaren.net/ubuntu/ precise-updates/main isc-dhcp-client amd64 4.1.ESV-R4-0ubuntu5.6 [289 kB]
+60% [52 isc-dhcp-client 0 B/289 kB 0%]                             325 kB/s 47s61% [Working]                                                      325 kB/s 46s                                                                               Get:53 http://ftp.twaren.net/ubuntu/ precise-updates/main isc-dhcp-common amd64 4.1.ESV-R4-0ubuntu5.6 [347 kB]
+61% [53 isc-dhcp-common 0 B/347 kB 0%]                             325 kB/s 46s62% [Working]                                                      325 kB/s 45s                                                                               Get:54 http://ftp.twaren.net/ubuntu/ precise-updates/main lsb-release all 4.0-0ubuntu20.2 [10.8 kB]
+62% [54 lsb-release 0 B/10.8 kB 0%]                                325 kB/s 45s62% [Working]                                                      325 kB/s 45s                                                                               Get:55 http://ftp.twaren.net/ubuntu/ precise-updates/main vim amd64 2:7.3.429-2ubuntu2.1 [1048 kB]
+62% [55 vim 0 B/1048 kB 0%]                                        325 kB/s 45s65% [Working]                                                      325 kB/s 42s                                                                               Get:56 http://ftp.twaren.net/ubuntu/ precise-updates/main vim-tiny amd64 2:7.3.429-2ubuntu2.1 [411 kB]
+65% [56 vim-tiny 0 B/411 kB 0%]                                    325 kB/s 42s66% [Working]                                                      325 kB/s 41s                                                                               Get:57 http://ftp.twaren.net/ubuntu/ precise-updates/main vim-runtime all 2:7.3.429-2ubuntu2.1 [6277 kB]
+66% [57 vim-runtime 4096 B/6277 kB 0%]                             325 kB/s 41s72% [57 vim-runtime 2228 kB/6277 kB 35%]                           325 kB/s 34s74% [57 vim-runtime 3022 kB/6277 kB 48%]                           325 kB/s 31s78% [57 vim-runtime 4686 kB/6277 kB 75%]                           325 kB/s 26s82% [Working]                                                      4844 kB/s 1s                                                                               Get:58 http://ftp.twaren.net/ubuntu/ precise-updates/main vim-common amd64 2:7.3.429-2ubuntu2.1 [86.5 kB]
+82% [58 vim-common 2307 B/86.5 kB 3%]                              4844 kB/s 1s82% [Working]                                                      4844 kB/s 1s                                                                               Get:59 http://ftp.twaren.net/ubuntu/ precise-updates/main ubuntu-minimal amd64 1.267.1 [2904 B]
+82% [59 ubuntu-minimal 2904 B/2904 B 100%]                         4844 kB/s 1s82% [Working]                                                      4844 kB/s 1s                                                                               Get:60 http://ftp.twaren.net/ubuntu/ precise-updates/main xkb-data all 2.5-1ubuntu1.3 [474 kB]
+82% [60 xkb-data 0 B/474 kB 0%]                                    4844 kB/s 1s83% [Working]                                                      4844 kB/s 1s                                                                               Get:61 http://ftp.twaren.net/ubuntu/ precise-updates/main busybox-static amd64 1:1.18.5-1ubuntu4.1 [920 kB]
+83% [61 busybox-static 0 B/920 kB 0%]                              4844 kB/s 1s86% [Working]                                                      4844 kB/s 1s                                                                               Get:62 http://ftp.twaren.net/ubuntu/ precise-updates/main man-db amd64 2.6.1-2ubuntu1 [755 kB]
+86% [62 man-db 0 B/755 kB 0%]                                      4844 kB/s 1s88% [Working]                                                      4844 kB/s 0s                                                                               Get:63 http://ftp.twaren.net/ubuntu/ precise-updates/main parted amd64 2.3-8ubuntu5.1 [52.4 kB]
+88% [63 parted 12.3 kB/52.4 kB 23%]                                4844 kB/s 0s88% [Working]                                                      4844 kB/s 0s                                                                               Get:64 http://ftp.twaren.net/ubuntu/ precise-updates/main plymouth-theme-ubuntu-text amd64 0.8.2-2ubuntu31 [9028 B]
+88% [64 plymouth-theme-ubuntu-text 3210 B/9028 B 36%]              4844 kB/s 0s88% [Working]                                                      4844 kB/s 0s                                                                               Get:65 http://ftp.twaren.net/ubuntu/ precise-updates/main psmisc amd64 22.15-2ubuntu1.1 [53.7 kB]
+88% [65 psmisc 4047 B/53.7 kB 8%]                                  4844 kB/s 0s88% [Working]                                                      4844 kB/s 0s                                                                               Get:66 http://ftp.twaren.net/ubuntu/ precise-updates/main python-gi amd64 3.2.2-1~precise [222 kB]
+88% [66 python-gi 1149 B/222 kB 1%]                                4844 kB/s 0s89% [Working]                                                      4844 kB/s 0s                                                                               Get:67 http://ftp.twaren.net/ubuntu/ precise-updates/main ubuntu-standard amd64 1.267.1 [2950 B]
+89% [67 ubuntu-standard 2950 B/2950 B 100%]                        4844 kB/s 0s89% [Working]                                                      4844 kB/s 0s                                                                               Get:68 http://ftp.twaren.net/ubuntu/ precise-updates/main update-manager-core amd64 1:0.156.14.11 [182 kB]
+89% [68 update-manager-core 0 B/182 kB 0%]                         4844 kB/s 0s89% [Working]                                                      4844 kB/s 0s                                                                               Get:69 http://ftp.twaren.net/ubuntu/ precise-updates/main python-problem-report all 2.0.1-0ubuntu17.1 [9776 B]
+89% [69 python-problem-report 0 B/9776 B 0%]                       4844 kB/s 0s89% [Working]                                                      4844 kB/s 0s                                                                               Get:70 http://ftp.twaren.net/ubuntu/ precise-updates/main python-apport all 2.0.1-0ubuntu17.1 [81.4 kB]
+89% [70 python-apport 4046 B/81.4 kB 5%]                           4844 kB/s 0s89% [Working]                                                      4844 kB/s 0s                                                                               Get:71 http://ftp.twaren.net/ubuntu/ precise-updates/main apport all 2.0.1-0ubuntu17.1 [146 kB]
+89% [71 apport 5493 B/146 kB 4%]                                   4844 kB/s 0s90% [Working]                                                      4844 kB/s 0s                                                                               Get:72 http://ftp.twaren.net/ubuntu/ precise-updates/main apport-symptoms all 0.16.1 [14.2 kB]
+90% [72 apport-symptoms 4096 B/14.2 kB 29%]                        4844 kB/s 0s90% [Working]                                                      4844 kB/s 0s                                                                               Get:73 http://ftp.twaren.net/ubuntu/ precise-updates/main aptitude amd64 0.6.6-1ubuntu1.1 [2373 kB]
+90% [73 aptitude 1147 B/2373 kB 0%]                                4844 kB/s 0s95% [73 aptitude 2175 kB/2373 kB 92%]                              4844 kB/s 0s96% [Working]                                                      4844 kB/s 0s                                                                               Get:74 http://ftp.twaren.net/ubuntu/ precise-updates/main landscape-common amd64 12.05-0ubuntu1.12.04 [242 kB]
+96% [74 landscape-common 4096 B/242 kB 2%]                         4844 kB/s 0s96% [Working]                                                      4844 kB/s 0s                                                                               Get:75 http://ftp.twaren.net/ubuntu/ precise-updates/main librbd1 amd64 0.41-1ubuntu2.1 [49.8 kB]
+96% [75 librbd1 0 B/49.8 kB 0%]                                    4844 kB/s 0s96% [Working]                                                      4844 kB/s 0s                                                                               Get:76 http://ftp.twaren.net/ubuntu/ precise-updates/main librados2 amd64 0.41-1ubuntu2.1 [784 kB]
+96% [76 librados2 0 B/784 kB 0%]                                   4844 kB/s 0s98% [Working]                                                      4844 kB/s 0s                                                                               Get:77 http://ftp.twaren.net/ubuntu/ precise-updates/main seabios all 0.6.2-0ubuntu2.1 [70.5 kB]
+98% [77 seabios 0 B/70.5 kB 0%]                                    4844 kB/s 0s99% [Working]                                                      4844 kB/s 0s                                                                               Get:78 http://ftp.twaren.net/ubuntu/ precise-updates/main unattended-upgrades all 0.76ubuntu1 [24.7 kB]
+99% [78 unattended-upgrades 0 B/24.7 kB 0%]                        4844 kB/s 0s99% [Working]                                                      4844 kB/s 0s                                                                               Get:79 http://ftp.twaren.net/ubuntu/ precise-updates/main wpasupplicant amd64 0.7.3-6ubuntu2.1 [490 kB]
+99% [79 wpasupplicant 0 B/490 kB 0%]                               4844 kB/s 0s100% [Working]                                                     4844 kB/s 0s                                                                               Get:80 http://ftp.twaren.net/ubuntu/ precise-updates/main cgroup-lite all 1.1.2 [3878 B]
+100% [80 cgroup-lite 0 B/3878 B 0%]                                4844 kB/s 0s100% [Working]                                                     4844 kB/s 0s                                                                               Fetched 38.9 MB in 14s (2757 kB/s)
+Extracting templates from packages: 37%Extracting templates from packages: 75%Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77876 files and directories currently installed.)
+Preparing to replace base-files 6.5ubuntu6 (using .../base-files_6.5ubuntu6.5_amd64.deb) ...
+Unpacking replacement base-files ...
+Processing triggers for man-db ...
+Processing triggers for install-info ...
+Processing triggers for plymouth-theme-ubuntu-text ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
+Setting up base-files (6.5ubuntu6.5) ...
+Installing new version of config file /etc/issue ...
+Installing new version of config file /etc/issue.net ...
+Installing new version of config file /etc/lsb-release ...
+Processing triggers for plymouth-theme-ubuntu-text ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77877 files and directories currently installed.)
+Preparing to replace sysv-rc 2.88dsf-13.10ubuntu11 (using .../sysv-rc_2.88dsf-13.10ubuntu11.1_all.deb) ...
+Unpacking replacement sysv-rc ...
+Preparing to replace plymouth 0.8.2-2ubuntu30 (using .../plymouth_0.8.2-2ubuntu31_amd64.deb) ...
+Unpacking replacement plymouth ...
+Preparing to replace libplymouth2 0.8.2-2ubuntu30 (using .../libplymouth2_0.8.2-2ubuntu31_amd64.deb) ...
+Unpacking replacement libplymouth2 ...
+Preparing to replace initramfs-tools-bin 0.99ubuntu13 (using .../initramfs-tools-bin_0.99ubuntu13.1_amd64.deb) ...
+Unpacking replacement initramfs-tools-bin ...
+Preparing to replace initramfs-tools 0.99ubuntu13 (using .../initramfs-tools_0.99ubuntu13.1_all.deb) ...
+Unpacking replacement initramfs-tools ...
+Preparing to replace mountall 2.36 (using .../mountall_2.36.4_amd64.deb) ...
+Unpacking replacement mountall ...
+Preparing to replace initscripts 2.88dsf-13.10ubuntu11 (using .../initscripts_2.88dsf-13.10ubuntu11.1_amd64.deb) ...
+Unpacking replacement initscripts ...
+Preparing to replace upstart 1.5-0ubuntu5 (using .../upstart_1.5-0ubuntu7.2_amd64.deb) ...
+Unpacking replacement upstart ...
+Preparing to replace libc-bin 2.15-0ubuntu10.2 (using .../libc-bin_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement libc-bin ...
+Processing triggers for ureadahead ...
+ureadahead will be reprofiled on next reboot
+Processing triggers for man-db ...
+Setting up libc-bin (2.15-0ubuntu10.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77877 files and directories currently installed.)
+Preparing to replace libc6 2.15-0ubuntu10.2 (using .../libc6_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement libc6 ...
+Setting up libc6 (2.15-0ubuntu10.3) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77877 files and directories currently installed.)
+Preparing to replace sysvinit-utils 2.88dsf-13.10ubuntu11 (using .../sysvinit-utils_2.88dsf-13.10ubuntu11.1_amd64.deb) ...
+Unpacking replacement sysvinit-utils ...
+Preparing to replace lsb-base 4.0-0ubuntu20 (using .../lsb-base_4.0-0ubuntu20.2_all.deb) ...
+Unpacking replacement lsb-base ...
+Processing triggers for man-db ...
+Setting up lsb-base (4.0-0ubuntu20.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77877 files and directories currently installed.)
+Preparing to replace libudev0 175-0ubuntu9 (using .../libudev0_175-0ubuntu9.2_amd64.deb) ...
+Unpacking replacement libudev0 ...
+Preparing to replace busybox-initramfs 1:1.18.5-1ubuntu4 (using .../busybox-initramfs_1%3a1.18.5-1ubuntu4.1_amd64.deb) ...
+Unpacking replacement busybox-initramfs ...
+Preparing to replace mdadm 3.2.3-2ubuntu1 (using .../mdadm_3.2.5-1ubuntu0.2_amd64.deb) ...
+ * Stopping MD monitoring service mdadm --monitor
+   ...done.
+Unpacking replacement mdadm ...
+Preparing to replace hdparm 9.37-0ubuntu3 (using .../hdparm_9.37-0ubuntu3.1_amd64.deb) ...
+Unpacking replacement hdparm ...
+Preparing to replace libdevmapper1.02.1 2:1.02.48-4ubuntu7 (using .../libdevmapper1.02.1_2%3a1.02.48-4ubuntu7.1_amd64.deb) ...
+Unpacking replacement libdevmapper1.02.1 ...
+Preparing to replace dmsetup 2:1.02.48-4ubuntu7 (using .../dmsetup_2%3a1.02.48-4ubuntu7.1_amd64.deb) ...
+Unpacking replacement dmsetup ...
+Preparing to replace libglib2.0-0 2.32.1-0ubuntu2 (using .../libglib2.0-0_2.32.3-0ubuntu1_amd64.deb) ...
+Unpacking replacement libglib2.0-0 ...
+Preparing to replace udev 175-0ubuntu9 (using .../udev_175-0ubuntu9.2_amd64.deb) ...
+Adding 'diversion of /sbin/udevadm to /sbin/udevadm.upgrade by fake-udev'
+Unpacking replacement udev ...
+Preparing to replace libnih-dbus1 1.0.3-4ubuntu9 (using .../libnih-dbus1_1.0.3-4ubuntu9.1_amd64.deb) ...
+Unpacking replacement libnih-dbus1 ...
+Preparing to replace libnih1 1.0.3-4ubuntu9 (using .../libnih1_1.0.3-4ubuntu9.1_amd64.deb) ...
+Unpacking replacement libnih1 ...
+Preparing to replace passwd 1:4.1.4.2+svn3283-3ubuntu5 (using .../passwd_1%3a4.1.4.2+svn3283-3ubuntu5.1_amd64.deb) ...
+Unpacking replacement passwd ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up libnih1 (1.0.3-4ubuntu9.1) ...
+Setting up libnih-dbus1 (1.0.3-4ubuntu9.1) ...
+Setting up libudev0 (175-0ubuntu9.2) ...
+Setting up sysvinit-utils (2.88dsf-13.10ubuntu11.1) ...
+Setting up sysv-rc (2.88dsf-13.10ubuntu11.1) ...
+Setting up libglib2.0-0 (2.32.3-0ubuntu1) ...
+No schema files found: doing nothing.
+Setting up initramfs-tools-bin (0.99ubuntu13.1) ...
+Setting up busybox-initramfs (1:1.18.5-1ubuntu4.1) ...
+Setting up libplymouth2 (0.8.2-2ubuntu31) ...
+Setting up upstart (1.5-0ubuntu7.2) ...
+Installing new version of config file /etc/logrotate.d/upstart ...
+Setting up passwd (1:4.1.4.2+svn3283-3ubuntu5.1) ...
+Setting up initramfs-tools (0.99ubuntu13.1) ...
+update-initramfs: deferring update (trigger activated)
+Setting up udev (175-0ubuntu9.2) ...
+udev stop/waiting
+udev start/running, process 16688
+Removing 'diversion of /sbin/udevadm to /sbin/udevadm.upgrade by fake-udev'
+update-initramfs: deferring update (trigger activated)
+Setting up plymouth (0.8.2-2ubuntu31) ...
+update-initramfs: deferring update (trigger activated)
+Setting up mountall (2.36.4) ...
+Setting up initscripts (2.88dsf-13.10ubuntu11.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77880 files and directories currently installed.)
+Preparing to replace cron 3.0pl1-120ubuntu3 (using .../cron_3.0pl1-120ubuntu4_amd64.deb) ...
+cron stop/waiting
+Unpacking replacement cron ...
+Preparing to replace dpkg 1.16.1.2ubuntu7 (using .../dpkg_1.16.1.2ubuntu7.1_amd64.deb) ...
+Unpacking replacement dpkg ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up dpkg (1.16.1.2ubuntu7.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77881 files and directories currently installed.)
+Preparing to replace coreutils 8.13-3ubuntu3 (using .../coreutils_8.13-3ubuntu3.2_amd64.deb) ...
+Unpacking replacement coreutils ...
+Processing triggers for install-info ...
+Processing triggers for man-db ...
+Setting up coreutils (8.13-3ubuntu3.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77881 files and directories currently installed.)
+Preparing to replace login 1:4.1.4.2+svn3283-3ubuntu5 (using .../login_1%3a4.1.4.2+svn3283-3ubuntu5.1_amd64.deb) ...
+Unpacking replacement login ...
+Processing triggers for man-db ...
+Setting up login (1:4.1.4.2+svn3283-3ubuntu5.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77881 files and directories currently installed.)
+Preparing to replace libsqlite3-0 3.7.9-2ubuntu1 (using .../libsqlite3-0_3.7.9-2ubuntu1.1_amd64.deb) ...
+Unpacking replacement libsqlite3-0 ...
+Preparing to replace ntpdate 1:4.2.6.p3+dfsg-1ubuntu3 (using .../ntpdate_1%3a4.2.6.p3+dfsg-1ubuntu3.1_amd64.deb) ...
+Unpacking replacement ntpdate ...
+Preparing to replace resolvconf 1.63ubuntu11 (using .../resolvconf_1.63ubuntu16_all.deb) ...
+Unpacking replacement resolvconf ...
+Preparing to replace libpciaccess0 0.12.902-1 (using .../libpciaccess0_0.12.902-1ubuntu0.1_amd64.deb) ...
+Unpacking replacement libpciaccess0 ...
+Preparing to replace libpython2.7 2.7.3-0ubuntu3 (using .../libpython2.7_2.7.3-0ubuntu3.1_amd64.deb) ...
+Unpacking replacement libpython2.7 ...
+Preparing to replace python2.7 2.7.3-0ubuntu3 (using .../python2.7_2.7.3-0ubuntu3.1_amd64.deb) ...
+Unpacking replacement python2.7 ...
+Preparing to replace python2.7-minimal 2.7.3-0ubuntu3 (using .../python2.7-minimal_2.7.3-0ubuntu3.1_amd64.deb) ...
+Unpacking replacement python2.7-minimal ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up python2.7-minimal (2.7.3-0ubuntu3.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77881 files and directories currently installed.)
+Preparing to replace accountsservice 0.6.15-2ubuntu9.1 (using .../accountsservice_0.6.15-2ubuntu9.4_amd64.deb) ...
+Unpacking replacement accountsservice ...
+Preparing to replace libaccountsservice0 0.6.15-2ubuntu9.1 (using .../libaccountsservice0_0.6.15-2ubuntu9.4_amd64.deb) ...
+Unpacking replacement libaccountsservice0 ...
+Preparing to replace libpolkit-gobject-1-0 0.104-1 (using .../libpolkit-gobject-1-0_0.104-1ubuntu1_amd64.deb) ...
+Unpacking replacement libpolkit-gobject-1-0 ...
+Preparing to replace language-selector-common 0.79 (using .../language-selector-common_0.79.1_all.deb) ...
+Unpacking replacement language-selector-common ...
+Preparing to replace libsasl2-modules 2.1.25.dfsg1-3 (using .../libsasl2-modules_2.1.25.dfsg1-3ubuntu0.1_amd64.deb) ...
+Unpacking replacement libsasl2-modules ...
+Preparing to replace libsasl2-2 2.1.25.dfsg1-3 (using .../libsasl2-2_2.1.25.dfsg1-3ubuntu0.1_amd64.deb) ...
+Unpacking replacement libsasl2-2 ...
+Preparing to replace libldap-2.4-2 2.4.28-1.1ubuntu4 (using .../libldap-2.4-2_2.4.28-1.1ubuntu4.2_amd64.deb) ...
+Unpacking replacement libldap-2.4-2 ...
+Preparing to replace libparted0debian1 2.3-8ubuntu5 (using .../libparted0debian1_2.3-8ubuntu5.1_amd64.deb) ...
+Unpacking replacement libparted0debian1 ...
+Preparing to replace ntfs-3g 1:2012.1.15AR.1-1ubuntu1 (using .../ntfs-3g_1%3a2012.1.15AR.1-1ubuntu1.2_amd64.deb) ...
+Unpacking replacement ntfs-3g ...
+Preparing to replace bridge-utils 1.5-2ubuntu6 (using .../bridge-utils_1.5-2ubuntu7_amd64.deb) ...
+Unpacking replacement bridge-utils ...
+Preparing to replace libasound2 1.0.25-1ubuntu10 (using .../libasound2_1.0.25-1ubuntu10.1_amd64.deb) ...
+Unpacking replacement libasound2 ...
+Preparing to replace libcups2 1.5.3-0ubuntu5.1 (using .../libcups2_1.5.3-0ubuntu6_amd64.deb) ...
+Unpacking replacement libcups2 ...
+Preparing to replace libpulse0 1:1.1-0ubuntu15 (using .../libpulse0_1%3a1.1-0ubuntu15.2_amd64.deb) ...
+Unpacking replacement libpulse0 ...
+Preparing to replace update-notifier-common 0.119ubuntu8.1 (using .../update-notifier-common_0.119ubuntu8.6_all.deb) ...
+Unpacking replacement update-notifier-common ...
+Preparing to replace ubuntu-keyring 2011.11.21 (using .../ubuntu-keyring_2011.11.21.1_all.deb) ...
+Unpacking replacement ubuntu-keyring ...
+Processing triggers for man-db ...
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
+Setting up ubuntu-keyring (2011.11.21.1) ...
+gpg: key 437D05B5: "Ubuntu Archive Automatic Signing Key <ftpmaster@ubuntu.com>" not changed
+gpg: key FBB75451: "Ubuntu CD Image Automatic Signing Key <cdimage@ubuntu.com>" not changed
+gpg: key C0B21F32: public key "Ubuntu Archive Automatic Signing Key (2012) <ftpmaster@ubuntu.com>" imported
+gpg: key EFE21092: public key "Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>" imported
+gpg: Total number processed: 4
+gpg:               imported: 2  (RSA: 2)
+gpg:              unchanged: 2
+gpg: no ultimately trusted keys found
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77881 files and directories currently installed.)
+Preparing to replace multiarch-support 2.15-0ubuntu10.2 (using .../multiarch-support_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement multiarch-support ...
+Setting up multiarch-support (2.15-0ubuntu10.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77881 files and directories currently installed.)
+Preparing to replace isc-dhcp-client 4.1.ESV-R4-0ubuntu5.5 (using .../isc-dhcp-client_4.1.ESV-R4-0ubuntu5.6_amd64.deb) ...
+Unpacking replacement isc-dhcp-client ...
+Preparing to replace isc-dhcp-common 4.1.ESV-R4-0ubuntu5.5 (using .../isc-dhcp-common_4.1.ESV-R4-0ubuntu5.6_amd64.deb) ...
+Unpacking replacement isc-dhcp-common ...
+Preparing to replace lsb-release 4.0-0ubuntu20 (using .../lsb-release_4.0-0ubuntu20.2_all.deb) ...
+Unpacking replacement lsb-release ...
+Preparing to replace vim 2:7.3.429-2ubuntu2 (using .../vim_2%3a7.3.429-2ubuntu2.1_amd64.deb) ...
+Unpacking replacement vim ...
+Preparing to replace vim-tiny 2:7.3.429-2ubuntu2 (using .../vim-tiny_2%3a7.3.429-2ubuntu2.1_amd64.deb) ...
+Unpacking replacement vim-tiny ...
+Preparing to replace vim-runtime 2:7.3.429-2ubuntu2 (using .../vim-runtime_2%3a7.3.429-2ubuntu2.1_all.deb) ...
+Unpacking replacement vim-runtime ...
+Preparing to replace vim-common 2:7.3.429-2ubuntu2 (using .../vim-common_2%3a7.3.429-2ubuntu2.1_amd64.deb) ...
+Unpacking replacement vim-common ...
+Preparing to replace ubuntu-minimal 1.267 (using .../ubuntu-minimal_1.267.1_amd64.deb) ...
+Unpacking replacement ubuntu-minimal ...
+Preparing to replace xkb-data 2.5-1ubuntu1 (using .../xkb-data_2.5-1ubuntu1.3_all.deb) ...
+Unpacking replacement xkb-data ...
+Preparing to replace busybox-static 1:1.18.5-1ubuntu4 (using .../busybox-static_1%3a1.18.5-1ubuntu4.1_amd64.deb) ...
+Unpacking replacement busybox-static ...
+Preparing to replace man-db 2.6.1-2 (using .../man-db_2.6.1-2ubuntu1_amd64.deb) ...
+Unpacking replacement man-db ...
+Preparing to replace parted 2.3-8ubuntu5 (using .../parted_2.3-8ubuntu5.1_amd64.deb) ...
+Unpacking replacement parted ...
+Preparing to replace plymouth-theme-ubuntu-text 0.8.2-2ubuntu30 (using .../plymouth-theme-ubuntu-text_0.8.2-2ubuntu31_amd64.deb) ...
+Unpacking replacement plymouth-theme-ubuntu-text ...
+Preparing to replace psmisc 22.15-2ubuntu1 (using .../psmisc_22.15-2ubuntu1.1_amd64.deb) ...
+Unpacking replacement psmisc ...
+Preparing to replace python-gi 3.2.0-3 (using .../python-gi_3.2.2-1~precise_amd64.deb) ...
+Unpacking replacement python-gi ...
+Preparing to replace ubuntu-standard 1.267 (using .../ubuntu-standard_1.267.1_amd64.deb) ...
+Unpacking replacement ubuntu-standard ...
+Preparing to replace update-manager-core 1:0.156.14.5 (using .../update-manager-core_1%3a0.156.14.11_amd64.deb) ...
+Unpacking replacement update-manager-core ...
+Preparing to replace python-problem-report 2.0.1-0ubuntu15.1 (using .../python-problem-report_2.0.1-0ubuntu17.1_all.deb) ...
+Unpacking replacement python-problem-report ...
+Preparing to replace python-apport 2.0.1-0ubuntu15.1 (using .../python-apport_2.0.1-0ubuntu17.1_all.deb) ...
+Unpacking replacement python-apport ...
+Preparing to replace apport 2.0.1-0ubuntu15.1 (using .../apport_2.0.1-0ubuntu17.1_all.deb) ...
+apport stop/waiting
+Unpacking replacement apport ...
+Preparing to replace apport-symptoms 0.16 (using .../apport-symptoms_0.16.1_all.deb) ...
+Unpacking replacement apport-symptoms ...
+Preparing to replace aptitude 0.6.6-1ubuntu1 (using .../aptitude_0.6.6-1ubuntu1.1_amd64.deb) ...
+Unpacking replacement aptitude ...
+Preparing to replace landscape-common 12.04.3-0ubuntu1 (using .../landscape-common_12.05-0ubuntu1.12.04_amd64.deb) ...
+Unpacking replacement landscape-common ...
+Preparing to replace librbd1 0.41-1ubuntu2 (using .../librbd1_0.41-1ubuntu2.1_amd64.deb) ...
+Unpacking replacement librbd1 ...
+Preparing to replace librados2 0.41-1ubuntu2 (using .../librados2_0.41-1ubuntu2.1_amd64.deb) ...
+Unpacking replacement librados2 ...
+Preparing to replace seabios 0.6.2-0ubuntu2 (using .../seabios_0.6.2-0ubuntu2.1_all.deb) ...
+Unpacking replacement seabios ...
+Preparing to replace unattended-upgrades 0.76 (using .../unattended-upgrades_0.76ubuntu1_all.deb) ...
+Unpacking replacement unattended-upgrades ...
+Preparing to replace wpasupplicant 0.7.3-6ubuntu2 (using .../wpasupplicant_0.7.3-6ubuntu2.1_amd64.deb) ...
+Unpacking replacement wpasupplicant ...
+Preparing to replace cgroup-lite 1.1 (using .../cgroup-lite_1.1.2_all.deb) ...
+cgroup-lite stop/waiting
+Unpacking replacement cgroup-lite ...
+Processing triggers for ureadahead ...
+Setting up mdadm (3.2.5-1ubuntu0.2) ...
+ Removing any system startup links for /etc/init.d/mdadm-raid ...
+update-initramfs: deferring update (trigger activated)
+ * Starting MD monitoring service mdadm --monitor
+   ...done.
+Setting up hdparm (9.37-0ubuntu3.1) ...
+Setting up cron (3.0pl1-120ubuntu4) ...
+Installing new version of config file /etc/default/cron ...
+cron start/running, process 30844
+Setting up libsqlite3-0 (3.7.9-2ubuntu1.1) ...
+Setting up ntpdate (1:4.2.6.p3+dfsg-1ubuntu3.1) ...
+Setting up resolvconf (1.63ubuntu16) ...
+Installing new version of config file /etc/ppp/ip-down.d/000resolvconf ...
+Installing new version of config file /etc/ppp/ip-up.d/000resolvconf ...
+Setting up libpciaccess0 (0.12.902-1ubuntu0.1) ...
+Setting up python2.7 (2.7.3-0ubuntu3.1) ...
+Setting up libpython2.7 (2.7.3-0ubuntu3.1) ...
+Setting up libpolkit-gobject-1-0 (0.104-1ubuntu1) ...
+Setting up libaccountsservice0 (0.6.15-2ubuntu9.4) ...
+Setting up accountsservice (0.6.15-2ubuntu9.4) ...
+Setting up language-selector-common (0.79.1) ...
+Setting up libsasl2-2 (2.1.25.dfsg1-3ubuntu0.1) ...
+Setting up libsasl2-modules (2.1.25.dfsg1-3ubuntu0.1) ...
+Setting up libldap-2.4-2 (2.4.28-1.1ubuntu4.2) ...
+Setting up ntfs-3g (1:2012.1.15AR.1-1ubuntu1.2) ...
+update-initramfs: deferring update (trigger activated)
+Setting up bridge-utils (1.5-2ubuntu7) ...
+Setting up libasound2 (1.0.25-1ubuntu10.1) ...
+Setting up libcups2 (1.5.3-0ubuntu6) ...
+Setting up libpulse0 (1:1.1-0ubuntu15.2) ...
+Setting up update-notifier-common (0.119ubuntu8.6) ...
+Setting up isc-dhcp-common (4.1.ESV-R4-0ubuntu5.6) ...
+Setting up isc-dhcp-client (4.1.ESV-R4-0ubuntu5.6) ...
+Setting up lsb-release (4.0-0ubuntu20.2) ...
+Setting up vim-common (2:7.3.429-2ubuntu2.1) ...
+Setting up vim-runtime (2:7.3.429-2ubuntu2.1) ...
+Processing /usr/share/vim/addons/doc
+Setting up vim (2:7.3.429-2ubuntu2.1) ...
+Setting up vim-tiny (2:7.3.429-2ubuntu2.1) ...
+Setting up ubuntu-minimal (1.267.1) ...
+Setting up xkb-data (2.5-1ubuntu1.3) ...
+Setting up busybox-static (1:1.18.5-1ubuntu4.1) ...
+Setting up man-db (2.6.1-2ubuntu1) ...
+Updating database of manual pages ...
+Setting up plymouth-theme-ubuntu-text (0.8.2-2ubuntu31) ...
+update-initramfs: deferring update (trigger activated)
+Setting up psmisc (22.15-2ubuntu1.1) ...
+Setting up python-gi (3.2.2-1~precise) ...
+Setting up update-manager-core (1:0.156.14.11) ...
+Setting up python-problem-report (2.0.1-0ubuntu17.1) ...
+Setting up python-apport (2.0.1-0ubuntu17.1) ...
+Setting up apport (2.0.1-0ubuntu17.1) ...
+apport start/running
+Setting up apport-symptoms (0.16.1) ...
+Setting up aptitude (0.6.6-1ubuntu1.1) ...
+Setting up landscape-common (12.05-0ubuntu1.12.04) ...
+Setting up librados2 (0.41-1ubuntu2.1) ...
+Setting up librbd1 (0.41-1ubuntu2.1) ...
+Setting up seabios (0.6.2-0ubuntu2.1) ...
+Setting up unattended-upgrades (0.76ubuntu1) ...
+Setting up wpasupplicant (0.7.3-6ubuntu2.1) ...
+Setting up cgroup-lite (1.1.2) ...
+Installing new version of config file /etc/init/cgroup-lite.conf ...
+cgroup-lite start/running
+Setting up dmsetup (2:1.02.48-4ubuntu7.1) ...
+update-initramfs: deferring update (trigger activated)
+Setting up libdevmapper1.02.1 (2:1.02.48-4ubuntu7.1) ...
+Setting up libparted0debian1 (2.3-8ubuntu5.1) ...
+Setting up parted (2.3-8ubuntu5.1) ...
+Setting up ubuntu-standard (1.267.1) ...
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Processing triggers for resolvconf ...
+Connection to 10.20.0.31 closed.
+
+Script done on 2013年09月08日 (週日) 19時04分18秒

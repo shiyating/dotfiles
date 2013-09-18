@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="log-store-xml.xsl"?>
+<log>
+<message time='20130204T10:44:46' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='614C435B7F6F752D_0'>前天忘記隨便在電玩展區拍一張照片 現在只得借別人拍好的圖片上傳</message>
+<message time='20130204T10:44:59' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='614C435B7F6F752D_1'>就是上傳照片抽獎的活動</message>
+<message time='20130204T10:46:17' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='614C435B7F6F752D_2'>中獎率至少約10%</message>
+<message time='20130204T13:01:05' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='DAD673AA2B2EDDC9_0'>這距離 我騎腳踏車花了18分鐘</message>
+<message time='20130204T13:01:06' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='DAD673AA2B2EDDC9_1'>https://maps.google.com.tw/maps?hl=zh-TW</message>
+<message time='20130204T13:01:38' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='DAD673AA2B2EDDC9_2'>如果是走路 就得花30分鐘</message>
+</log>

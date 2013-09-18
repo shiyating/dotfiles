@@ -414,55 +414,19 @@ function Do_make()
     execute "cwindow"
 endfunction
 
+
 " ===========================================================================
 " status line 
 " ===========================================================================
-if has('statusline')
-    " Status line detail: (from Rafael Garcia-Suarez)
-    " %f        file path
-    " %y        file type between braces (if defined)
-    " %([%R%M]%)    read-only, modified and modifiable flags between braces
-    " %{'!'[&ff=='default_file_format']}
-    "           shows a '!' if the file format is not the platform
-    "           default
-    " %{'$'[!&list]}    shows a '*' if in list mode
-    " %{'~'[&pm=='']}   shows a '~' if in patchmode
-    " (%{synIDattr(synID(line('.'),col('.'),0),'name')})
-    "           only for debug : display the current syntax item name
-    " %=        right-align following items
-    " #%n       buffer number
-    " %l/%L,%c%V    line number, total number of lines, and column number
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
-    set laststatus=2	"Display a status-bar.
-    function! SetStatusLineStyle()
-        set statusline=\ #%0*%-3n           " buffer number
-        set statusline+=%f\                 " file name
-        set statusline+=%h%1*%m%r%w%0*      " flag
-        set statusline+=[%{&ff}]\           " file format
-        set statusline+=%{strftime(\"%Y-%m-%d\ %H:%M:%S\")}
-        set statusline+=%=                  " right align
-        set statusline+=(char:%3.b\ 0x%2.B)\            " current char
-        set statusline+=[Ln\ %2l,Col\ %2v]\ %02p%%,\  " offset
-        set statusline+=%L\ lines
-    endfunc
-    call SetStatusLineStyle()
+" Always show statusline
+set laststatus=2
 
-    let &titlestring = hostname() . "[vim(" . expand("%:t") . ")]"
-    if &term == "screen"
-            set t_ts=^[k
-            set t_fs=^[\
-    endif
-    if &term == "screen" || &term == "xterm"
-            set title
-    endif
-    set titlestring=%t%(\ [%R%M]%)
-
-    highlight StatusLine    ctermfg=White ctermbg=DarkBlue cterm=bold
-    highlight StatusLineNC  ctermfg=White ctermbg=DarkBlue cterm=NONE
-endif
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
 
-au! BufRead,BufNewFile *.o  set filetype=c
 " ===========================================================================
 " auto load extensions for different file types
 " ===========================================================================

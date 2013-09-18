@@ -1,0 +1,1000 @@
+Script started on 2013年09月05日 (週四) 16時42分25秒
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  libfdt1 linux-headers-3.2.0-52 linux-headers-3.2.0-52-generic
+  linux-image-3.2.0-52-generic
+The following packages will be upgraded:
+  accountsservice apparmor apport apport-symptoms apt apt-transport-https
+  apt-utils aptitude base-files bind9 bind9-host bind9utils binutils
+  bridge-utils busybox-initramfs busybox-static coreutils curl dbus
+  debootstrap devscripts dkms dnsutils dpkg dpkg-dev gpgv grub-common grub-pc
+  grub-pc-bin grub2-common initramfs-tools initramfs-tools-bin isc-dhcp-client
+  isc-dhcp-common landscape-common language-selector-common
+  libaccountsservice0 libapparmor1 libapt-inst1.4 libapt-pkg4.12 libbind9-80
+  libc-bin libc-dev-bin libc6 libc6-dev libcups2 libcurl3 libcurl3-gnutls
+  libdbus-1-3 libdbus-glib-1-2 libdns81 libdpkg-perl libdrm-intel1
+  libdrm-nouveau1a libdrm-radeon1 libdrm2 libfreetype6 libgcrypt11
+  libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgnutls26 libisc83
+  libisccc80 libisccfg82 libldap-2.4-2 liblwres80 libmysqlclient18
+  libnih-dbus1 libnih1 libnspr4 libnss3 libparted0debian1 libpciaccess0
+  libplymouth2 libpulse0 libqt4-dbus libqt4-declarative libqt4-network
+  libqt4-opengl libqt4-script libqt4-sql libqt4-sql-mysql libqt4-xml
+  libqt4-xmlpatterns libqtcore4 libqtgui4 libssl1.0.0 libsvn1 libtiff4
+  libtspi1 libudev0 libvirt-bin libvirt0 libx11-6 libx11-data libx11-xcb1
+  libxcb-glx0 libxcb-render0 libxcb-shm0 libxcb1 libxcursor1 libxenstore3.0
+  libxext6 libxfixes3 libxi6 libxinerama1 libxml2 libxml2-utils libxrandr2
+  libxrender1 libxt6 libxxf86vm1 linux-firmware linux-headers-server
+  linux-image-server linux-libc-dev linux-server login lsb-base lsb-release
+  make man-db mountall multiarch-support mysql-client-core-5.5 mysql-common
+  ntfs-3g openssl parted passwd perl perl-base perl-modules plymouth
+  plymouth-theme-ubuntu-text python-apport python-keyring python-libvirt
+  python-problem-report python-vm-builder qdbus qemu qemu-common qemu-keymaps
+  qemu-kvm qemu-kvm-extras qemu-system qemu-user qemu-utils resolvconf
+  subversion sudo tzdata ubuntu-keyring ubuntu-minimal ubuntu-standard
+  ubuntu-vm-builder udev update-manager-core update-notifier-common upstart
+  virtualbox virtualbox-dkms virtualbox-qt wpasupplicant x11-common
+167 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 197 MB of archives.
+After this operation, 218 MB of additional disk space will be used.
+0% [Working]            Get:1 http://ftp.twaren.net/ubuntu/ precise-updates/main base-files amd64 6.5ubuntu6.5 [69.8 kB]
+            0% [1 base-files 4045 B/69.8 kB 6%] [Connecting to security.ubuntu.com (91.189.                                                                               0% [Connecting to security.ubuntu.com (91.189.92.200)]                                                      Get:2 http://ftp.twaren.net/ubuntu/ precise-updates/main dpkg amd64 1.16.1.2ubuntu7.1 [1830 kB]
+                                                      0% [2 dpkg 7750 B/1830 kB 0%] [Connecting to security.ubuntu.com (91.189.92.200                                                                               1% [Waiting for headers]                        Get:3 http://ftp.twaren.net/ubuntu/ precise-updates/main coreutils amd64 8.13-3ubuntu3.2 [2222 kB]
+                        1% [3 coreutils 6635 B/2222 kB 0%] [Waiting for headers]                                                        Get:4 http://security.ubuntu.com/ubuntu/ precise-security/main perl amd64 5.14.2-6ubuntu2.3 [4409 kB]
+                                                        2% [3 coreutils 1530 kB/2222 kB 69%] [4 perl 6929 B/4409 kB 0%]                                                               2% [4 perl 14.2 kB/4409 kB 0%]                              Get:5 http://ftp.twaren.net/ubuntu/ precise-updates/main login amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [291 kB]
+                              2% [5 login 5564 B/291 kB 2%] [4 perl 14.2 kB/4409 kB 0%]                                                         2% [4 perl 14.2 kB/4409 kB 0%]                              Get:6 http://ftp.twaren.net/ubuntu/ precise-updates/main upstart amd64 1.5-0ubuntu7.2 [312 kB]
+                              2% [6 upstart 0 B/312 kB 0%] [4 perl 14.2 kB/4409 kB 0%]                                                        2% [4 perl 14.2 kB/4409 kB 0%]                              Get:7 http://ftp.twaren.net/ubuntu/ precise-updates/main libc-dev-bin amd64 2.15-0ubuntu10.3 [84.5 kB]
+                              2% [7 libc-dev-bin 0 B/84.5 kB 0%] [4 perl 14.2 kB/4409 kB 0%]                                                              2% [4 perl 14.2 kB/4409 kB 0%]                              Get:8 http://ftp.twaren.net/ubuntu/ precise-updates/main libc6-dev amd64 2.15-0ubuntu10.3 [2945 kB]
+                              2% [8 libc6-dev 4344 B/2945 kB 0%] [4 perl 14.2 kB/4409 kB 0%]                                                              4% [4 perl 43.1 kB/4409 kB 1%]                              Get:9 http://ftp.twaren.net/ubuntu/ precise-updates/main libc-bin amd64 2.15-0ubuntu10.3 [1181 kB]
+                              4% [9 libc-bin 4593 B/1181 kB 0%] [4 perl 43.1 kB/4409 kB 1%]                                                             5% [4 perl 79.3 kB/4409 kB 2%]                              Get:10 http://ftp.twaren.net/ubuntu/ precise-updates/main libc6 amd64 2.15-0ubuntu10.3 [4653 kB]
+                              5% [10 libc6 6398 B/4653 kB 0%] [4 perl 79.3 kB/4409 kB 2%]                                                           6% [10 libc6 3605 kB/4653 kB 77%] [4 perl 231 kB/4409 kB 5%]                                                            7% [4 perl 231 kB/4409 kB 5%]                             Get:11 http://ftp.twaren.net/ubuntu/ precise-updates/main libnih-dbus1 amd64 1.0.3-4ubuntu9.1 [16.0 kB]
+                             7% [11 libnih-dbus1 5063 B/16.0 kB 32%] [4 perl 231 kB/4409 kB 5%]                                                                  7% [4 perl 231 kB/4409 kB 5%]                             Get:12 http://ftp.twaren.net/ubuntu/ precise-updates/main libnih1 amd64 1.0.3-4ubuntu9.1 [54.8 kB]
+                             7% [12 libnih1 3278 B/54.8 kB 6%] [4 perl 231 kB/4409 kB 5%]                                                            7% [4 perl 231 kB/4409 kB 5%]                             Get:13 http://ftp.twaren.net/ubuntu/ precise-updates/main libudev0 amd64 175-0ubuntu9.2 [29.2 kB]
+                             7% [13 libudev0 3787 B/29.2 kB 13%] [4 perl 231 kB/4409 kB 5%]                                                              7% [4 perl 231 kB/4409 kB 5%]                             Get:14 http://ftp.twaren.net/ubuntu/ precise-updates/main libpciaccess0 amd64 0.12.902-1ubuntu0.1 [20.8 kB]
+                             7% [14 libpciaccess0 4047 B/20.8 kB 19%] [4 perl 259 kB/4409 kB 6%]                                                                   7% [4 perl 263 kB/4409 kB 6%]                             Get:15 http://ftp.twaren.net/ubuntu/ precise-updates/main bridge-utils amd64 1.5-2ubuntu7 [32.0 kB]
+                             7% [15 bridge-utils 2599 B/32.0 kB 8%] [4 perl 333 kB/4409 kB 8%]                                                                 7% [4 perl 336 kB/4409 kB 8%]                             Get:16 http://ftp.twaren.net/ubuntu/ precise-updates/main qemu-common all 1.0+noroms-0ubuntu14.7 [21.5 kB]
+                             7% [16 qemu-common 6943 B/21.5 kB 32%] [4 perl 362 kB/4409 kB 8%]                                                                 7% [4 perl 362 kB/4409 kB 8%]                             Get:17 http://ftp.twaren.net/ubuntu/ precise-updates/main libldap-2.4-2 amd64 2.4.28-1.1ubuntu4.2 [186 kB]
+                             7% [17 libldap-2.4-2 4045 B/186 kB 2%] [4 perl 362 kB/4409 kB 8%]                                                                 7% [4 perl 369 kB/4409 kB 8%]                             Get:18 http://ftp.twaren.net/ubuntu/ precise-updates/main qemu-utils amd64 1.0+noroms-0ubuntu14.7 [353 kB]
+                             7% [18 qemu-utils 4548 B/353 kB 1%] [4 perl 369 kB/4409 kB 8%]                                                              7% [4 perl 373 kB/4409 kB 8%]                             Get:19 http://ftp.twaren.net/ubuntu/ precise-updates/universe qemu-user amd64 1.0.50-2012.03-0ubuntu2.1 [5233 kB]
+                             7% [19 qemu-user 6467 B/5233 kB 0%] [4 perl 373 kB/4409 kB 8%]                                                              9% [19 qemu-user 3155 kB/5233 kB 60%] [4 perl 811 kB/4409 kB 18%]                                                                 10% [4 perl 1070 kB/4409 kB 24%]                                Get:20 http://ftp.twaren.net/ubuntu/ precise/main libfdt1 amd64 1.3.0-2 [16.5 kB]
+                                10% [20 libfdt1 0 B/16.5 kB 0%] [4 perl 1070 kB/4409 kB 24%]                                                            10% [4 perl 1070 kB/4409 kB 24%]                                Get:21 http://ftp.twaren.net/ubuntu/ precise-updates/universe qemu-keymaps all 1.0.50-2012.03-0ubuntu2.1 [19.1 kB]
+                                10% [21 qemu-keymaps 8192 B/19.1 kB 43%] [4 perl 1070 kB/4409 kB 24%]                                                                     10% [4 perl 1070 kB/4409 kB 24%]                                Get:22 http://ftp.twaren.net/ubuntu/ precise-updates/main libpulse0 amd64 1:1.1-0ubuntu15.2 [289 kB]
+                                10% [22 libpulse0 4096 B/289 kB 1%] [4 perl 1070 kB/4409 kB 24%]                                                                11% [4 perl 1070 kB/4409 kB 24%]                                Get:23 http://ftp.twaren.net/ubuntu/ precise-updates/universe qemu-system amd64 1.0.50-2012.03-0ubuntu2.1 [16.7 MB]
+                                11% [23 qemu-system 5448 B/16.7 MB 0%] [4 perl 1070 kB/4409 kB 24%]                                                                   12% [23 qemu-system 2722 kB/16.7 MB 16%] [4 perl 1708 kB/4409 kB 39%]14% [23 qemu-system 5702 kB/16.7 MB 34%] [4 perl 1879 kB/4409 kB 43%]16% [23 qemu-system 8867 kB/16.7 MB 53%] [4 perl 2732 kB/4409 kB 62%]18% [23 qemu-system 11.9 MB/16.7 MB 71%] [4 perl 3265 kB/4409 kB 74%]19% [23 qemu-system 14.9 MB/16.7 MB 89%] [4 perl 3689 kB/4409 kB 84%]                                                                     21% [4 perl 3938 kB/4409 kB 89%]                                Get:24 http://ftp.twaren.net/ubuntu/ precise-updates/main qemu-kvm amd64 1.0+noroms-0ubuntu14.7 [3516 kB]
+                                21% [24 qemu-kvm 4096 B/3516 kB 0%] [4 perl 3938 kB/4409 kB 89%]                                                                22% [24 qemu-kvm 2733 kB/3516 kB 78%]                             7026 kB/s 21s                                                                               Get:25 http://security.ubuntu.com/ubuntu/ precise-security/main perl-base amd64 5.14.2-6ubuntu2.3 [1508 kB]
+                                                                               22% [24 qemu-kvm 2733 kB/3516 kB 78%] [25 perl-base 4096 B/1508 kB 0%]                                                                      23% [25 perl-base 75.2 kB/1508 kB 5%]                             7026 kB/s 21s                                                                               Get:26 http://ftp.twaren.net/ubuntu/ precise-updates/main initramfs-tools all 0.99ubuntu13.1 [49.0 kB]
+                                                                               23% [26 initramfs-tools 2186 B/49.0 kB 4%] [25 perl-base 75.2 kB/1508 kB 5%]                                                                            23% [25 perl-base 75.2 kB/1508 kB 5%]                             7026 kB/s 21s                                                                               Get:27 http://ftp.twaren.net/ubuntu/ precise-updates/main initramfs-tools-bin amd64 0.99ubuntu13.1 [10.0 kB]
+23% [27 initramfs-tools-bin 5597 B/10.0 kB 56%] [25 perl-base 75.2 kB/1508 kB 523% [25 perl-base 75.2 kB/1508 kB 5%]                             7026 kB/s 21s                                                                               Get:28 http://ftp.twaren.net/ubuntu/ precise-updates/main busybox-initramfs amd64 1:1.18.5-1ubuntu4.1 [183 kB]
+                                                                               23% [28 busybox-initramfs 0 B/183 kB 0%] [25 perl-base 75.2 kB/1508 kB 5%]                                                                          23% [25 perl-base 114 kB/1508 kB 8%]                              7026 kB/s 21s                                                                               Get:29 http://ftp.twaren.net/ubuntu/ precise-updates/main udev amd64 175-0ubuntu9.2 [323 kB]
+23% [29 udev 0 B/323 kB 0%] [25 perl-base 114 kB/1508 kB 8%]      7026 kB/s 21s23% [25 perl-base 245 kB/1508 kB 16%]                             7026 kB/s 21s                                                                               Get:30 http://ftp.twaren.net/ubuntu/ precise-updates/main plymouth amd64 0.8.2-2ubuntu31 [124 kB]
+                                                                               23% [30 plymouth 0 B/124 kB 0%] [25 perl-base 245 kB/1508 kB 16%]                                                                 23% [25 perl-base 245 kB/1508 kB 16%]                             7026 kB/s 21s                                                                               Get:31 http://ftp.twaren.net/ubuntu/ precise-updates/main libplymouth2 amd64 0.8.2-2ubuntu31 [91.5 kB]
+                                                                               23% [31 libplymouth2 0 B/91.5 kB 0%] [25 perl-base 245 kB/1508 kB 16%]                                                                      23% [25 perl-base 252 kB/1508 kB 17%]                             7026 kB/s 21s                                                                               Get:32 http://ftp.twaren.net/ubuntu/ precise-updates/main mountall amd64 2.36.4 [67.8 kB]
+                                                                               23% [32 mountall 0 B/67.8 kB 0%] [25 perl-base 252 kB/1508 kB 17%]                                                                  23% [25 perl-base 252 kB/1508 kB 17%]                             7026 kB/s 21s                                                                               Get:33 http://ftp.twaren.net/ubuntu/ precise-updates/main tzdata all 2012e-0ubuntu0.12.04.1 [474 kB]
+                                                                               23% [33 tzdata 3793 B/474 kB 1%] [25 perl-base 252 kB/1508 kB 17%]                                                                  23% [25 perl-base 337 kB/1508 kB 22%]                             7026 kB/s 21s                                                                               Get:34 http://ftp.twaren.net/ubuntu/ precise-updates/main ubuntu-keyring all 2011.11.21.1 [16.7 kB]
+                                                                               23% [34 ubuntu-keyring 8192 B/16.7 kB 49%] [25 perl-base 337 kB/1508 kB 22%]                                                                            23% [25 perl-base 337 kB/1508 kB 22%]                             7026 kB/s 21s                                                                               Get:35 http://ftp.twaren.net/ubuntu/ precise-updates/main lsb-base all 4.0-0ubuntu20.2 [10.4 kB]
+                                                                               23% [35 lsb-base 4096 B/10.4 kB 40%] [25 perl-base 337 kB/1508 kB 22%]                                                                      23% [25 perl-base 337 kB/1508 kB 22%]                             7026 kB/s 21s                                                                               Get:36 http://ftp.twaren.net/ubuntu/ precise-updates/main resolvconf all 1.63ubuntu16 [53.5 kB]
+                                                                               23% [36 resolvconf 0 B/53.5 kB 0%] [25 perl-base 337 kB/1508 kB 22%]                                                                    23% [25 perl-base 337 kB/1508 kB 22%]                             7026 kB/s 21s                                                                               Get:37 http://ftp.twaren.net/ubuntu/ precise-updates/main apparmor amd64 2.7.102-0ubuntu3.7 [357 kB]
+                                                                               23% [37 apparmor 0 B/357 kB 0%] [25 perl-base 337 kB/1508 kB 22%]                                                                 24% [25 perl-base 394 kB/1508 kB 26%]                             7026 kB/s 21s                                                                               Get:38 http://ftp.twaren.net/ubuntu/ precise-updates/main accountsservice amd64 0.6.15-2ubuntu9.4 [44.1 kB]
+                                                                               24% [38 accountsservice 0 B/44.1 kB 0%] [25 perl-base 394 kB/1508 kB 26%]                                                                         24% [25 perl-base 394 kB/1508 kB 26%]                             7026 kB/s 21s                                                                               Get:39 http://ftp.twaren.net/ubuntu/ precise-updates/main libaccountsservice0 amd64 0.6.15-2ubuntu9.4 [30.0 kB]
+24% [39 libaccountsservice0 5495 B/30.0 kB 18%] [25 perl-base 394 kB/1508 kB 2624% [25 perl-base 394 kB/1508 kB 26%]                             7026 kB/s 21s                                                                               Get:40 http://ftp.twaren.net/ubuntu/ precise-updates/main language-selector-common all 0.79.1 [365 kB]
+24% [40 language-selector-common 4096 B/365 kB 1%] [25 perl-base 440 kB/1508 kB24% [25 perl-base 556 kB/1508 kB 37%]                             7026 kB/s 21s                                                                               Get:41 http://ftp.twaren.net/ubuntu/ precise-updates/main libparted0debian1 amd64 2.3-8ubuntu5.1 [240 kB]
+                                                                               24% [41 libparted0debian1 3832 B/240 kB 2%] [25 perl-base 556 kB/1508 kB 37%]                                                                             24% [25 perl-base 556 kB/1508 kB 37%]                             7026 kB/s 21s                                                                               Get:42 http://ftp.twaren.net/ubuntu/ precise-updates/main ntfs-3g amd64 1:2012.1.15AR.1-1ubuntu1.2 [608 kB]
+                                                                               24% [42 ntfs-3g 6923 B/608 kB 1%] [25 perl-base 556 kB/1508 kB 37%]                                                                   24% [25 perl-base 605 kB/1508 kB 40%]                             7026 kB/s 21s                                                                               Get:43 http://ftp.twaren.net/ubuntu/ precise-updates/main libcups2 amd64 1.5.3-0ubuntu6 [171 kB]
+                                                                               24% [43 libcups2 5447 B/171 kB 3%] [25 perl-base 605 kB/1508 kB 40%]                                                                    24% [25 perl-base 607 kB/1508 kB 40%]                             7026 kB/s 21s                                                                               Get:44 http://ftp.twaren.net/ubuntu/ precise-updates/main libfreetype6 amd64 2.4.8-1ubuntu2.1 [343 kB]
+                                                                               24% [44 libfreetype6 6332 B/343 kB 2%] [25 perl-base 607 kB/1508 kB 40%]                                                                        25% [25 perl-base 644 kB/1508 kB 43%]                             7026 kB/s 21s                                                                               Get:45 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-opengl amd64 4:4.8.1-0ubuntu4.4 [293 kB]
+                                                                               25% [45 libqt4-opengl 6587 B/293 kB 2%] [25 perl-base 644 kB/1508 kB 43%]                                                                         25% [25 perl-base 680 kB/1508 kB 45%]                             7026 kB/s 21s                                                                               Get:46 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-declarative amd64 4:4.8.1-0ubuntu4.4 [1064 kB]
+25% [46 libqt4-declarative 6990 B/1064 kB 1%] [25 perl-base 680 kB/1508 kB 45%]25% [25 perl-base 843 kB/1508 kB 56%]                             7026 kB/s 20s                                                                               Get:47 http://ftp.twaren.net/ubuntu/ precise-updates/main libqtgui4 amd64 4:4.8.1-0ubuntu4.4 [4024 kB]
+                                                                               25% [47 libqtgui4 5479 B/4024 kB 0%] [25 perl-base 843 kB/1508 kB 56%]                                                                      27% [47 libqtgui4 3327 kB/4024 kB 83%] [25 perl-base 1287 kB/1508 kB 85%]                                                                         28% [25 perl-base 1357 kB/1508 kB 90%]                            7026 kB/s 20s                                                                               Get:48 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-xmlpatterns amd64 4:4.8.1-0ubuntu4.4 [1032 kB]
+28% [48 libqt4-xmlpatterns 6477 B/1032 kB 1%] [25 perl-base 1357 kB/1508 kB 90%28% [48 libqt4-xmlpatterns 929 kB/1032 kB 90%]                    7026 kB/s 20s                                                                               Get:49 http://security.ubuntu.com/ubuntu/ precise-security/main perl-modules all 5.14.2-6ubuntu2.3 [3389 kB]
+28% [48 libqt4-xmlpatterns 929 kB/1032 kB 90%] [49 perl-modules 6586 B/3389 kB 28% [49 perl-modules 36.9 kB/3389 kB 1%]                          7026 kB/s 20s                                                                               Get:50 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-network amd64 4:4.8.1-0ubuntu4.4 [536 kB]
+                                                                               28% [50 libqt4-network 4531 B/536 kB 1%] [49 perl-modules 36.9 kB/3389 kB 1%]                                                                             29% [49 perl-modules 108 kB/3389 kB 3%]                           7026 kB/s 20s                                                                               Get:51 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-script amd64 4:4.8.1-0ubuntu4.4 [758 kB]
+                                                                               29% [51 libqt4-script 5541 B/758 kB 1%] [49 perl-modules 108 kB/3389 kB 3%]                                                                           29% [49 perl-modules 167 kB/3389 kB 5%]                           7026 kB/s 19s                                                                               Get:52 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-sql-mysql amd64 4:4.8.1-0ubuntu4.4 [30.0 kB]
+29% [52 libqt4-sql-mysql 7874 B/30.0 kB 26%] [49 perl-modules 167 kB/3389 kB 5%29% [49 perl-modules 167 kB/3389 kB 5%]                           7026 kB/s 19s                                                                               Get:53 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-sql amd64 4:4.8.1-0ubuntu4.4 [97.0 kB]
+                                                                               29% [53 libqt4-sql 2896 B/97.0 kB 3%] [49 perl-modules 167 kB/3389 kB 5%]                                                                         29% [49 perl-modules 174 kB/3389 kB 5%]                           7026 kB/s 19s                                                                               Get:54 http://ftp.twaren.net/ubuntu/ precise-updates/main qdbus amd64 4:4.8.1-0ubuntu4.4 [28.7 kB]
+                                                                               29% [54 qdbus 1941 B/28.7 kB 7%] [49 perl-modules 174 kB/3389 kB 5%]                                                                    29% [49 perl-modules 174 kB/3389 kB 5%]                           7026 kB/s 19s                                                                               Get:55 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-dbus amd64 4:4.8.1-0ubuntu4.4 [179 kB]
+                                                                               29% [55 libqt4-dbus 4045 B/179 kB 2%] [49 perl-modules 174 kB/3389 kB 5%]                                                                         29% [49 perl-modules 232 kB/3389 kB 7%]                           7026 kB/s 19s                                                                               Get:56 http://ftp.twaren.net/ubuntu/ precise-updates/main libqt4-xml amd64 4:4.8.1-0ubuntu4.4 [91.8 kB]
+                                                                               29% [56 libqt4-xml 8583 B/91.8 kB 9%] [49 perl-modules 232 kB/3389 kB 7%]                                                                         29% [49 perl-modules 232 kB/3389 kB 7%]                           7026 kB/s 19s                                                                               Get:57 http://ftp.twaren.net/ubuntu/ precise-updates/main libqtcore4 amd64 4:4.8.1-0ubuntu4.4 [2025 kB]
+                                                                               29% [57 libqtcore4 4096 B/2025 kB 0%] [49 perl-modules 232 kB/3389 kB 7%]                                                                         31% [49 perl-modules 558 kB/3389 kB 16%]                          7026 kB/s 19s                                                                               Get:58 http://ftp.twaren.net/ubuntu/ precise-updates/main update-notifier-common all 0.119ubuntu8.6 [222 kB]
+31% [58 update-notifier-common 0 B/222 kB 0%] [49 perl-modules 558 kB/3389 kB 131% [49 perl-modules 567 kB/3389 kB 17%]                          7026 kB/s 19s                                                                               Get:59 http://ftp.twaren.net/ubuntu/ precise-updates/main multiarch-support amd64 2.15-0ubuntu10.3 [4480 B]
+31% [59 multiarch-support 4480 B/4480 B 100%] [49 perl-modules 567 kB/3389 kB 131% [49 perl-modules 567 kB/3389 kB 17%]                          7026 kB/s 19s                                                                               Get:60 http://ftp.twaren.net/ubuntu/ precise-updates/main passwd amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [959 kB]
+                                                                               31% [60 passwd 5003 B/959 kB 1%] [49 perl-modules 567 kB/3389 kB 17%]                                                                     31% [49 perl-modules 688 kB/3389 kB 20%]                          7026 kB/s 19s                                                                               Get:61 http://ftp.twaren.net/ubuntu/ precise-updates/main isc-dhcp-client amd64 4.1.ESV-R4-0ubuntu5.6 [289 kB]
+                                                                               31% [61 isc-dhcp-client 8001 B/289 kB 3%] [49 perl-modules 688 kB/3389 kB 20%]                                                                              31% [49 perl-modules 693 kB/3389 kB 20%]                          7026 kB/s 19s                                                                               Get:62 http://ftp.twaren.net/ubuntu/ precise-updates/main isc-dhcp-common amd64 4.1.ESV-R4-0ubuntu5.6 [347 kB]
+                                                                               31% [62 isc-dhcp-common 1603 B/347 kB 0%] [49 perl-modules 693 kB/3389 kB 20%]                                                                              32% [49 perl-modules 780 kB/3389 kB 23%]                          7026 kB/s 19s                                                                               Get:63 http://ftp.twaren.net/ubuntu/ precise-updates/main lsb-release all 4.0-0ubuntu20.2 [10.8 kB]
+                                                                               32% [63 lsb-release 4638 B/10.8 kB 43%] [49 perl-modules 780 kB/3389 kB 23%]                                                                            32% [49 perl-modules 780 kB/3389 kB 23%]                          7026 kB/s 19s                                                                               Get:64 http://ftp.twaren.net/ubuntu/ precise-updates/main ubuntu-minimal amd64 1.267.1 [2904 B]
+32% [64 ubuntu-minimal 2904 B/2904 B 100%] [49 perl-modules 780 kB/3389 kB 23%]32% [49 perl-modules 780 kB/3389 kB 23%]                          7026 kB/s 19s                                                                               Get:65 http://ftp.twaren.net/ubuntu/ precise-updates/main busybox-static amd64 1:1.18.5-1ubuntu4.1 [920 kB]
+                                                                               32% [65 busybox-static 9154 B/920 kB 1%] [49 perl-modules 780 kB/3389 kB 23%]                                                                             32% [49 perl-modules 888 kB/3389 kB 26%]                          7026 kB/s 19s                                                                               Get:66 http://ftp.twaren.net/ubuntu/ precise-updates/main man-db amd64 2.6.1-2ubuntu1 [755 kB]
+                                                                               32% [66 man-db 4096 B/755 kB 1%] [49 perl-modules 888 kB/3389 kB 26%]                                                                     33% [49 perl-modules 1014 kB/3389 kB 30%]                         7026 kB/s 18s                                                                               Get:67 http://ftp.twaren.net/ubuntu/ precise-updates/main parted amd64 2.3-8ubuntu5.1 [52.4 kB]
+                                                                               33% [67 parted 5977 B/52.4 kB 11%] [49 perl-modules 1014 kB/3389 kB 30%]                                                                        33% [49 perl-modules 1014 kB/3389 kB 30%]                         7026 kB/s 18s                                                                               Get:68 http://ftp.twaren.net/ubuntu/ precise-updates/main plymouth-theme-ubuntu-text amd64 0.8.2-2ubuntu31 [9028 B]
+33% [68 plymouth-theme-ubuntu-text 7794 B/9028 B 86%] [49 perl-modules 1014 kB/33% [49 perl-modules 1014 kB/3389 kB 30%]                         7026 kB/s 18s                                                                               Get:69 http://ftp.twaren.net/ubuntu/ precise-updates/main ubuntu-standard amd64 1.267.1 [2950 B]
+33% [69 ubuntu-standard 2950 B/2950 B 100%] [49 perl-modules 1014 kB/3389 kB 3033% [49 perl-modules 1026 kB/3389 kB 30%]                         7026 kB/s 18s                                                                               Get:70 http://ftp.twaren.net/ubuntu/ precise-updates/main update-manager-core amd64 1:0.156.14.11 [182 kB]
+33% [70 update-manager-core 0 B/182 kB 0%] [49 perl-modules 1026 kB/3389 kB 30%33% [49 perl-modules 1079 kB/3389 kB 32%]                         7026 kB/s 18s                                                                               Get:71 http://ftp.twaren.net/ubuntu/ precise-updates/main python-problem-report all 2.0.1-0ubuntu17.1 [9776 B]
+33% [71 python-problem-report 4096 B/9776 B 42%] [49 perl-modules 1079 kB/3389 33% [49 perl-modules 1079 kB/3389 kB 32%]                         7026 kB/s 18s                                                                               Get:72 http://ftp.twaren.net/ubuntu/ precise-updates/main python-apport all 2.0.1-0ubuntu17.1 [81.4 kB]
+                                                                               33% [72 python-apport 0 B/81.4 kB 0%] [49 perl-modules 1082 kB/3389 kB 32%]                                                                           33% [49 perl-modules 1084 kB/3389 kB 32%]                         7026 kB/s 18s                                                                               Get:73 http://ftp.twaren.net/ubuntu/ precise-updates/main apport all 2.0.1-0ubuntu17.1 [146 kB]
+                                                                               33% [73 apport 0 B/146 kB 0%] [49 perl-modules 1084 kB/3389 kB 32%]                                                                   33% [49 perl-modules 1145 kB/3389 kB 34%]                         7026 kB/s 18s                                                                               Get:74 http://ftp.twaren.net/ubuntu/ precise-updates/main apport-symptoms all 0.16.1 [14.2 kB]
+                                                                               33% [74 apport-symptoms 0 B/14.2 kB 0%] [49 perl-modules 1145 kB/3389 kB 34%]                                                                             33% [49 perl-modules 1145 kB/3389 kB 34%]                         7026 kB/s 18s                                                                               Get:75 http://ftp.twaren.net/ubuntu/ precise-updates/main aptitude amd64 0.6.6-1ubuntu1.1 [2373 kB]
+                                                                               33% [75 aptitude 5491 B/2373 kB 0%] [49 perl-modules 1145 kB/3389 kB 34%]                                                                         34% [49 perl-modules 1470 kB/3389 kB 43%]                         7026 kB/s 18s                                                                               Get:76 http://ftp.twaren.net/ubuntu/ precise-updates/main dpkg-dev all 1.16.1.2ubuntu7.1 [469 kB]
+                                                                               34% [76 dpkg-dev 2570 B/469 kB 1%] [49 perl-modules 1470 kB/3389 kB 43%]                                                                        34% [49 perl-modules 1540 kB/3389 kB 45%]                         7026 kB/s 18s                                                                               Get:77 http://ftp.twaren.net/ubuntu/ precise-updates/main libdpkg-perl all 1.16.1.2ubuntu7.1 [180 kB]
+                                                                               35% [77 libdpkg-perl 0 B/180 kB 0%] [49 perl-modules 1554 kB/3389 kB 46%]                                                                         35% [49 perl-modules 1601 kB/3389 kB 47%]                         7026 kB/s 18s                                                                               Get:78 http://ftp.twaren.net/ubuntu/ precise-updates/main make amd64 3.81-8.1ubuntu1.1 [119 kB]
+                                                                               35% [78 make 8192 B/119 kB 7%] [49 perl-modules 1601 kB/3389 kB 47%]                                                                    35% [49 perl-modules 1611 kB/3389 kB 48%]                         7026 kB/s 18s                                                                               Get:79 http://ftp.twaren.net/ubuntu/ precise-updates/main devscripts amd64 2.11.6ubuntu1.4 [632 kB]
+                                                                               35% [79 devscripts 7093 B/632 kB 1%] [49 perl-modules 1611 kB/3389 kB 48%]                                                                          35% [49 perl-modules 1731 kB/3389 kB 51%]                         7026 kB/s 18s                                                                               Get:80 http://ftp.twaren.net/ubuntu/ precise-updates/main dkms all 2.2.0.3-1ubuntu3.1 [73.2 kB]
+                                                                               35% [80 dkms 4096 B/73.2 kB 6%] [49 perl-modules 1731 kB/3389 kB 51%]                                                                     35% [49 perl-modules 1734 kB/3389 kB 51%]                         7026 kB/s 18s                                                                               Get:81 http://ftp.twaren.net/ubuntu/ precise-updates/main grub-pc amd64 1.99-21ubuntu3.9 [140 kB]
+                                                                               35% [81 grub-pc 4096 B/140 kB 3%] [49 perl-modules 1734 kB/3389 kB 51%]                                                                       35% [49 perl-modules 1734 kB/3389 kB 51%]                         7026 kB/s 18s                                                                               Get:82 http://ftp.twaren.net/ubuntu/ precise-updates/main grub-pc-bin amd64 1.99-21ubuntu3.9 [868 kB]
+                                                                               35% [82 grub-pc-bin 4096 B/868 kB 0%] [49 perl-modules 1734 kB/3389 kB 51%]                                                                           36% [49 perl-modules 1931 kB/3389 kB 57%]                         7026 kB/s 18s                                                                               Get:83 http://ftp.twaren.net/ubuntu/ precise-updates/main grub2-common amd64 1.99-21ubuntu3.9 [94.2 kB]
+                                                                               36% [83 grub2-common 6136 B/94.2 kB 7%] [49 perl-modules 1931 kB/3389 kB 57%]                                                                             36% [49 perl-modules 1931 kB/3389 kB 57%]                         7026 kB/s 18s                                                                               Get:84 http://ftp.twaren.net/ubuntu/ precise-updates/main grub-common amd64 1.99-21ubuntu3.9 [2067 kB]
+                                                                               36% [84 grub-common 8675 B/2067 kB 0%] [49 perl-modules 1931 kB/3389 kB 57%]                                                                            37% [49 perl-modules 2261 kB/3389 kB 67%]                         7026 kB/s 17s                                                                               Get:85 http://ftp.twaren.net/ubuntu/ precise-updates/main landscape-common amd64 12.05-0ubuntu1.12.04 [242 kB]
+                                                                               37% [85 landscape-common 0 B/242 kB 0%] [49 perl-modules 2261 kB/3389 kB 67%]                                                                             37% [49 perl-modules 2267 kB/3389 kB 67%]                         7026 kB/s 17s                                                                               Get:86 http://ftp.twaren.net/ubuntu/ precise-updates/main libapparmor1 amd64 2.7.102-0ubuntu3.7 [37.6 kB]
+                                                                               37% [86 libapparmor1 0 B/37.6 kB 0%] [49 perl-modules 2267 kB/3389 kB 67%]                                                                          37% [49 perl-modules 2317 kB/3389 kB 68%]                         7026 kB/s 17s                                                                               Get:87 http://ftp.twaren.net/ubuntu/ precise-updates/main libtspi1 amd64 0.3.7-2ubuntu1.1 [178 kB]
+                                                                               37% [87 libtspi1 2401 B/178 kB 1%] [49 perl-modules 2317 kB/3389 kB 68%]                                                                        37% [49 perl-modules 2344 kB/3389 kB 69%]                         7026 kB/s 17s                                                                               Get:88 http://ftp.twaren.net/ubuntu/ precise-updates/main libvirt-bin amd64 0.9.8-2ubuntu17.7 [1210 kB]
+                                                                               37% [88 libvirt-bin 4684 B/1210 kB 0%] [49 perl-modules 2344 kB/3389 kB 69%]                                                                            38% [49 perl-modules 2523 kB/3389 kB 74%]                         7026 kB/s 17s                                                                               Get:89 http://ftp.twaren.net/ubuntu/ precise-updates/main libvirt0 amd64 0.9.8-2ubuntu17.7 [871 kB]
+                                                                               38% [89 libvirt0 7633 B/871 kB 1%] [49 perl-modules 2523 kB/3389 kB 74%]                                                                        38% [49 perl-modules 2681 kB/3389 kB 79%]                         7026 kB/s 17s                                                                               Get:90 http://ftp.twaren.net/ubuntu/ precise-updates/main python-keyring all 0.9.2-0ubuntu0.12.04.2 [39.7 kB]
+38% [90 python-keyring 7998 B/39.7 kB 20%] [49 perl-modules 2681 kB/3389 kB 79%39% [49 perl-modules 2708 kB/3389 kB 80%]                         7026 kB/s 17s                                                                               Get:91 http://ftp.twaren.net/ubuntu/ precise-updates/main python-libvirt amd64 0.9.8-2ubuntu17.7 [96.3 kB]
+39% [91 python-libvirt 5634 B/96.3 kB 6%] [49 perl-modules 2708 kB/3389 kB 80%]39% [49 perl-modules 2708 kB/3389 kB 80%]                         7026 kB/s 17s                                                                               Get:92 http://ftp.twaren.net/ubuntu/ precise-updates/universe qemu amd64 1.0+noroms-0ubuntu14.7 [2664 B]
+                                                                               39% [92 qemu 2664 B/2664 B 100%] [49 perl-modules 2710 kB/3389 kB 80%]                                                                      39% [49 perl-modules 2717 kB/3389 kB 80%]                         7026 kB/s 17s                                                                               Get:93 http://ftp.twaren.net/ubuntu/ precise-updates/universe qemu-kvm-extras all 1.0.50-2012.03-0ubuntu2.1 [4934 B]
+39% [93 qemu-kvm-extras 4048 B/4934 B 82%] [49 perl-modules 2719 kB/3389 kB 80%39% [49 perl-modules 2719 kB/3389 kB 80%]                         7026 kB/s 17s                                                                               Get:94 http://ftp.twaren.net/ubuntu/ precise-updates/universe virtualbox-qt amd64 4.1.12-dfsg-2ubuntu0.2 [6488 kB]
+                                                                               39% [94 virtualbox-qt 8192 B/6488 kB 0%] [49 perl-modules 2719 kB/3389 kB 80%]                                                                              40% [94 virtualbox-qt 2794 kB/6488 kB 43%] [49 perl-modules 3183 kB/3389 kB 94%41% [94 virtualbox-qt 4423 kB/6488 kB 68%]                        7026 kB/s 16s                                                                               Get:95 http://security.ubuntu.com/ubuntu/ precise-security/main libdbus-1-3 amd64 1.4.18-1ubuntu1.4 [145 kB]
+                                                                               41% [94 virtualbox-qt 4423 kB/6488 kB 68%] [95 libdbus-1-3 6980 B/145 kB 5%]                                                                            42% [94 virtualbox-qt 5298 kB/6488 kB 82%]                        7026 kB/s 16s                                                                               Get:96 http://security.ubuntu.com/ubuntu/ precise-security/main libdrm2 amd64 2.4.39-0ubuntu0.2 [26.3 kB]
+                                                                               42% [94 virtualbox-qt 5298 kB/6488 kB 82%] [96 libdrm2 8336 B/26.3 kB 32%]                                                                          42% [94 virtualbox-qt 5353 kB/6488 kB 83%]                        7026 kB/s 16s                                                                               Get:97 http://security.ubuntu.com/ubuntu/ precise-security/main libdrm-intel1 amd64 2.4.39-0ubuntu0.2 [62.7 kB]
+42% [94 virtualbox-qt 5353 kB/6488 kB 83%] [97 libdrm-intel1 4048 B/62.7 kB 6%]42% [94 virtualbox-qt 6124 kB/6488 kB 94%]                        7026 kB/s 16s                                                                               Get:98 http://security.ubuntu.com/ubuntu/ precise-security/main libdrm-nouveau1a amd64 2.4.39-0ubuntu0.2 [14.0 kB]
+42% [94 virtualbox-qt 6124 kB/6488 kB 94%] [98 libdrm-nouveau1a 4718 B/14.0 kB 42% [94 virtualbox-qt 6124 kB/6488 kB 94%]                        7026 kB/s 16s                                                                               Get:99 http://security.ubuntu.com/ubuntu/ precise-security/main libdrm-radeon1 amd64 2.4.39-0ubuntu0.2 [22.6 kB]
+42% [94 virtualbox-qt 6124 kB/6488 kB 94%] [99 libdrm-radeon1 6332 B/22.6 kB 2842% [94 virtualbox-qt 6262 kB/6488 kB 97%]                        7026 kB/s 16s                                                                               Get:100 http://security.ubuntu.com/ubuntu/ precise-security/main libgcrypt11 amd64 1.5.0-3ubuntu0.2 [280 kB]
+                                                                               42% [94 virtualbox-qt 6262 kB/6488 kB 97%] [100 libgcrypt11 5108 B/280 kB 2%]                                                                             42% [100 libgcrypt11 49.9 kB/280 kB 18%]                          7026 kB/s 16s                                                                               Get:101 http://ftp.twaren.net/ubuntu/ precise-updates/universe virtualbox amd64 4.1.12-dfsg-2ubuntu0.2 [15.6 MB]
+                                                                               42% [101 virtualbox 5363 B/15.6 MB 0%] [100 libgcrypt11 49.9 kB/280 kB 18%]                                                                           43% [101 virtualbox 1750 kB/15.6 MB 11%]                          7026 kB/s 15s                                                                               Get:102 http://security.ubuntu.com/ubuntu/ precise-security/main libgnutls26 amd64 2.12.14-5ubuntu3.4 [459 kB]
+                                                                               43% [101 virtualbox 1750 kB/15.6 MB 11%] [102 libgnutls26 5410 B/459 kB 1%]                                                                           45% [101 virtualbox 4393 kB/15.6 MB 28%]                          7084 kB/s 15s                                                                               Get:103 http://security.ubuntu.com/ubuntu/ precise-security/main libcurl3-gnutls amd64 7.22.0-3ubuntu4.2 [227 kB]
+45% [101 virtualbox 4400 kB/15.6 MB 28%] [103 libcurl3-gnutls 3506 B/227 kB 2%]46% [101 virtualbox 5721 kB/15.6 MB 37%]                          7084 kB/s 15s                                                                               Get:104 http://security.ubuntu.com/ubuntu/ precise-security/main libxcb1 amd64 1.8.1-1ubuntu0.2 [44.8 kB]
+                                                                               46% [101 virtualbox 5721 kB/15.6 MB 37%] [104 libxcb1 4911 B/44.8 kB 11%]                                                                         46% [101 virtualbox 6080 kB/15.6 MB 39%]                          7084 kB/s 15s                                                                               Get:105 http://security.ubuntu.com/ubuntu/ precise-security/main libx11-data all 2:1.4.99.1-0ubuntu2.1 [175 kB]
+                                                                               46% [101 virtualbox 6080 kB/15.6 MB 39%] [105 libx11-data 5768 B/175 kB 3%]                                                                           47% [101 virtualbox 7483 kB/15.6 MB 48%]                          7084 kB/s 14s                                                                               Get:106 http://security.ubuntu.com/ubuntu/ precise-security/main libx11-6 amd64 2:1.4.99.1-0ubuntu2.1 [764 kB]
+                                                                               47% [101 virtualbox 7483 kB/15.6 MB 48%] [106 libx11-6 4672 B/764 kB 1%]                                                                        49% [101 virtualbox 10.7 MB/15.6 MB 68%] [106 libx11-6 590 kB/764 kB 77%]                                                                         49% [101 virtualbox 11.4 MB/15.6 MB 73%]                          7084 kB/s 14s                                                                               Get:107 http://security.ubuntu.com/ubuntu/ precise-security/main linux-libc-dev amd64 3.2.0-52.78 [855 kB]
+                                                                               49% [101 virtualbox 11.4 MB/15.6 MB 73%] [107 linux-libc-dev 3429 B/855 kB 0%]                                                                              51% [101 virtualbox 14.6 MB/15.6 MB 93%] [107 linux-libc-dev 553 kB/855 kB 65%]52% [107 linux-libc-dev 825 kB/855 kB 96%]                        7084 kB/s 13s                                                                               Get:108 http://ftp.twaren.net/ubuntu/ precise-updates/universe virtualbox-dkms all 4.1.12-dfsg-2ubuntu0.2 [675 kB]
+52% [108 virtualbox-dkms 4513 B/675 kB 1%] [107 linux-libc-dev 825 kB/855 kB 9652% [108 virtualbox-dkms 207 kB/675 kB 31%]                       7084 kB/s 13s                                                                               Get:109 http://security.ubuntu.com/ubuntu/ precise-security/main libapt-pkg4.12 amd64 0.8.16~exp12ubuntu10.10 [940 kB]
+52% [108 virtualbox-dkms 214 kB/675 kB 32%] [109 libapt-pkg4.12 1500 B/940 kB 052% [109 libapt-pkg4.12 88.4 kB/940 kB 9%]                        7084 kB/s 13s                                                                               Get:110 http://ftp.twaren.net/ubuntu/ precise-updates/main wpasupplicant amd64 0.7.3-6ubuntu2.1 [490 kB]
+52% [110 wpasupplicant 3813 B/490 kB 1%] [109 libapt-pkg4.12 88.4 kB/940 kB 9%]52% [109 libapt-pkg4.12 219 kB/940 kB 23%]                        7084 kB/s 13s                                                                               Get:111 http://ftp.twaren.net/ubuntu/ precise-updates/main x11-common all 1:7.6+12ubuntu2 [52.0 kB]
+                                                                               52% [111 x11-common 7443 B/52.0 kB 14%] [109 libapt-pkg4.12 219 kB/940 kB 23%]                                                                              52% [109 libapt-pkg4.12 262 kB/940 kB 28%]                        7084 kB/s 13s                                                                               Get:112 http://ftp.twaren.net/ubuntu/ precise-updates/main debootstrap all 1.0.39ubuntu0.2 [34.0 kB]
+                                                                               52% [112 debootstrap 2945 B/34.0 kB 9%] [109 libapt-pkg4.12 262 kB/940 kB 28%]                                                                              52% [109 libapt-pkg4.12 262 kB/940 kB 28%]                        7084 kB/s 13s                                                                               Get:113 http://ftp.twaren.net/ubuntu/ precise-updates/universe python-vm-builder all 0.12.4+bzr477-0ubuntu3 [410 kB]
+52% [113 python-vm-builder 3427 B/410 kB 1%] [109 libapt-pkg4.12 262 kB/940 kB 53% [109 libapt-pkg4.12 343 kB/940 kB 37%]                        7084 kB/s 13s                                                                               Get:114 http://ftp.twaren.net/ubuntu/ precise-updates/universe ubuntu-vm-builder all 0.12.4+bzr477-0ubuntu3 [3744 B]
+53% [114 ubuntu-vm-builder 3744 B/3744 B 100%] [109 libapt-pkg4.12 343 kB/940 k53% [109 libapt-pkg4.12 343 kB/940 kB 37%]                        7084 kB/s 13s53% [Working]                                                     7084 kB/s 13s                                                                               Get:115 http://security.ubuntu.com/ubuntu/ precise-security/main apt amd64 0.8.16~exp12ubuntu10.10 [1101 kB]
+53% [115 apt 0 B/1101 kB 0%]                                      7084 kB/s 13s53% [115 apt 770 kB/1101 kB 70%]                                  7084 kB/s 12s54% [Working]                                                     7084 kB/s 12s                                                                               Get:116 http://security.ubuntu.com/ubuntu/ precise-security/main libssl1.0.0 amd64 1.0.1-4ubuntu5.10 [1048 kB]
+54% [116 libssl1.0.0 6299 B/1048 kB 1%]                           7084 kB/s 12s54% [116 libssl1.0.0 840 kB/1048 kB 80%]                          7084 kB/s 12s54% [Working]                                                     7084 kB/s 12s                                                                               Get:117 http://security.ubuntu.com/ubuntu/ precise-security/main libapt-inst1.4 amd64 0.8.16~exp12ubuntu10.10 [99.8 kB]
+54% [117 libapt-inst1.4 4474 B/99.8 kB 4%]                        7084 kB/s 12s54% [Working]                                                     7084 kB/s 12s                                                                               Get:118 http://security.ubuntu.com/ubuntu/ precise-security/main dbus amd64 1.4.18-1ubuntu1.4 [360 kB]
+54% [118 dbus 4096 B/360 kB 1%]                                   7084 kB/s 12s54% [Working]                                                     7084 kB/s 12s                                                                               Get:119 http://security.ubuntu.com/ubuntu/ precise-security/main libdbus-glib-1-2 amd64 0.98-1ubuntu1.1 [73.6 kB]
+54% [119 libdbus-glib-1-2 13.4 kB/73.6 kB 18%]                    7084 kB/s 12s54% [Working]                                                     7084 kB/s 12s                                                                               Get:120 http://security.ubuntu.com/ubuntu/ precise-security/main libxext6 amd64 2:1.3.0-3ubuntu0.1 [33.7 kB]
+54% [120 libxext6 4647 B/33.7 kB 14%]                             7084 kB/s 12s54% [Working]                                                     7084 kB/s 12s                                                                               Get:121 http://security.ubuntu.com/ubuntu/ precise-security/main libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.6 [673 kB]
+54% [121 libxml2 6795 B/673 kB 1%]                                7084 kB/s 12s55% [Working]                                                     7084 kB/s 12s                                                                               Get:122 http://security.ubuntu.com/ubuntu/ precise-security/main libcurl3 amd64 7.22.0-3ubuntu4.2 [236 kB]
+55% [122 libcurl3 9562 B/236 kB 4%]                               7084 kB/s 12s55% [Working]                                                     7084 kB/s 12s                                                                               Get:123 http://security.ubuntu.com/ubuntu/ precise-security/main libgl1-mesa-dri amd64 8.0.4-0ubuntu0.6 [3087 kB]
+55% [123 libgl1-mesa-dri 9474 B/3087 kB 0%]                       7084 kB/s 12s55% [123 libgl1-mesa-dri 1233 kB/3087 kB 40%]                     7084 kB/s 12s56% [123 libgl1-mesa-dri 2536 kB/3087 kB 82%]                     7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:124 http://security.ubuntu.com/ubuntu/ precise-security/main libgl1-mesa-glx amd64 8.0.4-0ubuntu0.6 [104 kB]
+56% [124 libgl1-mesa-glx 4096 B/104 kB 4%]                        7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:125 http://security.ubuntu.com/ubuntu/ precise-security/main libglapi-mesa amd64 8.0.4-0ubuntu0.6 [21.4 kB]
+56% [125 libglapi-mesa 7918 B/21.4 kB 37%]                        7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:126 http://security.ubuntu.com/ubuntu/ precise-security/main libx11-xcb1 amd64 2:1.4.99.1-0ubuntu2.1 [10.5 kB]
+56% [126 libx11-xcb1 2152 B/10.5 kB 21%]                          7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:127 http://security.ubuntu.com/ubuntu/ precise-security/main libxcb-glx0 amd64 1.8.1-1ubuntu0.2 [26.4 kB]
+56% [127 libxcb-glx0 4418 B/26.4 kB 17%]                          7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:128 http://security.ubuntu.com/ubuntu/ precise-security/main libxfixes3 amd64 1:5.0-4ubuntu4.1 [12.5 kB]
+56% [128 libxfixes3 4420 B/12.5 kB 35%]                           7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:129 http://security.ubuntu.com/ubuntu/ precise-security/main libxxf86vm1 amd64 1:1.1.1-2ubuntu0.1 [11.9 kB]
+56% [129 libxxf86vm1 0 B/11.9 kB 0%]                              7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:130 http://security.ubuntu.com/ubuntu/ precise-security/main mysql-common all 5.5.32-0ubuntu0.12.04.1 [13.3 kB]
+56% [130 mysql-common 0 B/13.3 kB 0%]                             7084 kB/s 12s56% [Working]                                                     7084 kB/s 12s                                                                               Get:131 http://security.ubuntu.com/ubuntu/ precise-security/main libmysqlclient18 amd64 5.5.32-0ubuntu0.12.04.1 [944 kB]
+56% [131 libmysqlclient18 4096 B/944 kB 0%]                       7084 kB/s 12s57% [Working]                                                     3937 kB/s 21s                                                                               Get:132 http://security.ubuntu.com/ubuntu/ precise-security/main libnspr4 amd64 4.9.5-0ubuntu0.12.04.1 [141 kB]
+57% [132 libnspr4 7826 B/141 kB 6%]                               3937 kB/s 21s57% [Working]                                                     3937 kB/s 21s                                                                               Get:133 http://security.ubuntu.com/ubuntu/ precise-security/main libnss3 amd64 3.14.3-0ubuntu0.12.04.1 [1196 kB]
+57% [133 libnss3 5604 B/1196 kB 0%]                               3937 kB/s 21s58% [Working]                                                     3937 kB/s 21s                                                                               Get:134 http://security.ubuntu.com/ubuntu/ precise-security/main libxrender1 amd64 1:0.9.6-2ubuntu0.1 [20.6 kB]
+58% [134 libxrender1 0 B/20.6 kB 0%]                              3937 kB/s 21s58% [Working]                                                     3937 kB/s 21s                                                                               Get:135 http://security.ubuntu.com/ubuntu/ precise-security/main libtiff4 amd64 3.9.5-2ubuntu1.5 [145 kB]
+58% [135 libtiff4 4096 B/145 kB 3%]                               3937 kB/s 21s58% [Working]                                                     3937 kB/s 21s                                                                               Get:136 http://security.ubuntu.com/ubuntu/ precise-security/main libxi6 amd64 2:1.6.0-0ubuntu2.1 [30.8 kB]
+58% [136 libxi6 6676 B/30.8 kB 22%]                               3937 kB/s 21s58% [Working]                                                     3937 kB/s 21s                                                                               Get:137 http://security.ubuntu.com/ubuntu/ precise-security/main subversion amd64 1.6.17dfsg-3ubuntu3.3 [297 kB]
+58% [137 subversion 2694 B/297 kB 1%]                             3937 kB/s 21s58% [Working]                                                     3937 kB/s 21s                                                                               Get:138 http://security.ubuntu.com/ubuntu/ precise-security/main libsvn1 amd64 1.6.17dfsg-3ubuntu3.3 [820 kB]
+58% [138 libsvn1 4096 B/820 kB 0%]                                3937 kB/s 21s58% [Working]                                                     3937 kB/s 20s                                                                               Get:139 http://security.ubuntu.com/ubuntu/ precise-security/main libxcb-render0 amd64 1.8.1-1ubuntu0.2 [13.3 kB]
+58% [139 libxcb-render0 6928 B/13.3 kB 52%]                       3937 kB/s 20s58% [Working]                                                     3937 kB/s 20s                                                                               Get:140 http://security.ubuntu.com/ubuntu/ precise-security/main libxcb-shm0 amd64 1.8.1-1ubuntu0.2 [5516 B]
+58% [140 libxcb-shm0 1875 B/5516 B 34%]                           3937 kB/s 20s58% [Working]                                                     3937 kB/s 20s                                                                               Get:141 http://security.ubuntu.com/ubuntu/ precise-security/main libxcursor1 amd64 1:1.1.12-1ubuntu0.1 [22.7 kB]
+58% [141 libxcursor1 4096 B/22.7 kB 18%]                          3937 kB/s 20s58% [Working]                                                     3937 kB/s 20s                                                                               Get:142 http://security.ubuntu.com/ubuntu/ precise-security/main libxinerama1 amd64 2:1.1.1-3ubuntu0.1 [8072 B]
+58% [142 libxinerama1 5677 B/8072 B 70%]                          3937 kB/s 20s58% [Working]                                                     3937 kB/s 20s                                                                               Get:143 http://security.ubuntu.com/ubuntu/ precise-security/main libxrandr2 amd64 2:1.3.2-2ubuntu0.2 [17.5 kB]
+58% [143 libxrandr2 7435 B/17.5 kB 42%]                           3937 kB/s 20s58% [Working]                                                     3937 kB/s 20s                                                                               Get:144 http://security.ubuntu.com/ubuntu/ precise-security/main libxt6 amd64 1:1.1.1-2ubuntu0.1 [186 kB]
+58% [144 libxt6 0 B/186 kB 0%]                                    3937 kB/s 20s58% [Working]                                                     3937 kB/s 20s                                                                               Get:145 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-3.2.0-52-generic amd64 3.2.0-52.78 [38.6 MB]
+58% [145 linux-image-3.2.0-52-generic 6928 B/38.6 MB 0%]          3937 kB/s 20s59% [145 linux-image-3.2.0-52-generic 1523 kB/38.6 MB 4%]         3937 kB/s 20s60% [145 linux-image-3.2.0-52-generic 3120 kB/38.6 MB 8%]         3937 kB/s 20s61% [145 linux-image-3.2.0-52-generic 4735 kB/38.6 MB 12%]        3937 kB/s 19s62% [145 linux-image-3.2.0-52-generic 6122 kB/38.6 MB 16%]        3937 kB/s 19s62% [145 linux-image-3.2.0-52-generic 7612 kB/38.6 MB 20%]        3937 kB/s 18s63% [145 linux-image-3.2.0-52-generic 9491 kB/38.6 MB 25%]        3937 kB/s 18s64% [145 linux-image-3.2.0-52-generic 11.4 MB/38.6 MB 30%]        3937 kB/s 17s65% [145 linux-image-3.2.0-52-generic 13.2 MB/38.6 MB 34%]        3937 kB/s 17s66% [145 linux-image-3.2.0-52-generic 14.8 MB/38.6 MB 38%]        3937 kB/s 17s67% [145 linux-image-3.2.0-52-generic 16.7 MB/38.6 MB 43%]        3262 kB/s 20s68% [145 linux-image-3.2.0-52-generic 18.7 MB/38.6 MB 49%]        3262 kB/s 19s69% [145 linux-image-3.2.0-52-generic 20.8 MB/38.6 MB 54%]        3262 kB/s 18s70% [145 linux-image-3.2.0-52-generic 22.6 MB/38.6 MB 58%]        3262 kB/s 18s71% [145 linux-image-3.2.0-52-generic 24.3 MB/38.6 MB 63%]        3262 kB/s 17s72% [145 linux-image-3.2.0-52-generic 26.2 MB/38.6 MB 68%]        3262 kB/s 17s73% [145 linux-image-3.2.0-52-generic 28.3 MB/38.6 MB 73%]        3262 kB/s 16s74% [145 linux-image-3.2.0-52-generic 30.2 MB/38.6 MB 78%]        3262 kB/s 15s75% [145 linux-image-3.2.0-52-generic 32.1 MB/38.6 MB 83%]        3262 kB/s 15s76% [145 linux-image-3.2.0-52-generic 34.0 MB/38.6 MB 88%]        3262 kB/s 14s77% [145 linux-image-3.2.0-52-generic 35.8 MB/38.6 MB 93%]        3262 kB/s 14s78% [145 linux-image-3.2.0-52-generic 37.8 MB/38.6 MB 98%]        3262 kB/s 13s78% [Working]                                                     3262 kB/s 13s                                                                               Get:146 http://security.ubuntu.com/ubuntu/ precise-security/main gpgv amd64 1.4.11-3ubuntu2.3 [185 kB]
+78% [146 gpgv 7906 B/185 kB 4%]                                   3262 kB/s 13s78% [Working]                                                     3262 kB/s 13s                                                                               Get:147 http://security.ubuntu.com/ubuntu/ precise-security/main apt-utils amd64 0.8.16~exp12ubuntu10.10 [190 kB]
+78% [147 apt-utils 8112 B/190 kB 4%]                              3262 kB/s 13s78% [Working]                                                     3262 kB/s 13s                                                                               Get:148 http://security.ubuntu.com/ubuntu/ precise-security/main sudo amd64 1.8.3p1-1ubuntu3.4 [288 kB]
+78% [148 sudo 0 B/288 kB 0%]                                      3262 kB/s 13s78% [Working]                                                     3262 kB/s 13s                                                                               Get:149 http://security.ubuntu.com/ubuntu/ precise-security/main apt-transport-https amd64 0.8.16~exp12ubuntu10.10 [16.3 kB]
+78% [149 apt-transport-https 7548 B/16.3 kB 46%]                  3262 kB/s 13s78% [Working]                                                     3262 kB/s 13s                                                                               Get:150 http://security.ubuntu.com/ubuntu/ precise-security/main bind9 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [347 kB]
+78% [150 bind9 8192 B/347 kB 2%]                                  3262 kB/s 13s78% [Working]                                                     3262 kB/s 13s                                                                               Get:151 http://security.ubuntu.com/ubuntu/ precise-security/main bind9-host amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [55.3 kB]
+78% [151 bind9-host 2846 B/55.3 kB 5%]                            3262 kB/s 13s79% [Working]                                                     3262 kB/s 13s                                                                               Get:152 http://security.ubuntu.com/ubuntu/ precise-security/main dnsutils amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [148 kB]
+79% [152 dnsutils 3510 B/148 kB 2%]                               3262 kB/s 13s79% [Working]                                                     3837 kB/s 11s                                                                               Get:153 http://security.ubuntu.com/ubuntu/ precise-security/main libisc83 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [161 kB]
+79% [153 libisc83 6474 B/161 kB 4%]                               3837 kB/s 11s79% [Working]                                                     3837 kB/s 10s                                                                               Get:154 http://security.ubuntu.com/ubuntu/ precise-security/main libisccc80 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [17.6 kB]
+79% [154 libisccc80 4096 B/17.6 kB 23%]                           3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:155 http://security.ubuntu.com/ubuntu/ precise-security/main libisccfg82 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [43.4 kB]
+79% [155 libisccfg82 684 B/43.4 kB 2%]                            3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:156 http://security.ubuntu.com/ubuntu/ precise-security/main liblwres80 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [37.9 kB]
+79% [156 liblwres80 4038 B/37.9 kB 11%]                           3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:157 http://security.ubuntu.com/ubuntu/ precise-security/main libdns81 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [704 kB]
+79% [157 libdns81 5484 B/704 kB 1%]                               3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:158 http://security.ubuntu.com/ubuntu/ precise-security/main bind9utils amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [108 kB]
+79% [158 bind9utils 0 B/108 kB 0%]                                3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:159 http://security.ubuntu.com/ubuntu/ precise-security/main libbind9-80 amd64 1:9.8.1.dfsg.P1-4ubuntu0.7 [24.3 kB]
+79% [159 libbind9-80 0 B/24.3 kB 0%]                              3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:160 http://security.ubuntu.com/ubuntu/ precise-security/main openssl amd64 1.0.1-4ubuntu5.10 [524 kB]
+79% [160 openssl 0 B/524 kB 0%]                                   3837 kB/s 10s79% [Working]                                                     3837 kB/s 10s                                                                               Get:161 http://security.ubuntu.com/ubuntu/ precise-security/main binutils amd64 2.22-6ubuntu1.1 [2638 kB]
+79% [161 binutils 332 B/2638 kB 0%]                               3837 kB/s 10s80% [161 binutils 1531 kB/2638 kB 58%]                            3837 kB/s 10s81% [Working]                                                      3837 kB/s 9s                                                                               Get:162 http://security.ubuntu.com/ubuntu/ precise-security/main curl amd64 7.22.0-3ubuntu4.2 [137 kB]
+81% [162 curl 4096 B/137 kB 3%]                                    3837 kB/s 9s81% [Working]                                                      3837 kB/s 9s                                                                               Get:163 http://security.ubuntu.com/ubuntu/ precise-security/main libxenstore3.0 amd64 4.1.2-2ubuntu2.10 [20.5 kB]
+81% [163 libxenstore3.0 2476 B/20.5 kB 12%]                        3837 kB/s 9s81% [Working]                                                      3837 kB/s 9s                                                                               Get:164 http://security.ubuntu.com/ubuntu/ precise-security/main libxml2-utils amd64 2.7.8.dfsg-5.1ubuntu4.6 [39.8 kB]
+81% [164 libxml2-utils 2590 B/39.8 kB 7%]                          3837 kB/s 9s81% [Working]                                                      3837 kB/s 9s                                                                               Get:165 http://security.ubuntu.com/ubuntu/ precise-security/main linux-firmware all 1.79.6 [23.2 MB]
+81% [165 linux-firmware 3004 B/23.2 MB 0%]                         3837 kB/s 9s81% [165 linux-firmware 1221 kB/23.2 MB 5%]                        3837 kB/s 9s82% [165 linux-firmware 2841 kB/23.2 MB 12%]                       3837 kB/s 9s83% [165 linux-firmware 4582 kB/23.2 MB 20%]                       3837 kB/s 8s84% [165 linux-firmware 6211 kB/23.2 MB 27%]                       3837 kB/s 8s85% [165 linux-firmware 7576 kB/23.2 MB 33%]                       3837 kB/s 7s85% [165 linux-firmware 9078 kB/23.2 MB 39%]                       3837 kB/s 7s86% [165 linux-firmware 10.8 MB/23.2 MB 46%]                       3837 kB/s 7s87% [165 linux-firmware 12.5 MB/23.2 MB 54%]                       3837 kB/s 6s88% [165 linux-firmware 14.2 MB/23.2 MB 61%]                       3008 kB/s 7s89% [165 linux-firmware 15.6 MB/23.2 MB 67%]                       3008 kB/s 7s90% [165 linux-firmware 17.3 MB/23.2 MB 75%]                       3008 kB/s 6s90% [165 linux-firmware 19.0 MB/23.2 MB 82%]                       3008 kB/s 6s91% [165 linux-firmware 20.7 MB/23.2 MB 89%]                       3008 kB/s 5s92% [165 linux-firmware 22.2 MB/23.2 MB 96%]                       3008 kB/s 5s93% [Working]                                                      3008 kB/s 4s                                                                               Get:166 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-3.2.0-52 all 3.2.0-52.78 [11.7 MB]
+93% [166 linux-headers-3.2.0-52 0 B/11.7 MB 0%]                    3008 kB/s 4s93% [166 linux-headers-3.2.0-52 1563 kB/11.7 MB 13%]               3008 kB/s 4s94% [166 linux-headers-3.2.0-52 3323 kB/11.7 MB 28%]               3008 kB/s 3s95% [166 linux-headers-3.2.0-52 5082 kB/11.7 MB 43%]               3008 kB/s 3s96% [166 linux-headers-3.2.0-52 6750 kB/11.7 MB 58%]               3008 kB/s 2s97% [166 linux-headers-3.2.0-52 8250 kB/11.7 MB 71%]               3008 kB/s 2s98% [166 linux-headers-3.2.0-52 9969 kB/11.7 MB 85%]               3008 kB/s 1s99% [Working]                                                      3333 kB/s 0s                                                                               Get:167 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-3.2.0-52-generic amd64 3.2.0-52.78 [976 kB]
+99% [167 linux-headers-3.2.0-52-generic 1021 B/976 kB 0%]          3333 kB/s 0s99% [Working]                                                      3333 kB/s 0s                                                                               Get:168 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-server amd64 3.2.0.52.62 [2358 B]
+99% [168 linux-headers-server 2358 B/2358 B 100%]                  3333 kB/s 0s99% [Working]                                                      3333 kB/s 0s                                                                               Get:169 http://security.ubuntu.com/ubuntu/ precise-security/main linux-server amd64 3.2.0.52.62 [1734 B]
+99% [169 linux-server 1734 B/1734 B 100%]                          3333 kB/s 0s99% [Working]                                                      3333 kB/s 0s                                                                               Get:170 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-server amd64 3.2.0.52.62 [2362 B]
+99% [170 linux-image-server 2362 B/2362 B 100%]                    3333 kB/s 0s99% [Working]                                                      3333 kB/s 0s                                                                               Get:171 http://security.ubuntu.com/ubuntu/ precise-security/main mysql-client-core-5.5 amd64 5.5.32-0ubuntu0.12.04.1 [1921 kB]
+99% [171 mysql-client-core-5.5 12.2 kB/1921 kB 1%]                 3333 kB/s 0s100% [171 mysql-client-core-5.5 1634 kB/1921 kB 85%]               3333 kB/s 0s100% [Working]                                                     3333 kB/s 0s                                                                               Fetched 197 MB in 43s (4500 kB/s)
+Extracting templates from packages: 17%Extracting templates from packages: 35%Extracting templates from packages: 52%Extracting templates from packages: 70%Extracting templates from packages: 87%Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60539 files and directories currently installed.)
+Preparing to replace base-files 6.5ubuntu6.2 (using .../base-files_6.5ubuntu6.5_amd64.deb) ...
+Unpacking replacement base-files ...
+Processing triggers for man-db ...
+Processing triggers for install-info ...
+Processing triggers for plymouth-theme-ubuntu-text ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-23-generic
+Setting up base-files (6.5ubuntu6.5) ...
+Installing new version of config file /etc/issue ...
+Installing new version of config file /etc/issue.net ...
+Installing new version of config file /etc/lsb-release ...
+Processing triggers for plymouth-theme-ubuntu-text ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-23-generic
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60540 files and directories currently installed.)
+Preparing to replace dpkg 1.16.1.2ubuntu7 (using .../dpkg_1.16.1.2ubuntu7.1_amd64.deb) ...
+Unpacking replacement dpkg ...
+Processing triggers for man-db ...
+Setting up dpkg (1.16.1.2ubuntu7.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60541 files and directories currently installed.)
+Preparing to replace coreutils 8.13-3ubuntu3 (using .../coreutils_8.13-3ubuntu3.2_amd64.deb) ...
+Unpacking replacement coreutils ...
+Processing triggers for install-info ...
+Processing triggers for man-db ...
+Setting up coreutils (8.13-3ubuntu3.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60541 files and directories currently installed.)
+Preparing to replace login 1:4.1.4.2+svn3283-3ubuntu5 (using .../login_1%3a4.1.4.2+svn3283-3ubuntu5.1_amd64.deb) ...
+Unpacking replacement login ...
+Processing triggers for man-db ...
+Setting up login (1:4.1.4.2+svn3283-3ubuntu5.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60541 files and directories currently installed.)
+Preparing to replace perl 5.14.2-6ubuntu2.1 (using .../perl_5.14.2-6ubuntu2.3_amd64.deb) ...
+Unpacking replacement perl ...
+Preparing to replace perl-base 5.14.2-6ubuntu2.1 (using .../perl-base_5.14.2-6ubuntu2.3_amd64.deb) ...
+Unpacking replacement perl-base ...
+Processing triggers for man-db ...
+Setting up perl-base (5.14.2-6ubuntu2.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60541 files and directories currently installed.)
+Preparing to replace perl-modules 5.14.2-6ubuntu2.1 (using .../perl-modules_5.14.2-6ubuntu2.3_all.deb) ...
+Unpacking replacement perl-modules ...
+Preparing to replace upstart 1.5-0ubuntu7 (using .../upstart_1.5-0ubuntu7.2_amd64.deb) ...
+Unpacking replacement upstart ...
+Preparing to replace libc-dev-bin 2.15-0ubuntu10 (using .../libc-dev-bin_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement libc-dev-bin ...
+Preparing to replace libc6-dev 2.15-0ubuntu10 (using .../libc6-dev_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement libc6-dev ...
+Preparing to replace libc-bin 2.15-0ubuntu10 (using .../libc-bin_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement libc-bin ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Processing triggers for lintian ...
+Setting up libc-bin (2.15-0ubuntu10.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60541 files and directories currently installed.)
+Preparing to replace libc6 2.15-0ubuntu10 (using .../libc6_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement libc6 ...
+Setting up libc6 (2.15-0ubuntu10.3) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60541 files and directories currently installed.)
+Preparing to replace libdbus-1-3 1.4.18-1ubuntu1 (using .../libdbus-1-3_1.4.18-1ubuntu1.4_amd64.deb) ...
+Unpacking replacement libdbus-1-3 ...
+Preparing to replace libnih-dbus1 1.0.3-4ubuntu9 (using .../libnih-dbus1_1.0.3-4ubuntu9.1_amd64.deb) ...
+Unpacking replacement libnih-dbus1 ...
+Preparing to replace libnih1 1.0.3-4ubuntu9 (using .../libnih1_1.0.3-4ubuntu9.1_amd64.deb) ...
+Unpacking replacement libnih1 ...
+Preparing to replace libudev0 175-0ubuntu9.1 (using .../libudev0_175-0ubuntu9.2_amd64.deb) ...
+Unpacking replacement libudev0 ...
+Preparing to replace libdrm2 2.4.32-1ubuntu1 (using .../libdrm2_2.4.39-0ubuntu0.2_amd64.deb) ...
+Unpacking replacement libdrm2 ...
+Preparing to replace libpciaccess0 0.12.902-1 (using .../libpciaccess0_0.12.902-1ubuntu0.1_amd64.deb) ...
+Unpacking replacement libpciaccess0 ...
+Preparing to replace libdrm-intel1 2.4.32-1ubuntu1 (using .../libdrm-intel1_2.4.39-0ubuntu0.2_amd64.deb) ...
+Unpacking replacement libdrm-intel1 ...
+Preparing to replace libdrm-nouveau1a 2.4.32-1ubuntu1 (using .../libdrm-nouveau1a_2.4.39-0ubuntu0.2_amd64.deb) ...
+Unpacking replacement libdrm-nouveau1a ...
+Preparing to replace libdrm-radeon1 2.4.32-1ubuntu1 (using .../libdrm-radeon1_2.4.39-0ubuntu0.2_amd64.deb) ...
+Unpacking replacement libdrm-radeon1 ...
+Preparing to replace bridge-utils 1.5-2ubuntu6 (using .../bridge-utils_1.5-2ubuntu7_amd64.deb) ...
+Unpacking replacement bridge-utils ...
+Preparing to replace qemu-common 1.0+noroms-0ubuntu14.1 (using .../qemu-common_1.0+noroms-0ubuntu14.7_all.deb) ...
+Unpacking replacement qemu-common ...
+Preparing to replace libgcrypt11 1.5.0-3ubuntu0.1 (using .../libgcrypt11_1.5.0-3ubuntu0.2_amd64.deb) ...
+Unpacking replacement libgcrypt11 ...
+Preparing to replace libgnutls26 2.12.14-5ubuntu3.1 (using .../libgnutls26_2.12.14-5ubuntu3.4_amd64.deb) ...
+Unpacking replacement libgnutls26 ...
+Preparing to replace libldap-2.4-2 2.4.28-1.1ubuntu4.1 (using .../libldap-2.4-2_2.4.28-1.1ubuntu4.2_amd64.deb) ...
+Unpacking replacement libldap-2.4-2 ...
+Preparing to replace libcurl3-gnutls 7.22.0-3ubuntu4 (using .../libcurl3-gnutls_7.22.0-3ubuntu4.2_amd64.deb) ...
+Unpacking replacement libcurl3-gnutls ...
+Preparing to replace qemu-utils 1.0+noroms-0ubuntu14.1 (using .../qemu-utils_1.0+noroms-0ubuntu14.7_amd64.deb) ...
+Unpacking replacement qemu-utils ...
+Preparing to replace qemu-user 1.0.50-2012.03-0ubuntu2 (using .../qemu-user_1.0.50-2012.03-0ubuntu2.1_amd64.deb) ...
+Unpacking replacement qemu-user ...
+Selecting previously unselected package libfdt1.
+Unpacking libfdt1 (from .../libfdt1_1.3.0-2_amd64.deb) ...
+Preparing to replace qemu-keymaps 1.0.50-2012.03-0ubuntu2 (using .../qemu-keymaps_1.0.50-2012.03-0ubuntu2.1_all.deb) ...
+Unpacking replacement qemu-keymaps ...
+Preparing to replace libxcb1 1.8.1-1 (using .../libxcb1_1.8.1-1ubuntu0.2_amd64.deb) ...
+Unpacking replacement libxcb1 ...
+Preparing to replace libpulse0 1:1.1-0ubuntu15.1 (using .../libpulse0_1%3a1.1-0ubuntu15.2_amd64.deb) ...
+Unpacking replacement libpulse0 ...
+Preparing to replace libx11-data 2:1.4.99.1-0ubuntu2 (using .../libx11-data_2%3a1.4.99.1-0ubuntu2.1_all.deb) ...
+Unpacking replacement libx11-data ...
+Preparing to replace libx11-6 2:1.4.99.1-0ubuntu2 (using .../libx11-6_2%3a1.4.99.1-0ubuntu2.1_amd64.deb) ...
+Unpacking replacement libx11-6 ...
+Preparing to replace qemu-system 1.0.50-2012.03-0ubuntu2 (using .../qemu-system_1.0.50-2012.03-0ubuntu2.1_amd64.deb) ...
+Unpacking replacement qemu-system ...
+Preparing to replace qemu-kvm 1.0+noroms-0ubuntu14.1 (using .../qemu-kvm_1.0+noroms-0ubuntu14.7_amd64.deb) ...
+Unpacking replacement qemu-kvm ...
+Preparing to replace initramfs-tools 0.99ubuntu13 (using .../initramfs-tools_0.99ubuntu13.1_all.deb) ...
+Unpacking replacement initramfs-tools ...
+Preparing to replace initramfs-tools-bin 0.99ubuntu13 (using .../initramfs-tools-bin_0.99ubuntu13.1_amd64.deb) ...
+Unpacking replacement initramfs-tools-bin ...
+Preparing to replace busybox-initramfs 1:1.18.5-1ubuntu4 (using .../busybox-initramfs_1%3a1.18.5-1ubuntu4.1_amd64.deb) ...
+Unpacking replacement busybox-initramfs ...
+Preparing to replace udev 175-0ubuntu9.1 (using .../udev_175-0ubuntu9.2_amd64.deb) ...
+Adding 'diversion of /sbin/udevadm to /sbin/udevadm.upgrade by fake-udev'
+Unpacking replacement udev ...
+Preparing to replace plymouth 0.8.2-2ubuntu30 (using .../plymouth_0.8.2-2ubuntu31_amd64.deb) ...
+Unpacking replacement plymouth ...
+Preparing to replace libplymouth2 0.8.2-2ubuntu30 (using .../libplymouth2_0.8.2-2ubuntu31_amd64.deb) ...
+Unpacking replacement libplymouth2 ...
+Preparing to replace mountall 2.36 (using .../mountall_2.36.4_amd64.deb) ...
+Unpacking replacement mountall ...
+Preparing to replace linux-libc-dev 3.2.0-30.48 (using .../linux-libc-dev_3.2.0-52.78_amd64.deb) ...
+Unpacking replacement linux-libc-dev ...
+Preparing to replace tzdata 2012e-0ubuntu0.12.04 (using .../tzdata_2012e-0ubuntu0.12.04.1_all.deb) ...
+Unpacking replacement tzdata ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up tzdata (2012e-0ubuntu0.12.04.1) ...
+
+Current default time zone: 'Asia/Taipei'
+Local time is now:      Thu Sep  5 16:45:18 CST 2013.
+Universal Time is now:  Thu Sep  5 08:45:18 UTC 2013.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60547 files and directories currently installed.)
+Preparing to replace libapt-pkg4.12 0.8.16~exp12ubuntu10.2 (using .../libapt-pkg4.12_0.8.16~exp12ubuntu10.10_amd64.deb) ...
+Unpacking replacement libapt-pkg4.12 ...
+Setting up libapt-pkg4.12 (0.8.16~exp12ubuntu10.10) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60547 files and directories currently installed.)
+Preparing to replace ubuntu-keyring 2011.11.21 (using .../ubuntu-keyring_2011.11.21.1_all.deb) ...
+Unpacking replacement ubuntu-keyring ...
+Setting up ubuntu-keyring (2011.11.21.1) ...
+gpg: key 437D05B5: "Ubuntu Archive Automatic Signing Key <ftpmaster@ubuntu.com>" not changed
+gpg: key FBB75451: "Ubuntu CD Image Automatic Signing Key <cdimage@ubuntu.com>" not changed
+gpg: key C0B21F32: public key "Ubuntu Archive Automatic Signing Key (2012) <ftpmaster@ubuntu.com>" imported
+gpg: key EFE21092: public key "Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>" imported
+gpg: Total number processed: 4
+gpg:               imported: 2  (RSA: 2)
+gpg:              unchanged: 2
+gpg: no ultimately trusted keys found
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60547 files and directories currently installed.)
+Preparing to replace apt 0.8.16~exp12ubuntu10.2 (using .../apt_0.8.16~exp12ubuntu10.10_amd64.deb) ...
+Unpacking replacement apt ...
+Processing triggers for man-db ...
+Setting up apt (0.8.16~exp12ubuntu10.10) ...
+Installing new version of config file /etc/apt/apt.conf.d/01autoremove ...
+gpg: key 437D05B5: "Ubuntu Archive Automatic Signing Key <ftpmaster@ubuntu.com>" not changed
+gpg: key FBB75451: "Ubuntu CD Image Automatic Signing Key <cdimage@ubuntu.com>" not changed
+gpg: key C0B21F32: "Ubuntu Archive Automatic Signing Key (2012) <ftpmaster@ubuntu.com>" not changed
+gpg: key EFE21092: "Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>" not changed
+gpg: Total number processed: 4
+gpg:              unchanged: 4
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60548 files and directories currently installed.)
+Preparing to replace libssl1.0.0 1.0.1-4ubuntu5.5 (using .../libssl1.0.0_1.0.1-4ubuntu5.10_amd64.deb) ...
+Unpacking replacement libssl1.0.0 ...
+Setting up libssl1.0.0 (1.0.1-4ubuntu5.10) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60548 files and directories currently installed.)
+Preparing to replace libapt-inst1.4 0.8.16~exp12ubuntu10.2 (using .../libapt-inst1.4_0.8.16~exp12ubuntu10.10_amd64.deb) ...
+Unpacking replacement libapt-inst1.4 ...
+Preparing to replace lsb-base 4.0-0ubuntu20 (using .../lsb-base_4.0-0ubuntu20.2_all.deb) ...
+Unpacking replacement lsb-base ...
+Setting up lsb-base (4.0-0ubuntu20.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60548 files and directories currently installed.)
+Preparing to replace resolvconf 1.63ubuntu15 (using .../resolvconf_1.63ubuntu16_all.deb) ...
+Unpacking replacement resolvconf ...
+Preparing to replace apparmor 2.7.102-0ubuntu3.1 (using .../apparmor_2.7.102-0ubuntu3.7_amd64.deb) ...
+Unpacking replacement apparmor ...
+Preparing to replace dbus 1.4.18-1ubuntu1 (using .../dbus_1.4.18-1ubuntu1.4_amd64.deb) ...
+Unpacking replacement dbus ...
+Preparing to replace libdbus-glib-1-2 0.98-1ubuntu1 (using .../libdbus-glib-1-2_0.98-1ubuntu1.1_amd64.deb) ...
+Unpacking replacement libdbus-glib-1-2 ...
+Preparing to replace accountsservice 0.6.15-2ubuntu9.3 (using .../accountsservice_0.6.15-2ubuntu9.4_amd64.deb) ...
+Unpacking replacement accountsservice ...
+Preparing to replace libaccountsservice0 0.6.15-2ubuntu9.3 (using .../libaccountsservice0_0.6.15-2ubuntu9.4_amd64.deb) ...
+Unpacking replacement libaccountsservice0 ...
+Preparing to replace language-selector-common 0.79 (using .../language-selector-common_0.79.1_all.deb) ...
+Unpacking replacement language-selector-common ...
+Preparing to replace libparted0debian1 2.3-8ubuntu5 (using .../libparted0debian1_2.3-8ubuntu5.1_amd64.deb) ...
+Unpacking replacement libparted0debian1 ...
+Preparing to replace libxext6 2:1.3.0-3build1 (using .../libxext6_2%3a1.3.0-3ubuntu0.1_amd64.deb) ...
+Unpacking replacement libxext6 ...
+Preparing to replace libxml2 2.7.8.dfsg-5.1ubuntu4.1 (using .../libxml2_2.7.8.dfsg-5.1ubuntu4.6_amd64.deb) ...
+Unpacking replacement libxml2 ...
+Preparing to replace ntfs-3g 1:2012.1.15AR.1-1ubuntu1 (using .../ntfs-3g_1%3a2012.1.15AR.1-1ubuntu1.2_amd64.deb) ...
+Unpacking replacement ntfs-3g ...
+Preparing to replace libcups2 1.5.3-0ubuntu4 (using .../libcups2_1.5.3-0ubuntu6_amd64.deb) ...
+Unpacking replacement libcups2 ...
+Preparing to replace libcurl3 7.22.0-3ubuntu4 (using .../libcurl3_7.22.0-3ubuntu4.2_amd64.deb) ...
+Unpacking replacement libcurl3 ...
+Preparing to replace libfreetype6 2.4.8-1ubuntu2 (using .../libfreetype6_2.4.8-1ubuntu2.1_amd64.deb) ...
+Unpacking replacement libfreetype6 ...
+Preparing to replace libgl1-mesa-dri 8.0.3+8.0.2-0ubuntu3.2 (using .../libgl1-mesa-dri_8.0.4-0ubuntu0.6_amd64.deb) ...
+Unpacking replacement libgl1-mesa-dri ...
+Preparing to replace libgl1-mesa-glx 8.0.3+8.0.2-0ubuntu3.2 (using .../libgl1-mesa-glx_8.0.4-0ubuntu0.6_amd64.deb) ...
+Unpacking replacement libgl1-mesa-glx ...
+Preparing to replace libglapi-mesa 8.0.3+8.0.2-0ubuntu3.2 (using .../libglapi-mesa_8.0.4-0ubuntu0.6_amd64.deb) ...
+Unpacking replacement libglapi-mesa ...
+Preparing to replace libx11-xcb1 2:1.4.99.1-0ubuntu2 (using .../libx11-xcb1_2%3a1.4.99.1-0ubuntu2.1_amd64.deb) ...
+Unpacking replacement libx11-xcb1 ...
+Preparing to replace libxcb-glx0 1.8.1-1 (using .../libxcb-glx0_1.8.1-1ubuntu0.2_amd64.deb) ...
+Unpacking replacement libxcb-glx0 ...
+Preparing to replace libxfixes3 1:5.0-4ubuntu4 (using .../libxfixes3_1%3a5.0-4ubuntu4.1_amd64.deb) ...
+Unpacking replacement libxfixes3 ...
+Preparing to replace libxxf86vm1 1:1.1.1-2build1 (using .../libxxf86vm1_1%3a1.1.1-2ubuntu0.1_amd64.deb) ...
+Unpacking replacement libxxf86vm1 ...
+Preparing to replace mysql-common 5.5.24-0ubuntu0.12.04.1 (using .../mysql-common_5.5.32-0ubuntu0.12.04.1_all.deb) ...
+Unpacking replacement mysql-common ...
+Preparing to replace libmysqlclient18 5.5.24-0ubuntu0.12.04.1 (using .../libmysqlclient18_5.5.32-0ubuntu0.12.04.1_amd64.deb) ...
+Unpacking replacement libmysqlclient18 ...
+Preparing to replace libnspr4 4.8.9-1ubuntu2.3 (using .../libnspr4_4.9.5-0ubuntu0.12.04.1_amd64.deb) ...
+Unpacking replacement libnspr4 ...
+Preparing to replace libnss3 3.13.1.with.ckbi.1.88-1ubuntu6.1 (using .../libnss3_3.14.3-0ubuntu0.12.04.1_amd64.deb) ...
+Unpacking replacement libnss3 ...
+Preparing to replace libxrender1 1:0.9.6-2build1 (using .../libxrender1_1%3a0.9.6-2ubuntu0.1_amd64.deb) ...
+Unpacking replacement libxrender1 ...
+Preparing to replace libqt4-opengl 4:4.8.1-0ubuntu4.2 (using .../libqt4-opengl_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-opengl ...
+Preparing to replace libtiff4 3.9.5-2ubuntu1.2 (using .../libtiff4_3.9.5-2ubuntu1.5_amd64.deb) ...
+Unpacking replacement libtiff4 ...
+Preparing to replace libxi6 2:1.6.0-0ubuntu2 (using .../libxi6_2%3a1.6.0-0ubuntu2.1_amd64.deb) ...
+Unpacking replacement libxi6 ...
+Preparing to replace libqt4-declarative 4:4.8.1-0ubuntu4.2 (using .../libqt4-declarative_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-declarative ...
+Preparing to replace libqtgui4 4:4.8.1-0ubuntu4.2 (using .../libqtgui4_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqtgui4 ...
+Preparing to replace libqt4-xmlpatterns 4:4.8.1-0ubuntu4.2 (using .../libqt4-xmlpatterns_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-xmlpatterns ...
+Preparing to replace libqt4-network 4:4.8.1-0ubuntu4.2 (using .../libqt4-network_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-network ...
+Preparing to replace libqt4-script 4:4.8.1-0ubuntu4.2 (using .../libqt4-script_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-script ...
+Preparing to replace libqt4-sql-mysql 4:4.8.1-0ubuntu4.2 (using .../libqt4-sql-mysql_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-sql-mysql ...
+Preparing to replace libqt4-sql 4:4.8.1-0ubuntu4.2 (using .../libqt4-sql_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-sql ...
+Preparing to replace qdbus 4:4.8.1-0ubuntu4.2 (using .../qdbus_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement qdbus ...
+Preparing to replace libqt4-dbus 4:4.8.1-0ubuntu4.2 (using .../libqt4-dbus_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-dbus ...
+Preparing to replace libqt4-xml 4:4.8.1-0ubuntu4.2 (using .../libqt4-xml_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqt4-xml ...
+Preparing to replace libqtcore4 4:4.8.1-0ubuntu4.2 (using .../libqtcore4_4%3a4.8.1-0ubuntu4.4_amd64.deb) ...
+Unpacking replacement libqtcore4 ...
+Preparing to replace subversion 1.6.17dfsg-3ubuntu3 (using .../subversion_1.6.17dfsg-3ubuntu3.3_amd64.deb) ...
+Unpacking replacement subversion ...
+Preparing to replace libsvn1 1.6.17dfsg-3ubuntu3 (using .../libsvn1_1.6.17dfsg-3ubuntu3.3_amd64.deb) ...
+Unpacking replacement libsvn1 ...
+Preparing to replace libxcb-render0 1.8.1-1 (using .../libxcb-render0_1.8.1-1ubuntu0.2_amd64.deb) ...
+Unpacking replacement libxcb-render0 ...
+Preparing to replace libxcb-shm0 1.8.1-1 (using .../libxcb-shm0_1.8.1-1ubuntu0.2_amd64.deb) ...
+Unpacking replacement libxcb-shm0 ...
+Preparing to replace libxcursor1 1:1.1.12-1 (using .../libxcursor1_1%3a1.1.12-1ubuntu0.1_amd64.deb) ...
+Unpacking replacement libxcursor1 ...
+Preparing to replace libxinerama1 2:1.1.1-3build1 (using .../libxinerama1_2%3a1.1.1-3ubuntu0.1_amd64.deb) ...
+Unpacking replacement libxinerama1 ...
+Preparing to replace libxrandr2 2:1.3.2-2 (using .../libxrandr2_2%3a1.3.2-2ubuntu0.2_amd64.deb) ...
+Unpacking replacement libxrandr2 ...
+Preparing to replace libxt6 1:1.1.1-2build1 (using .../libxt6_1%3a1.1.1-2ubuntu0.1_amd64.deb) ...
+Unpacking replacement libxt6 ...
+Selecting previously unselected package linux-image-3.2.0-52-generic.
+Unpacking linux-image-3.2.0-52-generic (from .../linux-image-3.2.0-52-generic_3.2.0-52.78_amd64.deb) ...
+Done.
+Preparing to replace update-notifier-common 0.119ubuntu8.5 (using .../update-notifier-common_0.119ubuntu8.6_all.deb) ...
+Unpacking replacement update-notifier-common ...
+Preparing to replace gpgv 1.4.11-3ubuntu2 (using .../gpgv_1.4.11-3ubuntu2.3_amd64.deb) ...
+Unpacking replacement gpgv ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up gpgv (1.4.11-3ubuntu2.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64686 files and directories currently installed.)
+Preparing to replace multiarch-support 2.15-0ubuntu10 (using .../multiarch-support_2.15-0ubuntu10.3_amd64.deb) ...
+Unpacking replacement multiarch-support ...
+Setting up multiarch-support (2.15-0ubuntu10.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64686 files and directories currently installed.)
+Preparing to replace passwd 1:4.1.4.2+svn3283-3ubuntu5 (using .../passwd_1%3a4.1.4.2+svn3283-3ubuntu5.1_amd64.deb) ...
+Unpacking replacement passwd ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up libdbus-1-3 (1.4.18-1ubuntu1.4) ...
+Setting up libnih1 (1.0.3-4ubuntu9.1) ...
+Setting up libnih-dbus1 (1.0.3-4ubuntu9.1) ...
+Setting up libudev0 (175-0ubuntu9.2) ...
+Setting up initramfs-tools-bin (0.99ubuntu13.1) ...
+Setting up busybox-initramfs (1:1.18.5-1ubuntu4.1) ...
+Setting up libdrm2 (2.4.39-0ubuntu0.2) ...
+Setting up libpciaccess0 (0.12.902-1ubuntu0.1) ...
+Setting up libdrm-intel1 (2.4.39-0ubuntu0.2) ...
+Setting up libdrm-nouveau1a (2.4.39-0ubuntu0.2) ...
+Setting up libdrm-radeon1 (2.4.39-0ubuntu0.2) ...
+Setting up libplymouth2 (0.8.2-2ubuntu31) ...
+Setting up upstart (1.5-0ubuntu7.2) ...
+Setting up passwd (1:4.1.4.2+svn3283-3ubuntu5.1) ...
+Setting up udev (175-0ubuntu9.2) ...
+udev stop/waiting
+udev start/running, process 15795
+Removing 'diversion of /sbin/udevadm to /sbin/udevadm.upgrade by fake-udev'
+update-initramfs: deferring update (trigger activated)
+Setting up mountall (2.36.4) ...
+Setting up initramfs-tools (0.99ubuntu13.1) ...
+update-initramfs: deferring update (trigger activated)
+Setting up plymouth (0.8.2-2ubuntu31) ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-23-generic
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64687 files and directories currently installed.)
+Preparing to replace apt-utils 0.8.16~exp12ubuntu10.2 (using .../apt-utils_0.8.16~exp12ubuntu10.10_amd64.deb) ...
+Unpacking replacement apt-utils ...
+Preparing to replace isc-dhcp-client 4.1.ESV-R4-0ubuntu5.2 (using .../isc-dhcp-client_4.1.ESV-R4-0ubuntu5.6_amd64.deb) ...
+Unpacking replacement isc-dhcp-client ...
+Preparing to replace isc-dhcp-common 4.1.ESV-R4-0ubuntu5.2 (using .../isc-dhcp-common_4.1.ESV-R4-0ubuntu5.6_amd64.deb) ...
+Unpacking replacement isc-dhcp-common ...
+Preparing to replace lsb-release 4.0-0ubuntu20 (using .../lsb-release_4.0-0ubuntu20.2_all.deb) ...
+Unpacking replacement lsb-release ...
+Preparing to replace sudo 1.8.3p1-1ubuntu3.3 (using .../sudo_1.8.3p1-1ubuntu3.4_amd64.deb) ...
+Unpacking replacement sudo ...
+Preparing to replace ubuntu-minimal 1.267 (using .../ubuntu-minimal_1.267.1_amd64.deb) ...
+Unpacking replacement ubuntu-minimal ...
+Preparing to replace apt-transport-https 0.8.16~exp12ubuntu10.2 (using .../apt-transport-https_0.8.16~exp12ubuntu10.10_amd64.deb) ...
+Unpacking replacement apt-transport-https ...
+Preparing to replace bind9 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../bind9_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement bind9 ...
+Preparing to replace bind9-host 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../bind9-host_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement bind9-host ...
+Preparing to replace dnsutils 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../dnsutils_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement dnsutils ...
+Preparing to replace libisc83 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../libisc83_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement libisc83 ...
+Preparing to replace libisccc80 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../libisccc80_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement libisccc80 ...
+Preparing to replace libisccfg82 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../libisccfg82_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement libisccfg82 ...
+Preparing to replace liblwres80 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../liblwres80_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement liblwres80 ...
+Preparing to replace libdns81 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../libdns81_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement libdns81 ...
+Preparing to replace bind9utils 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../bind9utils_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement bind9utils ...
+Preparing to replace libbind9-80 1:9.8.1.dfsg.P1-4ubuntu0.6 (using .../libbind9-80_1%3a9.8.1.dfsg.P1-4ubuntu0.7_amd64.deb) ...
+Unpacking replacement libbind9-80 ...
+Preparing to replace busybox-static 1:1.18.5-1ubuntu4 (using .../busybox-static_1%3a1.18.5-1ubuntu4.1_amd64.deb) ...
+Unpacking replacement busybox-static ...
+Preparing to replace man-db 2.6.1-2 (using .../man-db_2.6.1-2ubuntu1_amd64.deb) ...
+Unpacking replacement man-db ...
+Preparing to replace openssl 1.0.1-4ubuntu5.5 (using .../openssl_1.0.1-4ubuntu5.10_amd64.deb) ...
+Unpacking replacement openssl ...
+Preparing to replace parted 2.3-8ubuntu5 (using .../parted_2.3-8ubuntu5.1_amd64.deb) ...
+Unpacking replacement parted ...
+Preparing to replace plymouth-theme-ubuntu-text 0.8.2-2ubuntu30 (using .../plymouth-theme-ubuntu-text_0.8.2-2ubuntu31_amd64.deb) ...
+Unpacking replacement plymouth-theme-ubuntu-text ...
+Preparing to replace ubuntu-standard 1.267 (using .../ubuntu-standard_1.267.1_amd64.deb) ...
+Unpacking replacement ubuntu-standard ...
+Preparing to replace update-manager-core 1:0.156.14.9 (using .../update-manager-core_1%3a0.156.14.11_amd64.deb) ...
+Unpacking replacement update-manager-core ...
+Preparing to replace python-problem-report 2.0.1-0ubuntu12 (using .../python-problem-report_2.0.1-0ubuntu17.1_all.deb) ...
+Unpacking replacement python-problem-report ...
+Preparing to replace python-apport 2.0.1-0ubuntu12 (using .../python-apport_2.0.1-0ubuntu17.1_all.deb) ...
+Unpacking replacement python-apport ...
+Preparing to replace apport 2.0.1-0ubuntu12 (using .../apport_2.0.1-0ubuntu17.1_all.deb) ...
+apport stop/waiting
+Unpacking replacement apport ...
+Preparing to replace apport-symptoms 0.16 (using .../apport-symptoms_0.16.1_all.deb) ...
+Unpacking replacement apport-symptoms ...
+Preparing to replace aptitude 0.6.6-1ubuntu1 (using .../aptitude_0.6.6-1ubuntu1.1_amd64.deb) ...
+Unpacking replacement aptitude ...
+Preparing to replace binutils 2.22-6ubuntu1 (using .../binutils_2.22-6ubuntu1.1_amd64.deb) ...
+Unpacking replacement binutils ...
+Preparing to replace curl 7.22.0-3ubuntu4 (using .../curl_7.22.0-3ubuntu4.2_amd64.deb) ...
+Unpacking replacement curl ...
+Preparing to replace dpkg-dev 1.16.1.2ubuntu7 (using .../dpkg-dev_1.16.1.2ubuntu7.1_all.deb) ...
+Unpacking replacement dpkg-dev ...
+Preparing to replace libdpkg-perl 1.16.1.2ubuntu7 (using .../libdpkg-perl_1.16.1.2ubuntu7.1_all.deb) ...
+Unpacking replacement libdpkg-perl ...
+Preparing to replace make 3.81-8.1ubuntu1 (using .../make_3.81-8.1ubuntu1.1_amd64.deb) ...
+Unpacking replacement make ...
+Preparing to replace devscripts 2.11.6ubuntu1.3 (using .../devscripts_2.11.6ubuntu1.4_amd64.deb) ...
+Unpacking replacement devscripts ...
+Preparing to replace dkms 2.2.0.3-1ubuntu3 (using .../dkms_2.2.0.3-1ubuntu3.1_all.deb) ...
+Unpacking replacement dkms ...
+Preparing to replace grub-pc 1.99-21ubuntu3.1 (using .../grub-pc_1.99-21ubuntu3.9_amd64.deb) ...
+Unpacking replacement grub-pc ...
+Preparing to replace grub-pc-bin 1.99-21ubuntu3.1 (using .../grub-pc-bin_1.99-21ubuntu3.9_amd64.deb) ...
+Unpacking replacement grub-pc-bin ...
+Preparing to replace grub2-common 1.99-21ubuntu3.1 (using .../grub2-common_1.99-21ubuntu3.9_amd64.deb) ...
+Unpacking replacement grub2-common ...
+Preparing to replace grub-common 1.99-21ubuntu3.1 (using .../grub-common_1.99-21ubuntu3.9_amd64.deb) ...
+Unpacking replacement grub-common ...
+Preparing to replace landscape-common 12.05-0ubuntu0.12.04 (using .../landscape-common_12.05-0ubuntu1.12.04_amd64.deb) ...
+Unpacking replacement landscape-common ...
+Preparing to replace libapparmor1 2.7.102-0ubuntu3.1 (using .../libapparmor1_2.7.102-0ubuntu3.7_amd64.deb) ...
+Unpacking replacement libapparmor1 ...
+Preparing to replace libtspi1 0.3.7-2ubuntu1 (using .../libtspi1_0.3.7-2ubuntu1.1_amd64.deb) ...
+Unpacking replacement libtspi1 ...
+Preparing to replace libxenstore3.0 4.1.2-2ubuntu2.2 (using .../libxenstore3.0_4.1.2-2ubuntu2.10_amd64.deb) ...
+Unpacking replacement libxenstore3.0 ...
+Preparing to replace libvirt-bin 0.9.8-2ubuntu17.3 (using .../libvirt-bin_0.9.8-2ubuntu17.7_amd64.deb) ...
+libvirt-bin stop/waiting
+Unpacking replacement libvirt-bin ...
+Preparing to replace libvirt0 0.9.8-2ubuntu17.3 (using .../libvirt0_0.9.8-2ubuntu17.7_amd64.deb) ...
+Unpacking replacement libvirt0 ...
+Preparing to replace libxml2-utils 2.7.8.dfsg-5.1ubuntu4.1 (using .../libxml2-utils_2.7.8.dfsg-5.1ubuntu4.6_amd64.deb) ...
+Unpacking replacement libxml2-utils ...
+Preparing to replace linux-firmware 1.79.1 (using .../linux-firmware_1.79.6_all.deb) ...
+Unpacking replacement linux-firmware ...
+Selecting previously unselected package linux-headers-3.2.0-52.
+Unpacking linux-headers-3.2.0-52 (from .../linux-headers-3.2.0-52_3.2.0-52.78_all.deb) ...
+Selecting previously unselected package linux-headers-3.2.0-52-generic.
+Unpacking linux-headers-3.2.0-52-generic (from .../linux-headers-3.2.0-52-generic_3.2.0-52.78_amd64.deb) ...
+Preparing to replace linux-headers-server 3.2.0.23.25 (using .../linux-headers-server_3.2.0.52.62_amd64.deb) ...
+Unpacking replacement linux-headers-server ...
+Preparing to replace linux-server 3.2.0.23.25 (using .../linux-server_3.2.0.52.62_amd64.deb) ...
+Unpacking replacement linux-server ...
+Preparing to replace linux-image-server 3.2.0.23.25 (using .../linux-image-server_3.2.0.52.62_amd64.deb) ...
+Unpacking replacement linux-image-server ...
+Preparing to replace mysql-client-core-5.5 5.5.29-0ubuntu0.12.04.1 (using .../mysql-client-core-5.5_5.5.32-0ubuntu0.12.04.1_amd64.deb) ...
+Unpacking replacement mysql-client-core-5.5 ...
+Preparing to replace python-keyring 0.7.1-1fakesync1 (using .../python-keyring_0.9.2-0ubuntu0.12.04.2_all.deb) ...
+Unpacking replacement python-keyring ...
+Preparing to replace python-libvirt 0.9.8-2ubuntu17.3 (using .../python-libvirt_0.9.8-2ubuntu17.7_amd64.deb) ...
+Unpacking replacement python-libvirt ...
+Preparing to replace qemu 1.0+noroms-0ubuntu14.1 (using .../qemu_1.0+noroms-0ubuntu14.7_amd64.deb) ...
+Unpacking replacement qemu ...
+Preparing to replace qemu-kvm-extras 1.0.50-2012.03-0ubuntu2 (using .../qemu-kvm-extras_1.0.50-2012.03-0ubuntu2.1_all.deb) ...
+Unpacking replacement qemu-kvm-extras ...
+Preparing to replace virtualbox-qt 4.1.12-dfsg-2ubuntu0.1 (using .../virtualbox-qt_4.1.12-dfsg-2ubuntu0.2_amd64.deb) ...
+Unpacking replacement virtualbox-qt ...
+Preparing to replace virtualbox 4.1.12-dfsg-2ubuntu0.1 (using .../virtualbox_4.1.12-dfsg-2ubuntu0.2_amd64.deb) ...
+Unpacking replacement virtualbox ...
+Preparing to replace virtualbox-dkms 4.1.12-dfsg-2ubuntu0.1 (using .../virtualbox-dkms_4.1.12-dfsg-2ubuntu0.2_all.deb) ...
+
+-------- Uninstall Beginning --------
+Module:  virtualbox
+Version: 4.1.12
+Kernel:  3.2.0-23-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxdrv.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.2.0-23-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetadp.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.2.0-23-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetflt.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.2.0-23-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxpci.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.2.0-23-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod.........
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 4.1.12
+completely from the DKMS tree.
+------------------------------
+Done.
+Unpacking replacement virtualbox-dkms ...
+Preparing to replace wpasupplicant 0.7.3-6ubuntu2 (using .../wpasupplicant_0.7.3-6ubuntu2.1_amd64.deb) ...
+Unpacking replacement wpasupplicant ...
+Preparing to replace x11-common 1:7.6+12ubuntu1 (using .../x11-common_1%3a7.6+12ubuntu2_all.deb) ...
+Unpacking replacement x11-common ...
+Preparing to replace debootstrap 1.0.39ubuntu0.1 (using .../debootstrap_1.0.39ubuntu0.2_all.deb) ...
+Unpacking replacement debootstrap ...
+Preparing to replace python-vm-builder 0.12.4+bzr477-0ubuntu1 (using .../python-vm-builder_0.12.4+bzr477-0ubuntu3_all.deb) ...
+Unpacking replacement python-vm-builder ...
+Preparing to replace ubuntu-vm-builder 0.12.4+bzr477-0ubuntu1 (using .../ubuntu-vm-builder_0.12.4+bzr477-0ubuntu3_all.deb) ...
+Unpacking replacement ubuntu-vm-builder ...
+Processing triggers for ureadahead ...
+Processing triggers for ufw ...
+Processing triggers for shared-mime-info ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for install-info ...
+Setting up libc-dev-bin (2.15-0ubuntu10.3) ...
+Setting up linux-libc-dev (3.2.0-52.78) ...
+Setting up libc6-dev (2.15-0ubuntu10.3) ...
+Setting up bridge-utils (1.5-2ubuntu7) ...
+Setting up qemu-common (1.0+noroms-0ubuntu14.7) ...
+Setting up libgcrypt11 (1.5.0-3ubuntu0.2) ...
+Setting up libgnutls26 (2.12.14-5ubuntu3.4) ...
+Setting up libldap-2.4-2 (2.4.28-1.1ubuntu4.2) ...
+Setting up libcurl3-gnutls (7.22.0-3ubuntu4.2) ...
+Setting up qemu-utils (1.0+noroms-0ubuntu14.7) ...
+Setting up qemu-user (1.0.50-2012.03-0ubuntu2.1) ...
+Setting up libfdt1 (1.3.0-2) ...
+Setting up qemu-keymaps (1.0.50-2012.03-0ubuntu2.1) ...
+Setting up libxcb1 (1.8.1-1ubuntu0.2) ...
+Setting up libpulse0 (1:1.1-0ubuntu15.2) ...
+Setting up libx11-data (2:1.4.99.1-0ubuntu2.1) ...
+Setting up libx11-6 (2:1.4.99.1-0ubuntu2.1) ...
+Setting up qemu-system (1.0.50-2012.03-0ubuntu2.1) ...
+Setting up qemu-kvm (1.0+noroms-0ubuntu14.7) ...
+Installing new version of config file /etc/init/qemu-kvm.conf ...
+Setting up libapt-inst1.4 (0.8.16~exp12ubuntu10.10) ...
+Setting up resolvconf (1.63ubuntu16) ...
+Installing new version of config file /etc/ppp/ip-down.d/000resolvconf ...
+Installing new version of config file /etc/ppp/ip-up.d/000resolvconf ...
+Setting up apparmor (2.7.102-0ubuntu3.7) ...
+Installing new version of config file /etc/apparmor.d/abstractions/ubuntu-browsers.d/multimedia ...
+Installing new version of config file /etc/apparmor.d/abstractions/nameservice ...
+ * Starting AppArmor profiles
+Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+   ...done.
+ * Reloading AppArmor profiles
+Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+   ...done.
+Setting up dbus (1.4.18-1ubuntu1.4) ...
+Setting up libdbus-glib-1-2 (0.98-1ubuntu1.1) ...
+Setting up libaccountsservice0 (0.6.15-2ubuntu9.4) ...
+Setting up accountsservice (0.6.15-2ubuntu9.4) ...
+Setting up language-selector-common (0.79.1) ...
+Setting up libparted0debian1 (2.3-8ubuntu5.1) ...
+Setting up libxext6 (2:1.3.0-3ubuntu0.1) ...
+Setting up libxml2 (2.7.8.dfsg-5.1ubuntu4.6) ...
+Setting up ntfs-3g (1:2012.1.15AR.1-1ubuntu1.2) ...
+update-initramfs: deferring update (trigger activated)
+Setting up libcups2 (1.5.3-0ubuntu6) ...
+Setting up libcurl3 (7.22.0-3ubuntu4.2) ...
+Setting up libfreetype6 (2.4.8-1ubuntu2.1) ...
+Setting up libgl1-mesa-dri (8.0.4-0ubuntu0.6) ...
+Setting up libglapi-mesa (8.0.4-0ubuntu0.6) ...
+Setting up libx11-xcb1 (2:1.4.99.1-0ubuntu2.1) ...
+Setting up libxcb-glx0 (1.8.1-1ubuntu0.2) ...
+Setting up libxfixes3 (1:5.0-4ubuntu4.1) ...
+Setting up libxxf86vm1 (1:1.1.1-2ubuntu0.1) ...
+Setting up libgl1-mesa-glx (8.0.4-0ubuntu0.6) ...
+Setting up mysql-common (5.5.32-0ubuntu0.12.04.1) ...
+Installing new version of config file /etc/mysql/my.cnf ...
+Setting up libmysqlclient18 (5.5.32-0ubuntu0.12.04.1) ...
+Setting up libnspr4 (4.9.5-0ubuntu0.12.04.1) ...
+Setting up libnss3 (3.14.3-0ubuntu0.12.04.1) ...
+Setting up libxrender1 (1:0.9.6-2ubuntu0.1) ...
+Setting up libqtcore4 (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-xml (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-dbus (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-network (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-script (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-sql (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-xmlpatterns (4:4.8.1-0ubuntu4.4) ...
+Setting up libtiff4 (3.9.5-2ubuntu1.5) ...
+Setting up libxi6 (2:1.6.0-0ubuntu2.1) ...
+Setting up libqt4-sql-mysql (4:4.8.1-0ubuntu4.4) ...
+Setting up qdbus (4:4.8.1-0ubuntu4.4) ...
+Setting up libsvn1 (1.6.17dfsg-3ubuntu3.3) ...
+Setting up subversion (1.6.17dfsg-3ubuntu3.3) ...
+Setting up libxcb-render0 (1.8.1-1ubuntu0.2) ...
+Setting up libxcb-shm0 (1.8.1-1ubuntu0.2) ...
+Setting up libxcursor1 (1:1.1.12-1ubuntu0.1) ...
+Setting up libxinerama1 (2:1.1.1-3ubuntu0.1) ...
+Setting up libxrandr2 (2:1.3.2-2ubuntu0.2) ...
+Setting up libxt6 (1:1.1.1-2ubuntu0.1) ...
+Setting up linux-image-3.2.0-52-generic (3.2.0-52.78) ...
+Running depmod.
+update-initramfs: deferring update (hook will be called later)
+Examining /etc/kernel/postinst.d.
+run-parts: executing /etc/kernel/postinst.d/apt-auto-removal 3.2.0-52-generic /boot/vmlinuz-3.2.0-52-generic
+run-parts: executing /etc/kernel/postinst.d/dkms 3.2.0-52-generic /boot/vmlinuz-3.2.0-52-generic
+run-parts: executing /etc/kernel/postinst.d/initramfs-tools 3.2.0-52-generic /boot/vmlinuz-3.2.0-52-generic
+update-initramfs: Generating /boot/initrd.img-3.2.0-52-generic
+run-parts: executing /etc/kernel/postinst.d/update-notifier 3.2.0-52-generic /boot/vmlinuz-3.2.0-52-generic
+run-parts: executing /etc/kernel/postinst.d/zz-update-grub 3.2.0-52-generic /boot/vmlinuz-3.2.0-52-generic
+Generating grub.cfg ...
+Found linux image: /boot/vmlinuz-3.2.0-52-generic
+Found initrd image: /boot/initrd.img-3.2.0-52-generic
+Found linux image: /boot/vmlinuz-3.2.0-23-generic
+Found initrd image: /boot/initrd.img-3.2.0-23-generic
+Found memtest86+ image: /boot/memtest86+.bin
+done
+Setting up update-notifier-common (0.119ubuntu8.6) ...
+Setting up apt-utils (0.8.16~exp12ubuntu10.10) ...
+Setting up isc-dhcp-common (4.1.ESV-R4-0ubuntu5.6) ...
+Setting up isc-dhcp-client (4.1.ESV-R4-0ubuntu5.6) ...
+Setting up lsb-release (4.0-0ubuntu20.2) ...
+Setting up sudo (1.8.3p1-1ubuntu3.4) ...
+Setting up ubuntu-minimal (1.267.1) ...
+Setting up apt-transport-https (0.8.16~exp12ubuntu10.10) ...
+Setting up libisc83 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up libdns81 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up libisccc80 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up libisccfg82 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up libbind9-80 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up liblwres80 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up bind9utils (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up bind9 (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+ * Stopping domain name service... bind9
+waiting for pid 23217 to die
+   ...done.
+ * Starting domain name service... bind9
+   ...done.
+Setting up bind9-host (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up dnsutils (1:9.8.1.dfsg.P1-4ubuntu0.7) ...
+Setting up busybox-static (1:1.18.5-1ubuntu4.1) ...
+Setting up man-db (2.6.1-2ubuntu1) ...
+Updating database of manual pages ...
+Setting up openssl (1.0.1-4ubuntu5.10) ...
+Setting up parted (2.3-8ubuntu5.1) ...
+Setting up plymouth-theme-ubuntu-text (0.8.2-2ubuntu31) ...
+update-initramfs: deferring update (trigger activated)
+Setting up ubuntu-standard (1.267.1) ...
+Setting up update-manager-core (1:0.156.14.11) ...
+Setting up python-problem-report (2.0.1-0ubuntu17.1) ...
+Setting up python-apport (2.0.1-0ubuntu17.1) ...
+Setting up apport (2.0.1-0ubuntu17.1) ...
+apport start/running
+Setting up apport-symptoms (0.16.1) ...
+Setting up aptitude (0.6.6-1ubuntu1.1) ...
+Setting up binutils (2.22-6ubuntu1.1) ...
+Setting up curl (7.22.0-3ubuntu4.2) ...
+Setting up make (3.81-8.1ubuntu1.1) ...
+Setting up dkms (2.2.0.3-1ubuntu3.1) ...
+Setting up grub-common (1.99-21ubuntu3.9) ...
+Installing new version of config file /etc/grub.d/10_linux ...
+Installing new version of config file /etc/grub.d/00_header ...
+Setting up grub2-common (1.99-21ubuntu3.9) ...
+Setting up grub-pc-bin (1.99-21ubuntu3.9) ...
+Setting up grub-pc (1.99-21ubuntu3.9) ...
+Installing new version of config file /etc/kernel/postinst.d/zz-update-grub ...
+Installing new version of config file /etc/kernel/postrm.d/zz-update-grub ...
+Installation finished. No error reported.
+Generating grub.cfg ...
+Found linux image: /boot/vmlinuz-3.2.0-52-generic
+Found initrd image: /boot/initrd.img-3.2.0-52-generic
+Found linux image: /boot/vmlinuz-3.2.0-23-generic
+Found initrd image: /boot/initrd.img-3.2.0-23-generic
+Found memtest86+ image: /boot/memtest86+.bin
+done
+Setting up landscape-common (12.05-0ubuntu1.12.04) ...
+Setting up libapparmor1 (2.7.102-0ubuntu3.7) ...
+Setting up libtspi1 (0.3.7-2ubuntu1.1) ...
+Setting up libxenstore3.0 (4.1.2-2ubuntu2.10) ...
+Setting up libvirt0 (0.9.8-2ubuntu17.7) ...
+Setting up libvirt-bin (0.9.8-2ubuntu17.7) ...
+libvirt-bin start/running, process 2445
+Setting up libxml2-utils (2.7.8.dfsg-5.1ubuntu4.6) ...
+Setting up linux-firmware (1.79.6) ...
+Setting up linux-headers-3.2.0-52 (3.2.0-52.78) ...
+Setting up linux-headers-3.2.0-52-generic (3.2.0-52.78) ...
+Examining /etc/kernel/header_postinst.d.
+run-parts: executing /etc/kernel/header_postinst.d/dkms 3.2.0-52-generic /boot/vmlinuz-3.2.0-52-generic
+Setting up linux-headers-server (3.2.0.52.62) ...
+Setting up linux-image-server (3.2.0.52.62) ...
+Setting up linux-server (3.2.0.52.62) ...
+Setting up mysql-client-core-5.5 (5.5.32-0ubuntu0.12.04.1) ...
+Setting up python-keyring (0.9.2-0ubuntu0.12.04.2) ...
+Setting up python-libvirt (0.9.8-2ubuntu17.7) ...
+Setting up qemu (1.0+noroms-0ubuntu14.7) ...
+Setting up qemu-kvm-extras (1.0.50-2012.03-0ubuntu2.1) ...
+Setting up virtualbox (4.1.12-dfsg-2ubuntu0.2) ...
+Setting up wpasupplicant (0.7.3-6ubuntu2.1) ...
+Setting up x11-common (1:7.6+12ubuntu2) ...
+Setting up debootstrap (1.0.39ubuntu0.2) ...
+Setting up python-vm-builder (0.12.4+bzr477-0ubuntu3) ...
+Processing triggers for python-central ...
+Setting up virtualbox-dkms (4.1.12-dfsg-2ubuntu0.2) ...
+Loading new virtualbox-4.1.12 DKMS files...
+Building for 3.2.0-23-generic and 3.2.0-52-generic
+Building initial module for 3.2.0-23-generic
+Done.
+
+vboxdrv:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-23-generic/updates/dkms/
+
+vboxnetadp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-23-generic/updates/dkms/
+
+vboxnetflt.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-23-generic/updates/dkms/
+
+vboxpci.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-23-generic/updates/dkms/
+
+depmod....
+
+DKMS: install completed.
+Building initial module for 3.2.0-52-generic
+Done.
+
+vboxdrv:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-52-generic/updates/dkms/
+
+vboxnetadp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-52-generic/updates/dkms/
+
+vboxnetflt.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-52-generic/updates/dkms/
+
+vboxpci.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/3.2.0-52-generic/updates/dkms/
+
+depmod....
+
+DKMS: install completed.
+Setting up ubuntu-vm-builder (0.12.4+bzr477-0ubuntu3) ...
+Processing triggers for python-central ...
+Setting up perl-modules (5.14.2-6ubuntu2.3) ...
+Setting up libqtgui4 (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-declarative (4:4.8.1-0ubuntu4.4) ...
+Setting up libqt4-opengl (4:4.8.1-0ubuntu4.4) ...
+Setting up virtualbox-qt (4.1.12-dfsg-2ubuntu0.2) ...
+Setting up perl (5.14.2-6ubuntu2.3) ...
+Setting up libdpkg-perl (1.16.1.2ubuntu7.1) ...
+Setting up dpkg-dev (1.16.1.2ubuntu7.1) ...
+Setting up devscripts (2.11.6ubuntu1.4) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Processing triggers for resolvconf ...
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-52-generic
+Connection to 10.20.0.32 closed.
+
+Script done on 2013年09月05日 (週四) 16時53分37秒

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="log-store-xml.xsl"?>
+<log>
+<message time='20130131T12:59:14' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='DD801FC50829195E_0'>怎樣 這星期六你要去嗎</message>
+<message time='20130131T12:59:23' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='DD801FC50829195E_1'>就在你家</message>
+<message time='20130131T12:59:25' id='moonloki@gmail.com' name='張晉榮' token='' isuser='false' type='normal' message-token='DD801FC50829195E_2'>附近</message>
+</log>

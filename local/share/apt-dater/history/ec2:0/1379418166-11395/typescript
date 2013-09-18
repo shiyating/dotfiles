@@ -1,0 +1,49 @@
+Script started on 2013年09月17日 (週二) 19時42分46秒
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  cloud-init grub-legacy-ec2 libx11-6 libx11-data
+4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1072 kB of archives.
+After this operation, 1024 B of additional disk space will be used.
+0% [Working]            Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-data all 2:1.4.99.1-0ubuntu2.2 [172 kB]
+            0% [1 libx11-data 0 B/172 kB 0%]                                16% [Working]             Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ precise-updates/main libx11-6 amd64 2:1.4.99.1-0ubuntu2.2 [763 kB]
+             16% [2 libx11-6 0 B/763 kB 0%]                              87% [Working]             Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ precise-updates/main cloud-init all 0.6.3-0ubuntu1.7 [113 kB]
+             87% [3 cloud-init 0 B/113 kB 0%]                                98% [Working]             Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ precise-updates/main grub-legacy-ec2 all 0.6.3-0ubuntu1.7 [24.3 kB]
+             98% [4 grub-legacy-ec2 0 B/24.3 kB 0%]                                      100% [Working]              Fetched 1072 kB in 0s (3207 kB/s)
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80033 files and directories currently installed.)
+Preparing to replace libx11-data 2:1.4.99.1-0ubuntu2.1 (using .../libx11-data_2%3a1.4.99.1-0ubuntu2.2_all.deb) ...
+Unpacking replacement libx11-data ...
+Preparing to replace libx11-6 2:1.4.99.1-0ubuntu2.1 (using .../libx11-6_2%3a1.4.99.1-0ubuntu2.2_amd64.deb) ...
+Unpacking replacement libx11-6 ...
+Preparing to replace cloud-init 0.6.3-0ubuntu1.6 (using .../cloud-init_0.6.3-0ubuntu1.7_all.deb) ...
+Unpacking replacement cloud-init ...
+Preparing to replace grub-legacy-ec2 0.6.3-0ubuntu1.6 (using .../grub-legacy-ec2_0.6.3-0ubuntu1.7_all.deb) ...
+Leaving 'diversion of /usr/sbin/grub-set-default to /usr/sbin/grub-set-default.real by grub-legacy-ec2'
+Unpacking replacement grub-legacy-ec2 ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up libx11-data (2:1.4.99.1-0ubuntu2.2) ...
+Setting up libx11-6 (2:1.4.99.1-0ubuntu2.2) ...
+Setting up cloud-init (0.6.3-0ubuntu1.7) ...
+Leaving 'diversion of /etc/init/ureadahead.conf to /etc/init/ureadahead.conf.disabled by cloud-init'
+Setting up grub-legacy-ec2 (0.6.3-0ubuntu1.7) ...
+Searching for GRUB installation directory ... found: /boot/grub
+Searching for default file ... found: /boot/grub/default
+Testing for an existing GRUB menu.lst file ... found: /boot/grub/menu.lst
+Searching for splash image ... none found, skipping ...
+Found kernel: /boot/vmlinuz-3.2.0-53-virtual
+Found kernel: /boot/vmlinuz-3.2.0-52-virtual
+Found kernel: /boot/vmlinuz-3.2.0-33-virtual
+Found kernel: /boot/vmlinuz-3.2.0-31-virtual
+Found kernel: /boot/memtest86+.bin
+Updating /boot/grub/menu.lst ... done
+
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Connection to 54.235.74.6 closed.
+
+Script done on 2013年09月17日 (週二) 19時43分04秒

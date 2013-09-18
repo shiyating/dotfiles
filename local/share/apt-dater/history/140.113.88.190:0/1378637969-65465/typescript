@@ -1,0 +1,166 @@
+Script started on 2013年09月08日 (週日) 18時59分29秒
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  linux-headers-3.2.0-53 linux-headers-3.2.0-53-generic
+  linux-image-3.2.0-53-generic
+The following packages will be upgraded:
+  bitcoind jenkins linux-generic linux-headers-generic linux-image-generic
+  linux-libc-dev oracle-java7-installer python-httplib2
+8 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 111 MB of archives.
+After this operation, 217 MB of additional disk space will be used.
+0% [Working]            0% [Waiting for headers] [Waiting for headers] [Connecting to mirrors.jenkins-c                                                                               Get:1 http://ppa.launchpad.net/webupd8team/java/ubuntu/ precise/main oracle-java7-installer all 7u40-0~webupd8~0 [17.6 kB]
+0% [Waiting for headers] [1 oracle-java7-installer 11.3 kB/17.6 kB 64%] [Waitin                                                                               Get:2 http://pkg.jenkins-ci.org/debian/ binary/ jenkins 1.530 [57.8 MB]
+0% [Waiting for headers] [1 oracle-java7-installer 11.3 kB/17.6 kB 64%] [2 jenk                                                                               Get:3 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-3.2.0-53-generic amd64 3.2.0-53.81 [38.6 MB]
+0% [3 linux-image-3.2.0-53-generic 0 B/38.6 MB 0%] [1 oracle-java7-installer 11                                                                               Get:4 http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu/ precise/main bitcoind amd64 0.8.4-precise2 [981 kB]
+1% [3 linux-image-3.2.0-53-generic 86.6 kB/38.6 MB 0%] [4 bitcoind 7791 B/981 k2% [3 linux-image-3.2.0-53-generic 239 kB/38.6 MB 1%] [4 bitcoind 29.5 kB/981 k3% [3 linux-image-3.2.0-53-generic 528 kB/38.6 MB 1%] [4 bitcoind 109 kB/981 kB4% [3 linux-image-3.2.0-53-generic 1091 kB/38.6 MB 3%] [4 bitcoind 174 kB/981 k7% [3 linux-image-3.2.0-53-generic 2731 kB/38.6 MB 7%] [4 bitcoind 392 kB/981 k9% [3 linux-image-3.2.0-53-generic 4785 kB/38.6 MB 12%] [4 bitcoind 574 kB/981 12% [3 linux-image-3.2.0-53-generic 6805 kB/38.6 MB 18%] [4 bitcoind 898 kB/98113% [3 linux-image-3.2.0-53-generic 7257 kB/38.6 MB 19%] [2 jenkins 6301 kB/57.16% [3 linux-image-3.2.0-53-generic 9477 kB/38.6 MB 25%] [2 jenkins 7243 kB/57.19% [3 linux-image-3.2.0-53-generic 11.4 MB/38.6 MB 30%] [2 jenkins 8166 kB/57.21% [3 linux-image-3.2.0-53-generic 13.4 MB/38.6 MB 35%] [2 jenkins 9099 kB/57.24% [3 linux-image-3.2.0-53-generic 15.5 MB/38.6 MB 40%] [2 jenkins 10.0 MB/57.27% [3 linux-image-3.2.0-53-generic 17.7 MB/38.6 MB 46%] [2 jenkins 11.0 MB/57.29% [3 linux-image-3.2.0-53-generic 19.6 MB/38.6 MB 51%] [2 jenkins 11.9 MB/57.32% [3 linux-image-3.2.0-53-generic 21.7 MB/38.6 MB 56%] [2 jenkins 12.8 MB/57.35% [3 linux-image-3.2.0-53-generic 23.8 MB/38.6 MB 62%] [2 jenkins 13.7 MB/57.38% [3 linux-image-3.2.0-53-generic 26.0 MB/38.6 MB 67%] [2 jenkins 14.7 MB/57.40% [3 linux-image-3.2.0-53-generic 27.9 MB/38.6 MB 72%] [2 jenkins 15.6 MB/57.43% [3 linux-image-3.2.0-53-generic 30.0 MB/38.6 MB 78%] [2 jenkins 16.5 MB/57.46% [3 linux-image-3.2.0-53-generic 32.1 MB/38.6 MB 83%] [2 jenkins 17.5 MB/57.48% [3 linux-image-3.2.0-53-generic 34.2 MB/38.6 MB 89%] [2 jenkins 18.4 MB/57.51% [3 linux-image-3.2.0-53-generic 36.2 MB/38.6 MB 94%] [2 jenkins 19.3 MB/57.54% [3 linux-image-3.2.0-53-generic 38.3 MB/38.6 MB 99%] [2 jenkins 20.2 MB/57.54% [2 jenkins 20.4 MB/57.8 MB 35%]                               4181 kB/s 12s                                                                               Get:5 http://security.ubuntu.com/ubuntu/ precise-security/main linux-generic amd64 3.2.0.53.63 [1720 B]
+                                                                               54% [5 linux-generic 0 B/1720 B 0%] [2 jenkins 20.4 MB/57.8 MB 35%]                                                                   54% [2 jenkins 20.4 MB/57.8 MB 35%]                               4181 kB/s 12s                                                                               Get:6 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-generic amd64 3.2.0.53.63 [2340 B]
+                                                                               54% [6 linux-image-generic 0 B/2340 B 0%] [2 jenkins 20.4 MB/57.8 MB 35%]                                                                         54% [2 jenkins 20.4 MB/57.8 MB 35%]                               4181 kB/s 12s                                                                               Get:7 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-3.2.0-53 all 3.2.0-53.81 [11.7 MB]
+                                                                               54% [7 linux-headers-3.2.0-53 0 B/11.7 MB 0%] [2 jenkins 20.4 MB/57.8 MB 35%]                                                                             57% [7 linux-headers-3.2.0-53 1913 kB/11.7 MB 16%] [2 jenkins 21.3 MB/57.8 MB 359% [7 linux-headers-3.2.0-53 4019 kB/11.7 MB 34%] [2 jenkins 22.2 MB/57.8 MB 362% [7 linux-headers-3.2.0-53 6186 kB/11.7 MB 53%] [2 jenkins 23.1 MB/57.8 MB 465% [7 linux-headers-3.2.0-53 8246 kB/11.7 MB 71%] [2 jenkins 24.0 MB/57.8 MB 467% [7 linux-headers-3.2.0-53 10.3 MB/11.7 MB 88%] [2 jenkins 24.8 MB/57.8 MB 469% [2 jenkins 25.4 MB/57.8 MB 44%]                                5936 kB/s 5s                                                                               Get:8 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-3.2.0-53-generic amd64 3.2.0-53.81 [978 kB]
+69% [8 linux-headers-3.2.0-53-generic 0 B/978 kB 0%] [2 jenkins 25.4 MB/57.8 MB70% [2 jenkins 25.9 MB/57.8 MB 45%]                                5936 kB/s 5s                                                                               Get:9 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-generic amd64 3.2.0.53.63 [2336 B]
+                                                                               70% [9 linux-headers-generic 0 B/2336 B 0%] [2 jenkins 25.9 MB/57.8 MB 45%]                                                                           70% [2 jenkins 25.9 MB/57.8 MB 45%]                                5936 kB/s 5s                                                                               Get:10 http://security.ubuntu.com/ubuntu/ precise-security/main linux-libc-dev amd64 3.2.0-53.81 [859 kB]
+                                                                               70% [10 linux-libc-dev 0 B/859 kB 0%] [2 jenkins 25.9 MB/57.8 MB 45%]                                                                     71% [2 jenkins 26.2 MB/57.8 MB 45%]                                5936 kB/s 5s                                                                               Get:11 http://security.ubuntu.com/ubuntu/ precise-security/main python-httplib2 all 0.7.2-1ubuntu2.1 [57.1 kB]
+                                                                               71% [11 python-httplib2 0 B/57.1 kB 0%] [2 jenkins 26.2 MB/57.8 MB 45%]                                                                       72% [2 jenkins 26.3 MB/57.8 MB 45%]                                5936 kB/s 5s72% [2 jenkins 27.1 MB/57.8 MB 47%]                                5936 kB/s 5s73% [2 jenkins 28.0 MB/57.8 MB 48%]                                5936 kB/s 5s74% [2 jenkins 28.9 MB/57.8 MB 50%]                                5936 kB/s 4s75% [2 jenkins 29.8 MB/57.8 MB 52%]                                5936 kB/s 4s76% [2 jenkins 30.7 MB/57.8 MB 53%]                                5936 kB/s 4s76% [2 jenkins 31.6 MB/57.8 MB 55%]                                5936 kB/s 4s77% [2 jenkins 32.5 MB/57.8 MB 56%]                                3646 kB/s 6s78% [2 jenkins 33.5 MB/57.8 MB 58%]                                3646 kB/s 6s79% [2 jenkins 34.4 MB/57.8 MB 59%]                                3646 kB/s 6s80% [2 jenkins 35.3 MB/57.8 MB 61%]                                3646 kB/s 6s81% [2 jenkins 36.3 MB/57.8 MB 63%]                                3646 kB/s 5s81% [2 jenkins 37.2 MB/57.8 MB 64%]                                3646 kB/s 5s82% [2 jenkins 38.1 MB/57.8 MB 66%]                                3646 kB/s 5s83% [2 jenkins 39.0 MB/57.8 MB 67%]                                3646 kB/s 5s84% [2 jenkins 39.9 MB/57.8 MB 69%]                                3646 kB/s 4s85% [2 jenkins 40.9 MB/57.8 MB 71%]                                3646 kB/s 4s86% [2 jenkins 41.8 MB/57.8 MB 72%]                                3646 kB/s 4s86% [2 jenkins 42.7 MB/57.8 MB 74%]                                3646 kB/s 4s87% [2 jenkins 43.6 MB/57.8 MB 75%]                                1845 kB/s 7s88% [2 jenkins 44.6 MB/57.8 MB 77%]                                1845 kB/s 7s89% [2 jenkins 45.5 MB/57.8 MB 79%]                                1845 kB/s 6s90% [2 jenkins 46.4 MB/57.8 MB 80%]                                1845 kB/s 6s90% [2 jenkins 47.1 MB/57.8 MB 82%]                                1845 kB/s 5s91% [2 jenkins 48.1 MB/57.8 MB 83%]                                1845 kB/s 5s92% [2 jenkins 49.0 MB/57.8 MB 85%]                                1845 kB/s 4s93% [2 jenkins 50.0 MB/57.8 MB 86%]                                1845 kB/s 4s94% [2 jenkins 50.9 MB/57.8 MB 88%]                                1845 kB/s 3s95% [2 jenkins 51.8 MB/57.8 MB 90%]                                1845 kB/s 3s95% [2 jenkins 52.8 MB/57.8 MB 91%]                                1845 kB/s 2s96% [2 jenkins 53.7 MB/57.8 MB 93%]                                1845 kB/s 2s97% [2 jenkins 54.6 MB/57.8 MB 94%]                                1827 kB/s 1s98% [2 jenkins 55.5 MB/57.8 MB 96%]                                1827 kB/s 1s99% [2 jenkins 56.5 MB/57.8 MB 98%]                                1827 kB/s 0s100% [2 jenkins 57.3 MB/57.8 MB 99%]                               1827 kB/s 0s100% [Working]                                                     1827 kB/s 0s                                                                               Fetched 111 MB in 32s (3415 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package linux-image-3.2.0-53-generic.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 200932 files and directories currently installed.)
+Unpacking linux-image-3.2.0-53-generic (from .../linux-image-3.2.0-53-generic_3.2.0-53.81_amd64.deb) ...
+Done.
+Preparing to replace oracle-java7-installer 7u25-0~webupd8~1 (using .../oracle-java7-installer_7u40-0~webupd8~0_all.deb) ...
+oracle-license-v1-1 license has already been accepted
+Unpacking replacement oracle-java7-installer ...
+Preparing to replace bitcoind 0.8.3-precise1 (using .../bitcoind_0.8.4-precise2_amd64.deb) ...
+Unpacking replacement bitcoind ...
+Preparing to replace linux-generic 3.2.0.52.62 (using .../linux-generic_3.2.0.53.63_amd64.deb) ...
+Unpacking replacement linux-generic ...
+Preparing to replace linux-image-generic 3.2.0.52.62 (using .../linux-image-generic_3.2.0.53.63_amd64.deb) ...
+Unpacking replacement linux-image-generic ...
+Selecting previously unselected package linux-headers-3.2.0-53.
+Unpacking linux-headers-3.2.0-53 (from .../linux-headers-3.2.0-53_3.2.0-53.81_all.deb) ...
+Selecting previously unselected package linux-headers-3.2.0-53-generic.
+Unpacking linux-headers-3.2.0-53-generic (from .../linux-headers-3.2.0-53-generic_3.2.0-53.81_amd64.deb) ...
+Preparing to replace linux-headers-generic 3.2.0.52.62 (using .../linux-headers-generic_3.2.0.53.63_amd64.deb) ...
+Unpacking replacement linux-headers-generic ...
+Preparing to replace linux-libc-dev 3.2.0-52.78 (using .../linux-libc-dev_3.2.0-53.81_amd64.deb) ...
+Unpacking replacement linux-libc-dev ...
+Preparing to replace python-httplib2 0.7.2-1ubuntu2 (using .../python-httplib2_0.7.2-1ubuntu2.1_all.deb) ...
+Unpacking replacement python-httplib2 ...
+Preparing to replace jenkins 1.529 (using .../archives/jenkins_1.530_all.deb) ...
+ * Stopping Jenkins Continuous Integration Server jenkins
+   ...done.
+Unpacking replacement jenkins ...
+Processing triggers for bamfdaemon ...
+Rebuilding /usr/share/applications/bamf.index...
+Processing triggers for desktop-file-utils ...
+Processing triggers for gnome-menus ...
+Processing triggers for shared-mime-info ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+ureadahead will be reprofiled on next reboot
+Setting up linux-image-3.2.0-53-generic (3.2.0-53.81) ...
+Running depmod.
+update-initramfs: deferring update (hook will be called later)
+Examining /etc/kernel/postinst.d.
+run-parts: executing /etc/kernel/postinst.d/apt-auto-removal 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
+run-parts: executing /etc/kernel/postinst.d/initramfs-tools 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
+update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
+run-parts: executing /etc/kernel/postinst.d/pm-utils 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
+run-parts: executing /etc/kernel/postinst.d/update-notifier 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
+run-parts: executing /etc/kernel/postinst.d/zz-update-grub 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
+Generating grub.cfg ...
+Found linux image: /boot/vmlinuz-3.2.0-53-generic
+Found initrd image: /boot/initrd.img-3.2.0-53-generic
+Found linux image: /boot/vmlinuz-3.2.0-52-generic
+Found initrd image: /boot/initrd.img-3.2.0-52-generic
+Found linux image: /boot/vmlinuz-3.2.0-32-generic
+Found initrd image: /boot/initrd.img-3.2.0-32-generic
+Found memtest86+ image: /boot/memtest86+.bin
+done
+Setting up oracle-java7-installer (7u40-0~webupd8~0) ...
+Downloading Oracle Java 7...
+--2013-09-12 11:47:11--  http://download.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz
+Resolving download.oracle.com (download.oracle.com)... 23.59.190.130, 23.59.190.131
+Connecting to download.oracle.com (download.oracle.com)|23.59.190.130|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://edelivery.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz [following]
+--2013-09-12 11:47:11--  https://edelivery.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz
+Resolving edelivery.oracle.com (edelivery.oracle.com)... 23.42.70.140
+Connecting to edelivery.oracle.com (edelivery.oracle.com)|23.42.70.140|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://download.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz?AuthParam=1378957742_a0d9bdf12fb83291d724b482ca657592 [following]
+--2013-09-12 11:47:12--  http://download.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz?AuthParam=1378957742_a0d9bdf12fb83291d724b482ca657592
+Connecting to download.oracle.com (download.oracle.com)|23.59.190.130|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 138021223 (132M) [application/x-gzip]
+Saving to: `jdk-7u40-linux-x64.tar.gz'
+
+     0K ........ ........ ........ ........ ........ ........  2%  679K 3m14s
+  3072K ........ ........ ........ ........ ........ ........  4% 2.22M 2m3s
+  6144K ........ ........ ........ ........ ........ ........  6% 2.14M 99s
+  9216K ........ ........ ........ ........ ........ ........  9% 2.01M 87s
+ 12288K ........ ........ ........ ........ ........ ........ 11% 1.93M 80s
+ 15360K ........ ........ ........ ........ ........ ........ 13% 2.95M 72s
+ 18432K ........ ........ ........ ........ ........ ........ 15% 3.07M 65s
+ 21504K ........ ........ ........ ........ ........ ........ 18% 2.80M 60s
+ 24576K ........ ........ ........ ........ ........ ........ 20% 2.44M 57s
+ 27648K ........ ........ ........ ........ ........ ........ 22% 2.23M 54s
+ 30720K ........ ........ ........ ........ ........ ........ 25% 1.92M 52s
+ 33792K ........ ........ ........ ........ ........ ........ 27% 1.82M 51s
+ 36864K ........ ........ ........ ........ ........ ........ 29% 2.71M 48s
+ 39936K ........ ........ ........ ........ ........ ........ 31% 2.59M 46s
+ 43008K ........ ........ ........ ........ ........ ........ 34% 1.75M 45s
+ 46080K ........ ........ ........ ........ ........ ........ 36% 3.93M 42s
+ 49152K ........ ........ ........ ........ ........ ........ 38% 1.91M 40s
+ 52224K ........ ........ ........ ........ ........ ........ 41% 1.86M 39s
+ 55296K ........ ........ ........ ........ ........ ........ 43% 4.29M 36s
+ 58368K ........ ........ ........ ........ ........ ........ 45% 3.05M 34s
+ 61440K ........ ........ ........ ........ ........ ........ 47% 4.30M 32s
+ 64512K ........ ........ ........ ........ ........ ........ 50% 4.49M 30s
+ 67584K ........ ........ ........ ........ ........ ........ 52% 1.87M 29s
+ 70656K ........ ........ ........ ........ ........ ........ 54% 2.69M 27s
+ 73728K ........ ........ ........ ........ ........ ........ 56% 3.32M 25s
+ 76800K ........ ........ ........ ........ ........ ........ 59% 2.68M 24s
+ 79872K ........ ........ ........ ........ ........ ........ 61% 2.44M 23s
+ 82944K ........ ........ ........ ........ ........ ........ 63% 4.28M 21s
+ 86016K ........ ........ ........ ........ ........ ........ 66% 4.39M 19s
+ 89088K ........ ........ ........ ........ ........ ........ 68% 4.38M 18s
+ 92160K ........ ........ ........ ........ ........ ........ 70% 3.20M 16s
+ 95232K ........ ........ ........ ........ ........ ........ 72% 3.34M 15s
+ 98304K ........ ........ ........ ........ ........ ........ 75% 2.69M 14s
+101376K ........ ........ ........ ........ ........ ........ 77% 3.46M 12s
+104448K ........ ........ ........ ........ ........ ........ 79% 3.33M 11s
+107520K ........ ........ ........ ........ ........ ........ 82% 3.99M 10s
+110592K ........ ........ ........ ........ ........ ........ 84% 4.05M 8s
+113664K ........ ........ ........ ........ ........ ........ 86% 4.29M 7s
+116736K ........ ........ ........ ........ ........ ........ 88% 1.60M 6s
+119808K ........ ........ ........ ........ ........ ........ 91% 2.09M 5s
+122880K ........ ........ ........ ........ ........ ........ 93% 1.75M 4s
+125952K ........ ........ ........ ........ ........ ........ 95% 2.91M 2s
+129024K ........ ........ ........ ........ ........ ........ 98% 2.68M 1s
+132096K ........ ........ ........ ........ ........ ..      100% 3.85M=53s
+
+2013-09-12 11:48:06 (2.49 MB/s) - `jdk-7u40-linux-x64.tar.gz' saved [138021223/138021223]
+
+Download done.
+Removing outdated cached downloads...
+removed `jdk-7u25-linux-x64.tar.gz'
+Oracle JDK 7 installed
+Oracle JRE 7 browser plugin installed
+Setting up bitcoind (0.8.4-precise2) ...
+Setting up linux-image-generic (3.2.0.53.63) ...
+Setting up linux-headers-3.2.0-53 (3.2.0-53.81) ...
+Setting up linux-headers-3.2.0-53-generic (3.2.0-53.81) ...
+Examining /etc/kernel/header_postinst.d.
+Setting up linux-headers-generic (3.2.0.53.63) ...
+Setting up linux-generic (3.2.0.53.63) ...
+Setting up linux-libc-dev (3.2.0-53.81) ...
+Setting up python-httplib2 (0.7.2-1ubuntu2.1) ...
+Setting up jenkins (1.530) ...
+ * Starting Jenkins Continuous Integration Server jenkins
+   ...done.
+Connection to 140.113.88.190 closed.
+
+Script done on 2013年09月08日 (週日) 19時02分42秒
