@@ -18,6 +18,7 @@
 alias ssh='TERM=screen LC_ALL=en_US.UTF-8 ssh'
 alias aa='vim ~/.bashrc && source ~/.bashrc'
 alias as='vim ~/.bash_aliases && source ~/.bashrc'
+alias apull='(cd $(dirname $(readlink ~/.bashrc)); git pull)'
 alias an='source ~/.bashrc'
 alias zz='vim ~/.vimrc'
 alias ze='vim ~/.zer0prompt && . ~/.bashrc'
