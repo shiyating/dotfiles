@@ -6,10 +6,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# cd to dotfiles folder, then git pull
-[ -L ~/.bashrc ] && ( cd $(dirname $(readlink ~/.bashrc)); git pull )
-
-
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
