@@ -2,3 +2,4 @@ vim/bundle
 *~
 # ignore local setting
 bashrc_local
+*.pyc
