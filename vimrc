@@ -211,16 +211,17 @@ map <LocalLeader>bb :ls<cr>
 " setup for the visual environment
 " ===========================================================================
 syntax enable                       " syntax on
-let g:solarized_termcolors=256
-
-"set background=light
-set background=dark
 try
     "colorscheme my_inkpot              " 256 colour
     colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
     " deal with it
 endtry
+
+let g:solarized_termcolors=256
+
+"set background=light
+set background=dark
 
 " ===========================================================================
 " Folding for unified diffs 
