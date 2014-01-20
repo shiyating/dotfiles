@@ -4,14 +4,15 @@
 		"dividers": {
 			"left": {
 				"hard": " ",
-				"soft": " "
+				"soft2": " ",
+				"soft": "/"
 			},
 			"right": {
 				"hard": " ",
 				"soft": " "
 			}
 		},
-		"spaces": 1
+		"spaces": 0
 	},
 	"ext": {
 		"ipython": {
