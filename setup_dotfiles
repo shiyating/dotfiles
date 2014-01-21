@@ -4,7 +4,6 @@
 which ctags >& /dev/null || sudo apt-get install exuberant-ctags
 which git >& /dev/null || sudo apt-get install git
 sudo locale-gen zh_TW.UTF-8
-sudo update-locale LANG=zh_TW.UTF-8
 
 
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
