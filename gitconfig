@@ -5,6 +5,7 @@
 	editor = vim
 	autocrlf = input
     whitespace = cr-at-eol
+	pager = less -r
 [color]
 	branch = auto
 	diff = auto
