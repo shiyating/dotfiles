@@ -19,10 +19,7 @@ shopt -s checkwinsize
 # ~/.zer0prompt         : preload color prompt
 # ~/.rvm/scripts/rvm    : Load RVM into a shell session *as a function*
 #-------------------------------------------------------------
-for file in \
-    /etc/bashrc \
-    ~/.bash_aliases ~/.git-prompt.sh \
-    ~/.rvm/scripts/rvm
+for file in /etc/bashrc ~/.bash_aliases ~/.git-prompt.sh ~/.rvm/scripts/rvm
 do
     if [ -f $file ]; then
         . $file

@@ -1,9 +1,9 @@
-#!/bin/bash
-
+#!/bin/bash -e
+set -x
 # new machine setup
-which ctags >& /dev/null || sudo apt-get install exuberant-ctags
+which ctags >& /dev/null || sudo apt-get install exuberant-ctags || sudo apt-get install ctags
 which git >& /dev/null || sudo apt-get install git
-sudo locale-gen zh_TW.UTF-8
+sudo locale-gen zh_TW.UTF-8 || true
 
 
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
