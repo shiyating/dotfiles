@@ -1,86 +1,0 @@
-Script started on 2013年09月08日 (週日) 18時59分31秒
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-Calculating upgrade... Done
-The following NEW packages will be installed:
-  linux-image-3.2.0-53-virtual
-The following packages will be upgraded:
-  linux-image-virtual linux-libc-dev php-pear php5-cli php5-common php5-curl
-  php5-fpm php5-gd php5-ldap php5-mysql php5-pgsql
-11 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 21.0 MB of archives.
-After this operation, 36.3 MB of additional disk space will be used.
-0% [Working]            Get:1 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-3.2.0-53-virtual amd64 3.2.0-53.81 [12.9 MB]
-            0% [1 linux-image-3.2.0-53-virtual 0 B/12.9 MB 0%]                                                  0% [1 linux-image-3.2.0-53-virtual 43.1 kB/12.9 MB 0%]0% [1 linux-image-3.2.0-53-virtual 86.6 kB/12.9 MB 1%]                                                      1% [1 linux-image-3.2.0-53-virtual 123 kB/12.9 MB 1%]1% [1 linux-image-3.2.0-53-virtual 159 kB/12.9 MB 1%]1% [1 linux-image-3.2.0-53-virtual 202 kB/12.9 MB 2%]1% [1 linux-image-3.2.0-53-virtual 253 kB/12.9 MB 2%]2% [1 linux-image-3.2.0-53-virtual 333 kB/12.9 MB 3%]2% [1 linux-image-3.2.0-53-virtual 441 kB/12.9 MB 3%]3% [1 linux-image-3.2.0-53-virtual 570 kB/12.9 MB 4%]3% [1 linux-image-3.2.0-53-virtual 715 kB/12.9 MB 6%]5% [1 linux-image-3.2.0-53-virtual 947 kB/12.9 MB 7%]                                                     6% [1 linux-image-3.2.0-53-virtual 1206 kB/12.9 MB 9%]        201 kB/s 1min 38s7% [1 linux-image-3.2.0-53-virtual 1532 kB/12.9 MB 12%]       201 kB/s 1min 36s9% [1 linux-image-3.2.0-53-virtual 1923 kB/12.9 MB 15%]       201 kB/s 1min 34s11% [1 linux-image-3.2.0-53-virtual 2263 kB/12.9 MB 18%]      201 kB/s 1min 33s13% [1 linux-image-3.2.0-53-virtual 2804 kB/12.9 MB 22%]      201 kB/s 1min 30s15% [1 linux-image-3.2.0-53-virtual 3226 kB/12.9 MB 25%]      201 kB/s 1min 28s17% [1 linux-image-3.2.0-53-virtual 3660 kB/12.9 MB 28%]      201 kB/s 1min 26s20% [1 linux-image-3.2.0-53-virtual 4177 kB/12.9 MB 32%]      201 kB/s 1min 23s22% [1 linux-image-3.2.0-53-virtual 4659 kB/12.9 MB 36%]      201 kB/s 1min 21s25% [1 linux-image-3.2.0-53-virtual 5157 kB/12.9 MB 40%]      201 kB/s 1min 18s27% [1 linux-image-3.2.0-53-virtual 5637 kB/12.9 MB 44%]      201 kB/s 1min 16s29% [1 linux-image-3.2.0-53-virtual 6144 kB/12.9 MB 48%]      201 kB/s 1min 13s32% [1 linux-image-3.2.0-53-virtual 6665 kB/12.9 MB 52%]           908 kB/s 15s34% [1 linux-image-3.2.0-53-virtual 7135 kB/12.9 MB 55%]           908 kB/s 15s36% [1 linux-image-3.2.0-53-virtual 7558 kB/12.9 MB 58%]           908 kB/s 14s38% [1 linux-image-3.2.0-53-virtual 7893 kB/12.9 MB 61%]           908 kB/s 14s39% [1 linux-image-3.2.0-53-virtual 8243 kB/12.9 MB 64%]           908 kB/s 13s41% [1 linux-image-3.2.0-53-virtual 8598 kB/12.9 MB 67%]           908 kB/s 13s43% [1 linux-image-3.2.0-53-virtual 8960 kB/12.9 MB 69%]           908 kB/s 13s45% [1 linux-image-3.2.0-53-virtual 9329 kB/12.9 MB 72%]           908 kB/s 12s46% [1 linux-image-3.2.0-53-virtual 9659 kB/12.9 MB 75%]           908 kB/s 12s47% [1 linux-image-3.2.0-53-virtual 9918 kB/12.9 MB 77%]           908 kB/s 12s49% [1 linux-image-3.2.0-53-virtual 10.2 MB/12.9 MB 79%]           908 kB/s 11s50% [1 linux-image-3.2.0-53-virtual 10.5 MB/12.9 MB 81%]           908 kB/s 11s52% [1 linux-image-3.2.0-53-virtual 10.8 MB/12.9 MB 84%]           691 kB/s 14s53% [1 linux-image-3.2.0-53-virtual 11.1 MB/12.9 MB 86%]           691 kB/s 14s54% [1 linux-image-3.2.0-53-virtual 11.4 MB/12.9 MB 88%]           691 kB/s 13s55% [1 linux-image-3.2.0-53-virtual 11.6 MB/12.9 MB 90%]           691 kB/s 13s57% [1 linux-image-3.2.0-53-virtual 11.8 MB/12.9 MB 92%]           691 kB/s 13s58% [1 linux-image-3.2.0-53-virtual 12.1 MB/12.9 MB 94%]           691 kB/s 12s59% [1 linux-image-3.2.0-53-virtual 12.3 MB/12.9 MB 96%]           691 kB/s 12s60% [1 linux-image-3.2.0-53-virtual 12.6 MB/12.9 MB 97%]           691 kB/s 12s61% [1 linux-image-3.2.0-53-virtual 12.8 MB/12.9 MB 99%]           691 kB/s 11s62% [Working]                                                      691 kB/s 11s                                                                               Get:2 http://security.ubuntu.com/ubuntu/ precise-security/main php5-cli amd64 5.3.10-1ubuntu3.8 [3051 kB]
-62% [2 php5-cli 0 B/3051 kB 0%]                                    691 kB/s 11s76% [Working]                                                       691 kB/s 7s                                                                               Get:3 http://security.ubuntu.com/ubuntu/ precise-security/main php5-mysql amd64 5.3.10-1ubuntu3.8 [77.1 kB]
-76% [3 php5-mysql 0 B/77.1 kB 0%]                                   691 kB/s 7s77% [Working]                                                       691 kB/s 7s                                                                               Get:4 http://security.ubuntu.com/ubuntu/ precise-security/main php5-ldap amd64 5.3.10-1ubuntu3.8 [19.5 kB]
-77% [4 php5-ldap 0 B/19.5 kB 0%]                                    691 kB/s 7s77% [Working]                                                       691 kB/s 7s                                                                               Get:5 http://security.ubuntu.com/ubuntu/ precise-security/main php5-curl amd64 5.3.10-1ubuntu3.8 [28.0 kB]
-77% [5 php5-curl 0 B/28.0 kB 0%]                                    691 kB/s 7s77% [Working]                                                       691 kB/s 7s                                                                               Get:6 http://security.ubuntu.com/ubuntu/ precise-security/main php5-gd amd64 5.3.10-1ubuntu3.8 [38.8 kB]
-77% [6 php5-gd 0 B/38.8 kB 0%]                                      691 kB/s 7s77% [Working]                                                       691 kB/s 6s                                                                               Get:7 http://security.ubuntu.com/ubuntu/ precise-security/main php5-pgsql amd64 5.3.10-1ubuntu3.8 [58.9 kB]
-77% [7 php5-pgsql 0 B/58.9 kB 0%]                                   691 kB/s 6s77% [7 php5-pgsql 44.6 kB/58.9 kB 76%]                              691 kB/s 6s77% [Working]                                                       691 kB/s 6s                                                                               Get:8 http://security.ubuntu.com/ubuntu/ precise-security/universe php5-fpm amd64 5.3.10-1ubuntu3.8 [3095 kB]
-77% [8 php5-fpm 0 B/3095 kB 0%]                                     691 kB/s 6s80% [8 php5-fpm 504 kB/3095 kB 16%]                                 926 kB/s 4s81% [8 php5-fpm 761 kB/3095 kB 25%]                                 926 kB/s 4s82% [8 php5-fpm 1052 kB/3095 kB 34%]                                926 kB/s 3s84% [8 php5-fpm 1368 kB/3095 kB 44%]                                926 kB/s 3s85% [8 php5-fpm 1536 kB/3095 kB 50%]                                926 kB/s 3s87% [8 php5-fpm 1992 kB/3095 kB 64%]                                926 kB/s 2s89% [8 php5-fpm 2373 kB/3095 kB 77%]                                926 kB/s 2s91% [8 php5-fpm 2789 kB/3095 kB 90%]                                926 kB/s 2s92% [Working]                                                       926 kB/s 1s                                                                               Get:9 http://security.ubuntu.com/ubuntu/ precise-security/main php5-common amd64 5.3.10-1ubuntu3.8 [428 kB]
-92% [9 php5-common 0 B/428 kB 0%]                                   926 kB/s 1s94% [Working]                                                       926 kB/s 1s                                                                               Get:10 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-virtual amd64 3.2.0.53.63 [2386 B]
-94% [10 linux-image-virtual 0 B/2386 B 0%]                          926 kB/s 1s94% [Working]                                                       926 kB/s 1s                                                                               Get:11 http://security.ubuntu.com/ubuntu/ precise-security/main linux-libc-dev amd64 3.2.0-53.81 [859 kB]
-94% [11 linux-libc-dev 0 B/859 kB 0%]                               926 kB/s 1s98% [Working]                                                       926 kB/s 0s                                                                               Get:12 http://security.ubuntu.com/ubuntu/ precise-security/main php-pear all 5.3.10-1ubuntu3.8 [370 kB]
-98% [12 php-pear 0 B/370 kB 0%]                                     926 kB/s 0s100% [Working]                                                      926 kB/s 0s                                                                               Fetched 21.0 MB in 28s (740 kB/s)
-Selecting previously unselected package linux-image-3.2.0-53-virtual.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48310 files and directories currently installed.)
-Unpacking linux-image-3.2.0-53-virtual (from .../linux-image-3.2.0-53-virtual_3.2.0-53.81_amd64.deb) ...
-Done.
-Preparing to replace php5-cli 5.3.10-1ubuntu3.7 (using .../php5-cli_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-cli ...
-Preparing to replace php5-mysql 5.3.10-1ubuntu3.7 (using .../php5-mysql_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-mysql ...
-Preparing to replace php5-ldap 5.3.10-1ubuntu3.7 (using .../php5-ldap_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-ldap ...
-Preparing to replace php5-curl 5.3.10-1ubuntu3.7 (using .../php5-curl_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-curl ...
-Preparing to replace php5-gd 5.3.10-1ubuntu3.7 (using .../php5-gd_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-gd ...
-Preparing to replace php5-pgsql 5.3.10-1ubuntu3.7 (using .../php5-pgsql_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-pgsql ...
-Preparing to replace php5-fpm 5.3.10-1ubuntu3.7 (using .../php5-fpm_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-fpm ...
-Preparing to replace php5-common 5.3.10-1ubuntu3.7 (using .../php5-common_5.3.10-1ubuntu3.8_amd64.deb) ...
-Unpacking replacement php5-common ...
-Preparing to replace linux-image-virtual 3.2.0.52.62 (using .../linux-image-virtual_3.2.0.53.63_amd64.deb) ...
-Unpacking replacement linux-image-virtual ...
-Preparing to replace linux-libc-dev 3.2.0-52.78 (using .../linux-libc-dev_3.2.0-53.81_amd64.deb) ...
-Unpacking replacement linux-libc-dev ...
-Preparing to replace php-pear 5.3.10-1ubuntu3.7 (using .../php-pear_5.3.10-1ubuntu3.8_all.deb) ...
-Unpacking replacement php-pear ...
-Processing triggers for ureadahead ...
-Setting up linux-image-3.2.0-53-virtual (3.2.0-53.81) ...
-Running depmod.
-update-initramfs: deferring update (hook will be called later)
-Examining /etc/kernel/postinst.d.
-run-parts: executing /etc/kernel/postinst.d/apt-auto-removal 3.2.0-53-virtual /boot/vmlinuz-3.2.0-53-virtual
-run-parts: executing /etc/kernel/postinst.d/initramfs-tools 3.2.0-53-virtual /boot/vmlinuz-3.2.0-53-virtual
-update-initramfs: Generating /boot/initrd.img-3.2.0-53-virtual
-run-parts: executing /etc/kernel/postinst.d/zz-update-grub 3.2.0-53-virtual /boot/vmlinuz-3.2.0-53-virtual
-Searching for GRUB installation directory ... found: /boot/grub
-Searching for default file ... found: /boot/grub/default
-Testing for an existing GRUB menu.lst file ... found: /boot/grub/menu.lst
-Searching for splash image ... none found, skipping ...
-Found kernel: /boot/vmlinuz-3.2.0-53-virtual
-Found kernel: /boot/vmlinuz-3.2.0-52-virtual
-Found kernel: /boot/vmlinuz-3.2.0-48-virtual
-Replacing config file /run/grub/menu.lst with new version
-Updating /boot/grub/menu.lst ... done
-
-Setting up php5-common (5.3.10-1ubuntu3.8) ...
-Setting up php5-cli (5.3.10-1ubuntu3.8) ...
-Setting up php5-fpm (5.3.10-1ubuntu3.8) ...
-update-rc.d: warning: php5-fpm stop runlevel arguments (0 1 6) do not match LSB Default-Stop values (none)
-Setting up php5-mysql (5.3.10-1ubuntu3.8) ...
-Setting up php5-ldap (5.3.10-1ubuntu3.8) ...
-Setting up php5-curl (5.3.10-1ubuntu3.8) ...
-Setting up php5-gd (5.3.10-1ubuntu3.8) ...
-Setting up php5-pgsql (5.3.10-1ubuntu3.8) ...
-Setting up linux-image-virtual (3.2.0.53.63) ...
-Setting up linux-libc-dev (3.2.0-53.81) ...
-Setting up php-pear (5.3.10-1ubuntu3.8) ...
-Connection to testlink closed.
-
-Script done on 2013年09月08日 (週日) 19時01分40秒

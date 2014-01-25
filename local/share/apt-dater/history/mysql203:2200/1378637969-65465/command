@@ -1,1 +1,0 @@
-"/usr/bin/ssh" "-t" "-l" "aptupdater" "-p" "2200" "mysql203" "apt-dater-host" "upgrade" 

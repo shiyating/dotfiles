@@ -1,1 +1,0 @@
-"/usr/bin/ssh" "-t" "-l" "aptupdater" "redmine" "apt-dater-host" "upgrade" 

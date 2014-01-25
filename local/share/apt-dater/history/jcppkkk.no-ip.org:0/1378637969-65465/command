@@ -1,1 +1,0 @@
-"/usr/bin/ssh" "-t" "-l" "aptupdater" "jcppkkk.no-ip.org" "apt-dater-host" "upgrade" 

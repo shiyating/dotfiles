@@ -1,55 +1,0 @@
-Script started on 2013年09月08日 (週日) 20時54分33秒
-Welcome to Ubuntu 12.04.2 LTS (GNU/Linux 3.2.0-48-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com/
-
-  System information as of Thu Sep 12 13:40:39 CST 2013
-
-  System load:  0.08               Processes:           101
-  Usage of /:   31.6% of 17.72GB   Users logged in:     0
-  Memory usage: 35%                IP address for eth0: 172.16.10.180
-  Swap usage:   18%
-
-  Graph this data and manage this system at https://landscape.canonical.com/
-
-*** System restart required ***
-Last login: Thu Sep 12 11:45:36 2013 from 172.16.12.162
--bash: warning: setlocale: LC_ALL: cannot change locale (zh_TW.UTF-8)
--bash: warning: setlocale: LC_ALL: cannot change locale (zh_TW.UTF-8)
-aptupdater@gitlab:~$ sudo locale-gen zh_TW.UTF-8
-[sudo] password for aptupdater: 
-aptupdater@gitlab:~$ ssh jethro          su - ci-manager
-Password: 
-[1m[3m%[23m[1m[0m                                                                                kgitlab:~:zsh\]0;[~] :zshk~\[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D
-[1m[3m%[23m[1m[0m                                                                                kgitlab:~:zsh\]0;[~] :zshk~\[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75Dssudo locale-gen zh_TW.UTF-8[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m sudo locale-gen zh_TW.UTF-8[K[48C[32m[00m[48D
-kgitlab:~:sudo\]0;[~] :sudo locale-gen zh_TW.UTF-8klocale-gen\Generating locales...
-  zh_TW.UTF-8... done
-Generation complete.
-[1m[3m%[23m[1m[0m                                                                                kgitlab:~:zsh\]0;[~] :zshk~\[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75Dssudo update-locale LANG=zh_TW.UTF-8[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m sudo update-locale LANG=zh_TW.UTF-8[K[40C[32m[00m[40D
-kgitlab:~:sudo\]0;[~] :sudo update-locale LANG=zh_TW.UTF-8kupdate-locale\[1m[3m%[23m[1m[0m                                                                                kgitlab:~:zsh\]0;[~] :zshk~\[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D[?1h=[?1l>MM[0m[23m[24m[J[39m[49m[0m
-[40m[1m[32mci-manager[1m[34m@[1m[36mgitlab[1m[32m [0m[33m[40m~[1m[32m[K[39m[49m[0m 
-[40m [40m %[39m[49m[0m [K[75C[32m[00m[75D
-aptupdater@gitlab:~$ logout
-Connection to git closed.
-
-Script done on 2013年09月08日 (週日) 20時55分28秒

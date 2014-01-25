@@ -1,6 +1,0 @@
-[Meta]
-TS=1378370545
-Maintainer=Jethro Yu,,,
-Action=upgrade
-Duration=655.038
-ERRPATTERN=(error|warning|fail)
