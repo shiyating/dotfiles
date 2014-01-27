@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<?xml-stylesheet type="text/xsl" href="log-store-xml.xsl"?>
-<log>
-<message time='20130130T12:00:04' id='dandai@gmail.com' name='戴晨宇' token='3405cc2aa423513c65b3896671684a107034bff2' isuser='false' type='normal' message-token='5BE0D8805F20335E_22'>裝桌機就 Green</message>
-<message time='20130130T12:00:14' id='dandai@gmail.com' name='戴晨宇' token='3405cc2aa423513c65b3896671684a107034bff2' isuser='false' type='normal' message-token='5BE0D8805F20335E_23'>裝 NAS 或 RAID 就 Red</message>
-</log>
