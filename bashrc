@@ -37,7 +37,7 @@ fi
 #-------------------------------------------------------------
 # Change language by terminal (local console OR ssh ?)
 #-------------------------------------------------------------
-export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
+#export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
 
 #-------------------------------------------------------------
 # Change the window title of X terminals 
