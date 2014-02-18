@@ -348,3 +348,5 @@ fi
 if [ ! -z "$TMUX" ]; then 
     [ -f /var/run/motd ] && cat /var/run/motd
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

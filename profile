@@ -20,3 +20,5 @@ fi
 export LANG="zh_TW.utf8"
 export LANGUAGE="zh_TW:en"
 export mydroid=/mydroid/
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
