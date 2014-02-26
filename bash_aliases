@@ -22,6 +22,7 @@ alias an='source ~/.bashrc'
 alias zz='vim ~/.vimrc'
 
 alias rm='rm -ri'
+alias jcrm='find . -regextype posix-extended -regex ".*(\.(core|gch|swp|tmp|orig|nfs\..*)|~)$" -print -delete'
 alias cp='cp -ri'
 alias mv='mv -i'
 # -> Prevents accidentally clobbering files.
