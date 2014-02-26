@@ -234,18 +234,18 @@ fi
 #-------------------------------------------------------------
 # customize PATH
 #-------------------------------------------------------------
-for a in \
-    ~/bin \
-    ~/.bin \
-    ~/.local/bin \
-    /android-cts/tools \
-    /android-sdk-linux_x86/tools
+path="$path $HOME/bin"
+path="$path $HOME/.bin"
+path="$path $HOME/.local/bin"
+path="$path $HOME/.rvm/bin" # Add RVM to PATH for scriptin
+path="$path /android-cts/tools"
+path="$path /android-sdk-linux_x86/tools"
+for a in $path
 do
-    if [ -d "$a" ] && [[ ":$PATH:" != *":$a:"* ]]; then
+    [ -d "$a" ] && [ ":$PATH:" = ":${PATH/:$a:/}:" ] &&
         export PATH="$PATH:$a"
-    fi
 done
-
+unset path
 
 
 #-------------------------------------------------------------
@@ -354,4 +354,3 @@ if [ ! -z "$TMUX" ]; then
     [ -f /var/run/motd ] && cat /var/run/motd
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
