@@ -15,13 +15,11 @@
 # Personnal Aliases
 #-------------------
 
-alias ssh='TERM=screen LC_ALL=en_US.UTF-8 ssh'
+alias ssh='LC_ALL=en_US.UTF-8 ssh'
 alias aa='vim ~/.bashrc && source ~/.bashrc'
 alias as='vim ~/.bash_aliases && source ~/.bashrc'
-alias apull='(cd $(dirname $(readlink ~/.bashrc)); git pull)'
 alias an='source ~/.bashrc'
 alias zz='vim ~/.vimrc'
-alias ze='vim ~/.zer0prompt && . ~/.bashrc'
 
 alias rm='rm -ri'
 alias cp='cp -ri'
@@ -45,16 +43,12 @@ alias df='df -kTh'
 # The 'ls' family (this assumes you use a recent GNU ls)
 #-------------------------------------------------------------
 if [ "$OS" == "Linux" ]; then
-    #alias ls='LC_ALL=C ls -Ah -F --color=auto'
-    #alias l="LC_ALL=C ls -l"
     alias ls='ls -h -F --color=auto'
-    alias l="ls -l"
-    alias ll="ls -l"
 else
     alias ls='ls -AhG'
-    alias l="ls -l"
-    alias ll="ls -l"
 fi
+alias l="ls -l"
+alias ll="ls -l"
 alias la='ls -a'          # show hidden files
 alias lla='ls -la'          # show hidden files
 alias lk='ls -lSr'         # sort by size, biggest last
