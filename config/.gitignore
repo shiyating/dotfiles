@@ -1,0 +1,9 @@
+compiz-1/
+dconf/
+gtk-3.0/
+ibus/
+libaccounts-glib/
+nautilus/
+pulse/
+user-dirs.dirs
+user-dirs.locale
