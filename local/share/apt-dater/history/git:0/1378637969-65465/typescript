@@ -1,88 +1,0 @@
-Script started on 2013年09月08日 (週日) 18時59分30秒
-bash: warning: setlocale: LC_ALL: cannot change locale (zh_TW.UTF-8)
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = "zh_TW.UTF-8",
-	LC_PAPER = "zh_TW.UTF-8",
-	LC_ADDRESS = "zh_TW.UTF-8",
-	LC_MONETARY = "zh_TW.UTF-8",
-	LC_NUMERIC = "zh_TW.UTF-8",
-	LC_TELEPHONE = "zh_TW.UTF-8",
-	LC_IDENTIFICATION = "zh_TW.UTF-8",
-	LC_MEASUREMENT = "zh_TW.UTF-8",
-	LC_TIME = "zh_TW.UTF-8",
-	LC_NAME = "zh_TW.UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-Calculating upgrade... Done
-The following NEW packages will be installed:
-  linux-headers-3.2.0-53 linux-headers-3.2.0-53-generic
-  linux-image-3.2.0-53-generic
-The following packages will be upgraded:
-  linux-headers-server linux-image-server linux-libc-dev linux-server
-  python-httplib2
-5 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
-Need to get 52.2 MB of archives.
-After this operation, 217 MB of additional disk space will be used.
-0% [Working]            0% [Waiting for headers]                        Get:1 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-3.2.0-53-generic amd64 3.2.0-53.81 [38.6 MB]
-                        0% [1 linux-image-3.2.0-53-generic 0 B/38.6 MB 0%]                                                  0% [1 linux-image-3.2.0-53-generic 43.1 kB/38.6 MB 0%]0% [1 linux-image-3.2.0-53-generic 72.1 kB/38.6 MB 0%]                                                      0% [1 linux-image-3.2.0-53-generic 116 kB/38.6 MB 0%]0% [1 linux-image-3.2.0-53-generic 159 kB/38.6 MB 0%]0% [1 linux-image-3.2.0-53-generic 202 kB/38.6 MB 1%]0% [1 linux-image-3.2.0-53-generic 259 kB/38.6 MB 1%]1% [1 linux-image-3.2.0-53-generic 333 kB/38.6 MB 1%]1% [1 linux-image-3.2.0-53-generic 434 kB/38.6 MB 1%]1% [1 linux-image-3.2.0-53-generic 543 kB/38.6 MB 1%]1% [1 linux-image-3.2.0-53-generic 709 kB/38.6 MB 2%]                                                     2% [1 linux-image-3.2.0-53-generic 912 kB/38.6 MB 2%]         148 kB/s 5min 46s2% [1 linux-image-3.2.0-53-generic 1162 kB/38.6 MB 3%]        148 kB/s 5min 44s3% [1 linux-image-3.2.0-53-generic 1469 kB/38.6 MB 4%]        148 kB/s 5min 42s4% [1 linux-image-3.2.0-53-generic 1837 kB/38.6 MB 5%]        148 kB/s 5min 40s5% [1 linux-image-3.2.0-53-generic 2358 kB/38.6 MB 6%]        148 kB/s 5min 36s6% [1 linux-image-3.2.0-53-generic 2945 kB/38.6 MB 8%]        148 kB/s 5min 32s7% [1 linux-image-3.2.0-53-generic 3646 kB/38.6 MB 9%]        148 kB/s 5min 28s9% [1 linux-image-3.2.0-53-generic 4509 kB/38.6 MB 12%]       148 kB/s 5min 22s10% [1 linux-image-3.2.0-53-generic 5456 kB/38.6 MB 14%]      148 kB/s 5min 15s12% [1 linux-image-3.2.0-53-generic 6277 kB/38.6 MB 16%]      148 kB/s 5min 10s14% [1 linux-image-3.2.0-53-generic 7050 kB/38.6 MB 18%]       148 kB/s 5min 5s15% [1 linux-image-3.2.0-53-generic 7838 kB/38.6 MB 20%]      148 kB/s 4min 59s17% [1 linux-image-3.2.0-53-generic 8809 kB/38.6 MB 23%]          1314 kB/s 32s19% [1 linux-image-3.2.0-53-generic 9852 kB/38.6 MB 26%]          1314 kB/s 32s21% [1 linux-image-3.2.0-53-generic 10.7 MB/38.6 MB 28%]          1314 kB/s 31s22% [1 linux-image-3.2.0-53-generic 11.7 MB/38.6 MB 30%]          1314 kB/s 30s24% [1 linux-image-3.2.0-53-generic 12.7 MB/38.6 MB 33%]          1314 kB/s 30s26% [1 linux-image-3.2.0-53-generic 13.7 MB/38.6 MB 36%]          1314 kB/s 29s28% [1 linux-image-3.2.0-53-generic 14.8 MB/38.6 MB 38%]          1314 kB/s 28s30% [1 linux-image-3.2.0-53-generic 15.7 MB/38.6 MB 41%]          1314 kB/s 27s32% [1 linux-image-3.2.0-53-generic 16.5 MB/38.6 MB 43%]          1314 kB/s 27s33% [1 linux-image-3.2.0-53-generic 17.3 MB/38.6 MB 45%]          1314 kB/s 26s35% [1 linux-image-3.2.0-53-generic 18.1 MB/38.6 MB 47%]          1314 kB/s 25s36% [1 linux-image-3.2.0-53-generic 18.8 MB/38.6 MB 49%]          1314 kB/s 25s38% [1 linux-image-3.2.0-53-generic 19.7 MB/38.6 MB 51%]          1811 kB/s 17s39% [1 linux-image-3.2.0-53-generic 20.3 MB/38.6 MB 53%]          1811 kB/s 17s41% [1 linux-image-3.2.0-53-generic 21.2 MB/38.6 MB 55%]          1811 kB/s 17s42% [1 linux-image-3.2.0-53-generic 21.8 MB/38.6 MB 57%]          1811 kB/s 16s43% [1 linux-image-3.2.0-53-generic 22.4 MB/38.6 MB 58%]          1811 kB/s 16s44% [1 linux-image-3.2.0-53-generic 23.1 MB/38.6 MB 60%]          1811 kB/s 16s46% [1 linux-image-3.2.0-53-generic 23.8 MB/38.6 MB 62%]          1811 kB/s 15s47% [1 linux-image-3.2.0-53-generic 24.4 MB/38.6 MB 63%]          1811 kB/s 15s48% [1 linux-image-3.2.0-53-generic 25.1 MB/38.6 MB 65%]          1811 kB/s 14s49% [1 linux-image-3.2.0-53-generic 25.8 MB/38.6 MB 67%]          1811 kB/s 14s51% [1 linux-image-3.2.0-53-generic 26.4 MB/38.6 MB 69%]          1811 kB/s 14s52% [1 linux-image-3.2.0-53-generic 27.1 MB/38.6 MB 70%]          1811 kB/s 13s53% [1 linux-image-3.2.0-53-generic 27.8 MB/38.6 MB 72%]          1343 kB/s 18s54% [1 linux-image-3.2.0-53-generic 28.4 MB/38.6 MB 74%]          1343 kB/s 17s56% [1 linux-image-3.2.0-53-generic 29.1 MB/38.6 MB 75%]          1343 kB/s 17s57% [1 linux-image-3.2.0-53-generic 29.7 MB/38.6 MB 77%]          1343 kB/s 16s58% [1 linux-image-3.2.0-53-generic 30.5 MB/38.6 MB 79%]          1343 kB/s 16s60% [1 linux-image-3.2.0-53-generic 31.2 MB/38.6 MB 81%]          1343 kB/s 15s61% [1 linux-image-3.2.0-53-generic 32.0 MB/38.6 MB 83%]          1343 kB/s 14s63% [1 linux-image-3.2.0-53-generic 32.8 MB/38.6 MB 85%]          1343 kB/s 14s64% [1 linux-image-3.2.0-53-generic 33.6 MB/38.6 MB 87%]          1343 kB/s 13s66% [1 linux-image-3.2.0-53-generic 34.3 MB/38.6 MB 89%]          1343 kB/s 13s67% [1 linux-image-3.2.0-53-generic 35.0 MB/38.6 MB 91%]          1343 kB/s 12s68% [1 linux-image-3.2.0-53-generic 35.6 MB/38.6 MB 92%]          1343 kB/s 12s70% [1 linux-image-3.2.0-53-generic 36.3 MB/38.6 MB 94%]          1422 kB/s 11s71% [1 linux-image-3.2.0-53-generic 37.1 MB/38.6 MB 96%]          1422 kB/s 10s73% [1 linux-image-3.2.0-53-generic 37.9 MB/38.6 MB 98%]          1422 kB/s 10s73% [1 linux-image-3.2.0-53-generic 38.1 MB/38.6 MB 99%]           1422 kB/s 9s74% [Working]                                                      1422 kB/s 9s                                                                               Get:2 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-3.2.0-53 all 3.2.0-53.81 [11.7 MB]
-74% [2 linux-headers-3.2.0-53 0 B/11.7 MB 0%]                      1422 kB/s 9s74% [2 linux-headers-3.2.0-53 93.3 kB/11.7 MB 1%]                  1422 kB/s 9s74% [2 linux-headers-3.2.0-53 121 kB/11.7 MB 1%]                   1422 kB/s 9s74% [2 linux-headers-3.2.0-53 152 kB/11.7 MB 1%]                   1422 kB/s 9s74% [2 linux-headers-3.2.0-53 195 kB/11.7 MB 2%]                   1422 kB/s 9s74% [2 linux-headers-3.2.0-53 224 kB/11.7 MB 2%]                   1422 kB/s 9s74% [2 linux-headers-3.2.0-53 253 kB/11.7 MB 2%]                   1422 kB/s 9s75% [2 linux-headers-3.2.0-53 297 kB/11.7 MB 3%]                   1422 kB/s 9s75% [2 linux-headers-3.2.0-53 325 kB/11.7 MB 3%]                   1422 kB/s 9s75% [2 linux-headers-3.2.0-53 354 kB/11.7 MB 3%]                   424 kB/s 31s75% [2 linux-headers-3.2.0-53 398 kB/11.7 MB 3%]                   424 kB/s 31s75% [2 linux-headers-3.2.0-53 453 kB/11.7 MB 4%]                   424 kB/s 31s75% [2 linux-headers-3.2.0-53 506 kB/11.7 MB 4%]                   424 kB/s 30s75% [2 linux-headers-3.2.0-53 588 kB/11.7 MB 5%]                   424 kB/s 30s75% [2 linux-headers-3.2.0-53 711 kB/11.7 MB 6%]                   424 kB/s 30s76% [2 linux-headers-3.2.0-53 825 kB/11.7 MB 7%]                   424 kB/s 30s76% [2 linux-headers-3.2.0-53 1032 kB/11.7 MB 9%]                  424 kB/s 29s76% [2 linux-headers-3.2.0-53 1259 kB/11.7 MB 11%]                 424 kB/s 29s77% [2 linux-headers-3.2.0-53 1533 kB/11.7 MB 13%]                 424 kB/s 28s78% [2 linux-headers-3.2.0-53 1910 kB/11.7 MB 16%]                 424 kB/s 27s78% [2 linux-headers-3.2.0-53 2179 kB/11.7 MB 19%]                 424 kB/s 26s79% [2 linux-headers-3.2.0-53 2453 kB/11.7 MB 21%]                 349 kB/s 31s79% [2 linux-headers-3.2.0-53 2807 kB/11.7 MB 24%]                 349 kB/s 30s80% [2 linux-headers-3.2.0-53 3153 kB/11.7 MB 27%]                 349 kB/s 29s81% [2 linux-headers-3.2.0-53 3460 kB/11.7 MB 30%]                 349 kB/s 29s81% [2 linux-headers-3.2.0-53 3821 kB/11.7 MB 33%]                 349 kB/s 27s82% [2 linux-headers-3.2.0-53 4173 kB/11.7 MB 36%]                 349 kB/s 26s83% [2 linux-headers-3.2.0-53 4525 kB/11.7 MB 39%]                 349 kB/s 25s83% [2 linux-headers-3.2.0-53 4850 kB/11.7 MB 41%]                 349 kB/s 25s84% [2 linux-headers-3.2.0-53 5168 kB/11.7 MB 44%]                 349 kB/s 24s84% [2 linux-headers-3.2.0-53 5437 kB/11.7 MB 46%]                 349 kB/s 23s85% [2 linux-headers-3.2.0-53 5702 kB/11.7 MB 49%]                 349 kB/s 22s85% [2 linux-headers-3.2.0-53 6007 kB/11.7 MB 51%]                 349 kB/s 21s86% [2 linux-headers-3.2.0-53 6296 kB/11.7 MB 54%]                 639 kB/s 11s87% [2 linux-headers-3.2.0-53 6621 kB/11.7 MB 57%]                 639 kB/s 10s87% [2 linux-headers-3.2.0-53 6915 kB/11.7 MB 59%]                 639 kB/s 10s88% [2 linux-headers-3.2.0-53 7221 kB/11.7 MB 62%]                  639 kB/s 9s88% [2 linux-headers-3.2.0-53 7534 kB/11.7 MB 64%]                  639 kB/s 9s89% [2 linux-headers-3.2.0-53 7828 kB/11.7 MB 67%]                  639 kB/s 9s90% [2 linux-headers-3.2.0-53 8149 kB/11.7 MB 70%]                  639 kB/s 8s90% [2 linux-headers-3.2.0-53 8465 kB/11.7 MB 72%]                  639 kB/s 8s91% [2 linux-headers-3.2.0-53 8779 kB/11.7 MB 75%]                  639 kB/s 7s91% [2 linux-headers-3.2.0-53 9115 kB/11.7 MB 78%]                  639 kB/s 7s92% [2 linux-headers-3.2.0-53 9419 kB/11.7 MB 81%]                  639 kB/s 6s93% [2 linux-headers-3.2.0-53 9833 kB/11.7 MB 84%]                  639 kB/s 5s94% [2 linux-headers-3.2.0-53 10.2 MB/11.7 MB 87%]                  655 kB/s 5s94% [2 linux-headers-3.2.0-53 10.6 MB/11.7 MB 91%]                  655 kB/s 4s95% [2 linux-headers-3.2.0-53 11.0 MB/11.7 MB 94%]                  655 kB/s 3s96% [2 linux-headers-3.2.0-53 11.4 MB/11.7 MB 97%]                  655 kB/s 3s96% [Working]                                                       655 kB/s 2s                                                                               Get:3 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-3.2.0-53-generic amd64 3.2.0-53.81 [978 kB]
-96% [3 linux-headers-3.2.0-53-generic 0 B/978 kB 0%]                655 kB/s 2s97% [3 linux-headers-3.2.0-53-generic 118 kB/978 kB 12%]            655 kB/s 2s97% [3 linux-headers-3.2.0-53-generic 155 kB/978 kB 16%]            655 kB/s 2s97% [3 linux-headers-3.2.0-53-generic 272 kB/978 kB 28%]            655 kB/s 2s97% [3 linux-headers-3.2.0-53-generic 418 kB/978 kB 43%]            655 kB/s 2s97% [3 linux-headers-3.2.0-53-generic 590 kB/978 kB 60%]            655 kB/s 1s98% [Working]                                                       655 kB/s 1s                                                                               Get:4 http://security.ubuntu.com/ubuntu/ precise-security/main linux-server amd64 3.2.0.53.63 [1730 B]
-98% [4 linux-server 0 B/1730 B 0%]                                  655 kB/s 1s98% [Working]                                                       655 kB/s 1s                                                                               Get:5 http://security.ubuntu.com/ubuntu/ precise-security/main linux-image-server amd64 3.2.0.53.63 [2360 B]
-98% [5 linux-image-server 0 B/2360 B 0%]                            655 kB/s 1s98% [Working]                                                       655 kB/s 1s                                                                               Get:6 http://security.ubuntu.com/ubuntu/ precise-security/main linux-headers-server amd64 3.2.0.53.63 [2348 B]
-98% [6 linux-headers-server 0 B/2348 B 0%]                          655 kB/s 1s98% [Working]                                                       655 kB/s 1s                                                                               Get:7 http://security.ubuntu.com/ubuntu/ precise-security/main linux-libc-dev amd64 3.2.0-53.81 [859 kB]
-98% [7 linux-libc-dev 0 B/859 kB 0%]                                655 kB/s 1s100% [Working]                                                      655 kB/s 0s                                                                               Get:8 http://security.ubuntu.com/ubuntu/ precise-security/main python-httplib2 all 0.7.2-1ubuntu2.1 [57.1 kB]
-100% [8 python-httplib2 0 B/57.1 kB 0%]                             655 kB/s 0s100% [Working]                                                      655 kB/s 0s                                                                               Fetched 52.2 MB in 59s (879 kB/s)
-Selecting previously unselected package linux-image-3.2.0-53-generic.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113546 files and directories currently installed.)
-Unpacking linux-image-3.2.0-53-generic (from .../linux-image-3.2.0-53-generic_3.2.0-53.81_amd64.deb) ...
-Done.
-Selecting previously unselected package linux-headers-3.2.0-53.
-Unpacking linux-headers-3.2.0-53 (from .../linux-headers-3.2.0-53_3.2.0-53.81_all.deb) ...
-Selecting previously unselected package linux-headers-3.2.0-53-generic.
-Unpacking linux-headers-3.2.0-53-generic (from .../linux-headers-3.2.0-53-generic_3.2.0-53.81_amd64.deb) ...
-Preparing to replace linux-server 3.2.0.52.62 (using .../linux-server_3.2.0.53.63_amd64.deb) ...
-Unpacking replacement linux-server ...
-Preparing to replace linux-image-server 3.2.0.52.62 (using .../linux-image-server_3.2.0.53.63_amd64.deb) ...
-Unpacking replacement linux-image-server ...
-Preparing to replace linux-headers-server 3.2.0.52.62 (using .../linux-headers-server_3.2.0.53.63_amd64.deb) ...
-Unpacking replacement linux-headers-server ...
-Preparing to replace linux-libc-dev 3.2.0-52.78 (using .../linux-libc-dev_3.2.0-53.81_amd64.deb) ...
-Unpacking replacement linux-libc-dev ...
-Preparing to replace python-httplib2 0.7.2-1ubuntu2 (using .../python-httplib2_0.7.2-1ubuntu2.1_all.deb) ...
-Unpacking replacement python-httplib2 ...
-Setting up linux-image-3.2.0-53-generic (3.2.0-53.81) ...
-Running depmod.
-update-initramfs: deferring update (hook will be called later)
-Examining /etc/kernel/postinst.d.
-run-parts: executing /etc/kernel/postinst.d/apt-auto-removal 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
-run-parts: executing /etc/kernel/postinst.d/initramfs-tools 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
-update-initramfs: Generating /boot/initrd.img-3.2.0-53-generic
-run-parts: executing /etc/kernel/postinst.d/update-notifier 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
-run-parts: executing /etc/kernel/postinst.d/zz-update-grub 3.2.0-53-generic /boot/vmlinuz-3.2.0-53-generic
-Generating grub.cfg ...
-Found linux image: /boot/vmlinuz-3.2.0-53-generic
-Found initrd image: /boot/initrd.img-3.2.0-53-generic
-Found linux image: /boot/vmlinuz-3.2.0-52-generic
-Found initrd image: /boot/initrd.img-3.2.0-52-generic
-Found linux image: /boot/vmlinuz-3.2.0-48-generic
-Found initrd image: /boot/initrd.img-3.2.0-48-generic
-Found linux image: /boot/vmlinuz-3.2.0-23-generic
-Found initrd image: /boot/initrd.img-3.2.0-23-generic
-Found memtest86+ image: /boot/memtest86+.bin
-done
-Setting up linux-headers-3.2.0-53 (3.2.0-53.81) ...
-Setting up linux-headers-3.2.0-53-generic (3.2.0-53.81) ...
-Setting up linux-image-server (3.2.0.53.63) ...
-Setting up linux-headers-server (3.2.0.53.63) ...
-Setting up linux-server (3.2.0.53.63) ...
-Setting up linux-libc-dev (3.2.0-53.81) ...
-Setting up python-httplib2 (0.7.2-1ubuntu2.1) ...
-Connection to git closed.
-
-Script done on 2013年09月08日 (週日) 19時01分12秒

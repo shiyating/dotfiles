@@ -1,46 +1,0 @@
-Script started on 2013年09月05日 (週四) 16時21分10秒
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-Calculating upgrade... Done
-The following packages will be REMOVED:
-  thunderbird-gnome-support
-The following NEW packages will be installed:
-  libcamel-1.2-29 libedataserver-1.2-15 libindicate5
-The following packages will be upgraded:
-  thunderbird thunderbird-globalmenu
-2 upgraded, 3 newly installed, 1 to remove and 0 not upgraded.
-Need to get 23.4 MB/24.0 MB of archives.
-After this operation, 2758 kB of additional disk space will be used.
-0% [Working]            Get:1 http://172.16.11.254/ubuntu/ precise/main libindicate5 amd64 0.6.92-0ubuntu1 [32.8 kB]
-            0% [1 libindicate5 0 B/32.8 kB 0%] [Connecting to security.ubuntu.com (91.189.9                                                                               0% [Connecting to security.ubuntu.com (91.189.92.201)]                                                      0% [Waiting for headers]                        Get:2 http://security.ubuntu.com/ubuntu/ precise-security/main thunderbird-globalmenu amd64 17.0.8+build1-0ubuntu0.12.04.1 [49.7 kB]
-                        0% [2 thunderbird-globalmenu 0 B/49.7 kB 0%]                                            0% [Working]            Get:3 http://security.ubuntu.com/ubuntu/ precise-security/main thunderbird amd64 17.0.8+build1-0ubuntu0.12.04.1 [23.3 MB]
-            0% [3 thunderbird 0 B/23.3 MB 0%]                                 1% [3 thunderbird 58.1 kB/23.3 MB 0%]                                     1% [3 thunderbird 143 kB/23.3 MB 1%]1% [3 thunderbird 251 kB/23.3 MB 1%]2% [3 thunderbird 476 kB/23.3 MB 2%]4% [3 thunderbird 797 kB/23.3 MB 3%]                                    5% [3 thunderbird 1129 kB/23.3 MB 5%]9% [3 thunderbird 1953 kB/23.3 MB 8%]                                     15% [3 thunderbird 3464 kB/23.3 MB 15%]20% [3 thunderbird 4650 kB/23.3 MB 20%]                                       29% [3 thunderbird 6752 kB/23.3 MB 29%]                           1056 kB/s 15s35% [3 thunderbird 8130 kB/23.3 MB 35%]                           1056 kB/s 14s42% [3 thunderbird 9744 kB/23.3 MB 42%]                           1056 kB/s 12s50% [3 thunderbird 11.6 MB/23.3 MB 50%]                           1056 kB/s 11s57% [3 thunderbird 13.2 MB/23.3 MB 57%]                            1056 kB/s 9s64% [3 thunderbird 14.8 MB/23.3 MB 63%]                            1056 kB/s 8s69% [3 thunderbird 16.1 MB/23.3 MB 69%]                            1056 kB/s 6s76% [3 thunderbird 17.6 MB/23.3 MB 76%]                            1056 kB/s 5s82% [3 thunderbird 19.2 MB/23.3 MB 82%]                            1056 kB/s 3s89% [3 thunderbird 20.8 MB/23.3 MB 89%]                            1056 kB/s 2s95% [3 thunderbird 22.1 MB/23.3 MB 95%]                            1056 kB/s 1s100% [3 thunderbird 23.3 MB/23.3 MB 100%]                          1056 kB/s 0s100% [Working]                                                     1056 kB/s 0s                                                                               Fetched 23.4 MB in 12s (1881 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 248607 files and directories currently installed.)
-Removing thunderbird-gnome-support ...
-Selecting previously unselected package libedataserver-1.2-15.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 248606 files and directories currently installed.)
-Unpacking libedataserver-1.2-15 (from .../libedataserver-1.2-15_3.2.3-0ubuntu7.1_amd64.deb) ...
-Selecting previously unselected package libcamel-1.2-29.
-Unpacking libcamel-1.2-29 (from .../libcamel-1.2-29_3.2.3-0ubuntu7.1_amd64.deb) ...
-Selecting previously unselected package libindicate5.
-Unpacking libindicate5 (from .../libindicate5_0.6.92-0ubuntu1_amd64.deb) ...
-Preparing to replace thunderbird-globalmenu 17.0.6+build1-0ubuntu0.13.04.1 (using .../thunderbird-globalmenu_17.0.8+build1-0ubuntu0.12.04.1_amd64.deb) ...
-Unpacking replacement thunderbird-globalmenu ...
-Preparing to replace thunderbird 17.0.6+build1-0ubuntu0.13.04.1 (using .../thunderbird_17.0.8+build1-0ubuntu0.12.04.1_amd64.deb) ...
-Unpacking replacement thunderbird ...
-Processing triggers for man-db ...
-Processing triggers for bamfdaemon ...
-Rebuilding /usr/share/applications/bamf-2.index...
-Processing triggers for desktop-file-utils ...
-Processing triggers for gnome-menus ...
-Setting up libedataserver-1.2-15 (3.2.3-0ubuntu7.1) ...
-Setting up libcamel-1.2-29 (3.2.3-0ubuntu7.1) ...
-Setting up libindicate5 (0.6.92-0ubuntu1) ...
-Setting up thunderbird (17.0.8+build1-0ubuntu0.12.04.1) ...
-Setting up thunderbird-globalmenu (17.0.8+build1-0ubuntu0.12.04.1) ...
-Processing triggers for libc-bin ...
-ldconfig deferred processing now taking place
-Connection to 127.0.0.1 closed.
-
-Script done on 2013年09月05日 (週四) 16時21分38秒

@@ -1,6 +1,0 @@
-Script started on 2013年09月06日 (週五) 23時17分49秒
-E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
-E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
-Connection to 10.20.0.31 closed.
-
-Script done on 2013年09月06日 (週五) 23時17分50秒

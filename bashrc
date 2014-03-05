@@ -19,10 +19,7 @@ shopt -s checkwinsize
 # ~/.zer0prompt         : preload color prompt
 # ~/.rvm/scripts/rvm    : Load RVM into a shell session *as a function*
 #-------------------------------------------------------------
-for file in \
-    /etc/bashrc \
-    ~/.bash_aliases ~/.git-prompt.sh \
-    ~/.rvm/scripts/rvm
+for file in /etc/bashrc ~/.bash_aliases ~/.git-prompt.sh ~/.rvm/scripts/rvm
 do
     if [ -f $file ]; then
         . $file
@@ -40,7 +37,7 @@ fi
 #-------------------------------------------------------------
 # Change language by terminal (local console OR ssh ?)
 #-------------------------------------------------------------
-export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
+#export LC_ALL=zh_TW.UTF-8 LANG=zh_TW LANGUAGE=zh_TW
 
 #-------------------------------------------------------------
 # Change the window title of X terminals 
@@ -322,7 +319,34 @@ if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.s
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 fi
 
+# mintty-colors-solarized
+if type -P mintty &>/dev/null;then
+    echo -ne   '\e]10;#839496\a'  # Foreground   -> base0
+    echo -ne   '\e]11;#002B36\a'  # Background   -> base03
+
+    echo -ne   '\e]12;#93A1A1\a'  # Cursor       -> base1
+
+    echo -ne  '\e]4;0;#073642\a'  # black        -> Base02
+    echo -ne  '\e]4;8;#002B36\a'  # bold black   -> Base03
+    echo -ne  '\e]4;1;#DC322F\a'  # red          -> red
+    echo -ne  '\e]4;9;#CB4B16\a'  # bold red     -> orange
+    echo -ne  '\e]4;2;#859900\a'  # green        -> green
+    echo -ne '\e]4;10;#586E75\a'  # bold green   -> base01 *
+    echo -ne  '\e]4;3;#B58900\a'  # yellow       -> yellow
+    echo -ne '\e]4;11;#657B83\a'  # bold yellow  -> base00 *
+    echo -ne  '\e]4;4;#268BD2\a'  # blue         -> blue
+    echo -ne '\e]4;12;#839496\a'  # bold blue    -> base0 *
+    echo -ne  '\e]4;5;#D33682\a'  # magenta      -> magenta
+    echo -ne '\e]4;13;#6C71C4\a'  # bold magenta -> violet
+    echo -ne  '\e]4;6;#2AA198\a'  # cyan         -> cyan
+    echo -ne '\e]4;14;#93A1A1\a'  # bold cyan    -> base1 *
+    echo -ne  '\e]4;7;#EEE8D5\a'  # white        -> Base2
+    echo -ne '\e]4;15;#FDFDE3\a'  # bold white   -> Base3
+fi
+
 # TMUX
 if [ ! -z "$TMUX" ]; then 
     [ -f /var/run/motd ] && cat /var/run/motd
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
