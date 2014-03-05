@@ -18,7 +18,6 @@
 alias ssh='TERM=screen LC_ALL=en_US.UTF-8 ssh'
 alias aa='vim ~/.bashrc && source ~/.bashrc'
 alias as='vim ~/.bash_aliases && source ~/.bashrc'
-alias apull='(cd $(dirname $(readlink ~/.bashrc)); git pull)'
 alias an='source ~/.bashrc'
 alias zz='vim ~/.vimrc'
 alias ze='vim ~/.zer0prompt && . ~/.bashrc'
@@ -44,17 +43,13 @@ alias df='df -kTh'
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls)
 #-------------------------------------------------------------
-if [ "$OS" == "Linux" ]; then
-    #alias ls='LC_ALL=C ls -Ah -F --color=auto'
-    #alias l="LC_ALL=C ls -l"
+if [[ $OSTYPE == *linux* ]]; then
     alias ls='ls -h -F --color=auto'
-    alias l="ls -l"
-    alias ll="ls -l"
 else
     alias ls='ls -AhG'
-    alias l="ls -l"
-    alias ll="ls -l"
 fi
+alias l="ls -l"
+alias ll="ls -l"
 alias la='ls -a'          # show hidden files
 alias lla='ls -la'          # show hidden files
 alias lk='ls -lSr'         # sort by size, biggest last
@@ -64,11 +59,6 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -l |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
-
-# If your version of 'ls' doesn't support --group-directories-first try this:
-# function ll(){ ls -l "$@"| egrep "^d" ; ls -lXB "$@" 2>&-| \
-#                egrep -v "^d|total "; }
-
 
 #-------------------------------------------------------------
 # Git alias
