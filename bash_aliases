@@ -15,14 +15,14 @@
 # Personnal Aliases
 #-------------------
 
-alias ssh='TERM=screen LC_ALL=en_US.UTF-8 ssh'
+alias ssh='LC_ALL=en_US.UTF-8 ssh'
 alias aa='vim ~/.bashrc && source ~/.bashrc'
 alias as='vim ~/.bash_aliases && source ~/.bashrc'
 alias an='source ~/.bashrc'
 alias zz='vim ~/.vimrc'
-alias ze='vim ~/.zer0prompt && . ~/.bashrc'
 
 alias rm='rm -ri'
+alias jcrm='find . -regextype posix-extended -regex ".*(\.(core|gch|swp|tmp|orig|nfs\..*)|~)$" -print -delete'
 alias cp='cp -ri'
 alias mv='mv -i'
 # -> Prevents accidentally clobbering files.

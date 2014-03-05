@@ -234,18 +234,18 @@ fi
 #-------------------------------------------------------------
 # customize PATH
 #-------------------------------------------------------------
-for a in \
-    ~/bin \
-    ~/.bin \
-    ~/.local/bin \
-    /android-cts/tools \
-    /android-sdk-linux_x86/tools
+path="$path $HOME/bin"
+path="$path $HOME/.bin"
+path="$path $HOME/.local/bin"
+path="$path $HOME/.rvm/bin" # Add RVM to PATH for scriptin
+path="$path /android-cts/tools"
+path="$path /android-sdk-linux_x86/tools"
+for a in $path
 do
-    if [ -d "$a" ] && [[ ":$PATH:" != *":$a:"* ]]; then
+    [ -d "$a" ] && [ ":$PATH:" = ":${PATH/:$a:/}:" ] &&
         export PATH="$PATH:$a"
-    fi
 done
-
+unset path
 
 
 #-------------------------------------------------------------
@@ -298,14 +298,23 @@ fi
 
 
 #-------------------------------------------------------------
+# Prompt_command
+#-------------------------------------------------------------
+# Powerline prompt
+if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
+
+[[ "$PROMPT_COMMAND" != "${PROMPT_COMMAND/history/}" ]] ||
+	export PROMPT_COMMAND="${PROMPT_COMMAND}"$'\n'"history -a;history -c; history -r"
+
+#-------------------------------------------------------------
 # History
 #-------------------------------------------------------------
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
 shopt -s cmdhist
-export PROMPT_COMMAND="history -a;history -c; history -r"
-#[[ "$PROMPT_COMMAND" = *\; ]] && export PROMPT_COMMAND="${PROMPT_COMMAND%;}"
 
 export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
 export HISTIGNORE="&:ls:[bf]g:exit"
@@ -314,10 +323,6 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 
-# Powerline prompt
-if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
-    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-fi
 
 # mintty-colors-solarized
 if type -P mintty &>/dev/null;then
@@ -349,4 +354,3 @@ if [ ! -z "$TMUX" ]; then
     [ -f /var/run/motd ] && cat /var/run/motd
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

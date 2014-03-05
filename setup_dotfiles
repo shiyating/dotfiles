@@ -28,4 +28,8 @@ vim +BundleInstall +qall
 
 which dos2unix &>/dev/null && find $HOME/.vim/ -name \*.vim -exec dos2unix {} \;
 
+sudo chown ${USER}. ~/.bash_history ~/.viminfo
+
+# patch fonts for powerline
+fc-cache -vf ~/.fonts
 exec bash -i
