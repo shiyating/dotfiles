@@ -5,6 +5,9 @@ which ctags >& /dev/null || sudo apt-get install exuberant-ctags || sudo apt-get
 which git >& /dev/null || sudo apt-get install git
 sudo locale-gen zh_TW.UTF-8 || true
 
+# Setup self default using rebase when pull
+git config branch.master.rebase true
+
 
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 dotfiles_oldfolder="$HOME/.dotfiles_old_`date +%Y%m%d%H%M%S`"
