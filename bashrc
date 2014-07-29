@@ -309,7 +309,7 @@ fi
 #-------------------------------------------------------------
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
     # Powerline prompt
-    powerline=$(find ~/.pyenv/ -name 'powerline.sh')
+    powerline=$(find ~/.pyenv/ -path '*/bash/powerline.sh')
     if [ -f "$powerline" ]; then
         source "$powerline"
     fi
