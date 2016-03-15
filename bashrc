@@ -383,9 +383,9 @@ function timer_start {
 }
 
 function timer_stop {
+    local ret=$?
     local tdiff=$(($SECONDS - ${timer:-$SECONDS}))
     unset timer
-    local ret=$?
     if [ $tdiff -gt 30 ]; then
         ((tput bel;sleep 0.5; tput bel;sleep 0.5; tput bel;sleep 0.5; tput bel;sleep 0.5; tput bel;)&)
         local hours=$(($tdiff / 3600 ))
@@ -420,6 +420,7 @@ function timer_stop {
 
 trap 'timer_start' DEBUG
 if  [ "$PROMPT_COMMAND" = "${PROMPT_COMMAND/timer_stop/}" ]; then
-PROMPT_COMMAND="$PROMPT_COMMAND
-timer_stop"
+PROMPT_COMMAND="timer_stop
+$PROMPT_COMMAND
+"
 fi
