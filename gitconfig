@@ -45,3 +45,5 @@
 	arguments = --committer-date-is-author-date
 [mergetool]
 	keepBackup = false
+[include]
+	path = ~/.local_gitconfig
