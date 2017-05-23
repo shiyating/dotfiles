@@ -39,8 +39,6 @@
 [git-up "fetch"]
 	prune = true
 	all = true
-[diff]
-	noprefix = true
 [mergetool]
 	keepBackup = false
 [include]
