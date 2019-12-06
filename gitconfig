@@ -54,8 +54,6 @@
 	arguments = --rerere-autoupdate
 [mergetool]
 	keepBackup = false
-[include]
-	path = ~/.local_gitconfig
 [diff]
 	algorithm = patience
 	submodule = log
@@ -72,13 +70,5 @@
 	spellcheck = true
 [sequence]
 	editor = interactive-rebase-tool
-[url "https://gitlab.teamt5.net/mirror/pdfkit.git"]
-	insteadOf = git://github.com/pdfkit/pdfkit.git
-[url "https://gitlab.teamt5.net/mirror/cal-heatmap-rails.git"]
-	insteadOf = git://github.com/pavolzbell/cal-heatmap-rails.git
-[url "https://gitlab.teamt5.net/mirror/bootstrap-helper.git"]
-	insteadOf = git://github.com/albb0920/bootstrap-helper.git
-[url "https://gitlab.teamt5.net/mirror/rails-settings-cached.git"]
-	insteadOf = git://github.com/albb0920/rails-settings-cached.git
-[url "https://gitlab.teamt5.net/mirror/docx.git"]
-	insteadOf = git://github.com/baleezo/docx.git
+[include]
+	path = ~/.local_gitconfig
