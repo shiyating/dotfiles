@@ -25,25 +25,3 @@
         state=absent
         path='/etc/sudoers.d/50_{{ lookup('env', 'USER') }}_sh'
 
-# UseDNS no
-    - name: package
-      apt:
-        name: openssh-server
-    - name: Update the /etc/ssh/sshd_config file
-      lineinfile:
-        dest: /etc/ssh/sshd_config
-        regexp: "^UseDNS"
-        line: "UseDNS no"
-        insertafter: EOF
-        state: present
-      register: ssh_config
-    - name: Restart ssh
-      service:
-        name: ssh
-        state: restarted
-      when: ssh_config.changed
-    - name: Delete dead links
-      become: True
-      command: find -L {{ lookup('env','HOME') }} -xdev -maxdepth 1 -type l -print -delete
-      register: command_result
-      changed_when: "command_result.stdout != ''"

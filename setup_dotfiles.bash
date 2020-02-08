@@ -26,9 +26,9 @@ retry_root() {
 
 # setup env and location
 source bashrc.d/get-platform
-source /etc/lsb-release
-DIST=${DISTRIB_CODENAME/serena/xenial}
-DIST=${DIST/sonya/xenial}
+#source /etc/lsb-release
+#DIST=${DISTRIB_CODENAME/serena/xenial}
+#DIST=${DIST/sonya/xenial}
 
 function install_pkg () {
 	if ! _install_pkg $@; then
@@ -59,18 +59,18 @@ esac
 ## install pips & powerline
 #######################
 packages+=(python)
-install_pkg ${packages[@]}
+#install_pkg ${packages[@]}
 # Remove deprecated pyenv version powerline
 if command -v powerline-daemon 2>/dev/null; then
 	powerline-daemon -k || true
 fi
 
-if ! command -v pip; then
+if ! command -v pip3; then
 	wget https://bootstrap.pypa.io/get-pip.py -q -O get-pip.py
 	retry_root python get-pip.py
 fi
-retry_root pip install -U pip
-retry_root pip install -U -r requirements_dotfiles.txt
+retry_root pip3 install -U pip
+retry_root pip3 install -U -r requirements_dotfiles.txt
 if command -v pyenv; then
 	pyenv rehash
 fi
@@ -128,7 +128,7 @@ case $platform in
 	packages+=(coreutils)
 	;;
 esac
-install_pkg ${packages[@]}
+#install_pkg ${packages[@]}
 
 #######################
 ## install vim plugins
@@ -138,6 +138,7 @@ curl -fLo vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 vim +PlugInstall +qa
+set -x
 find $HOME/.vim/ -name \*.vim -exec dos2unix -q {} \;
 
 
@@ -162,9 +163,9 @@ fi
 #######################
 rm -rf local
 [ -L ~/.local ] && rm ~/.local
-if [ -n "$USER" -a "$USER" != "root" ]; then
-	sudo chown -R $USER:$GROUPS $HOME
-fi
+#if [ -n "$USER" -a "$USER" != "root" ]; then
+#	sudo chown -R $USER:$GROUPS $HOME
+#fi
 
 # auto cleanup old-kernels
 if [[ -n "$(\which purge-old-kernels)" ]]; then

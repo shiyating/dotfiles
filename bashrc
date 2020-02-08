@@ -19,18 +19,6 @@ export LC_COLLATE=C
 if hash greadlink 2>/dev/null; then readlink=greadlink; fi
 if hash readlink 2>/dev/null; then readlink=readlink; fi
 
-if ! [[ ${BASH_SOURCE[0]} == *"/dev/fd/"* ]]; then
-    current="$(
-        cd "$(dirname "$($readlink -f "${BASH_SOURCE[0]}")")"
-        pwd
-    )"
-    (
-        cd "$current"
-        pwd
-        git diff --stat
-    )
-fi
-
 #-------------------------------------------------------------
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
@@ -184,7 +172,7 @@ unset path
 #-------------------------------------------------------------
 # Set colorful PS1 only on colorful terminals.
 #-------------------------------------------------------------
-eval "$(dircolors -b "$HOME/.dircolors.ansi-universal")" || :
+#aaeval "$(dircolors -b "$HOME/.dircolors.ansi-universal")" || :
 
 #-------------------------------------------------------------
 # Prompt_command
@@ -199,7 +187,7 @@ _bash_history_sync() {
 srcfiles=(
 	/home/$SUDO_USER/.local/lib/python*/site-packages/powerline/bindings/bash/powerline.sh
 	$HOME/.local/lib/python*/site-packages/powerline/bindings/bash/powerline.sh
-	/usr/local/lib/python*/dist-packages/powerline/bindings/bash/powerline.sh
+	/usr/local/lib/python3.*/site-packages/powerline/bindings/bash/powerline.sh
 	/Library/Python/*/site-packages/powerline/bindings/bash/powerline.sh
 )
 for powerline in "${srcfiles[@]}"; do
@@ -301,51 +289,6 @@ else
 		;;
 	esac
 fi
-command_timer_stop() {
-	local show_timer_after=30
-	local duration=$(($SECONDS - ${command_timer:-$SECONDS}))
-	local str_dur=""
-	if [ $duration -gt $show_timer_after ]; then
-		# Sound after slow command
-		if hash play 2>/dev/null; then
-			(for i in {1..8}; do
-				play -q -n synth 0.2 sin 800 vol 0.1
-				sleep 0.2
-			done 2>/dev/null &)
-		fi
-		local hours=$(($duration / 3600))
-		local mins=$((($duration % 3600) / 60))
-		local secs=$(($duration % 60))
-		if (($duration >= 3600)); then
-			str_dur=$(printf "(%02g:%02g:%02g (hh:mm:ss)) " $hours $mins $secs)
-		elif (($duration >= 60)); then
-			str_dur=$(printf "(%02g:%02g (mm:ss)) " $mins $secs)
-		else
-			str_dur=$(printf "(%s seconds) " $secs)
-		fi
-	fi
-	if [ -z "$str_dur" -a $1 -eq 0 ]; then
-		return $1
-	fi
-	# Print on error or wainting too long
-	local ncolors=$(tput colors 2>/dev/null)
-	if [ $1 -eq 0 ]; then
-		local status=success
-		local color_status="\e[0;32m"
-		local color_cmd="\e[7m"
-	else
-		local color_status="\e[0;31m"
-		local color_cmd="\e[00m\e[3;41m"
-		local status="failed with code ${color_cmd}${1}${color_status}"
-	fi
-	local color_reset="\e[00m"
-	if [ ${ncolors:=0} -lt 8 ]; then
-		color_status=""
-		color_cmd=""
-		color_reset=""
-	fi
-	echo -e "${color_status}#### Command ${color_cmd}$_cmd${color_status} ${status} $str_dur#### ${color_reset}"
-}
 
 set_screen_title() {
 	echo -ne "\ek$1\e\\"
@@ -366,7 +309,6 @@ POST_COMMAND() {
 	local r=$?
 
 	if [[ -n "$_cmd" ]]; then
-		command_timer_stop $r
 		_bash_history_sync
 		_cmd=
 	else
@@ -409,11 +351,7 @@ function cd() {
 
 export DOCKER_BUILDKIT=1
 
-if [ -f ~/bin/vault ]; then
-    complete -C ~/bin/vault vault
-fi
-eval "$($HOME/.pyenv/bin/pyenv init -)"
-
 path_unique
 
-complete -C /usr/local/bin/mc mc
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
