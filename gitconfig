@@ -2,7 +2,7 @@
 	editor = vim
 	autocrlf = input
 	whitespace = cr-at-eol
-	pager = sed 's/\\t/        /g' | less -R
+#	pager = sed 's/\\t/        /g' | less -R
 	preloadindex = true
 	excludesfile = ~/.gitignore_global
 [color]
@@ -72,3 +72,5 @@
 	editor = interactive-rebase-tool
 [include]
 	path = ~/.local_gitconfig
+[commit]
+	template = /Users/jamie_hsu/.gitmessage.txt

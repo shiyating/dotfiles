@@ -27,16 +27,6 @@ endif
 
 call plug#begin()
 
-" Testing
-Plug 'mfukar/robotframework-vim'
-
-" format / indent
-Plug 'roryokane/detectindent'
-autocmd BufReadPost *.jade DetectIndent
-autocmd BufReadPost *.coffee DetectIndent
-let g:detectindent_preferred_expandtab = 1
-let g:detectindent_preferred_indent = 4
-
 " syntax checker
 Plug 'scrooloose/syntastic'
 let g:syntastic_reuse_loc_lists = 0
@@ -56,70 +46,21 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E501,E265'
 let g:syntastic_sh_checkers = ['shellcheck']
 
-""""""""""""""""""" language support - others
-Plug 'chase/vim-ansible-yaml'
-Plug 'vim-ruby/vim-ruby'
-Plug 'kchmck/vim-coffee-script'
-Plug 'PProvost/vim-ps1'
-Plug 'vim-scripts/Improved-AnsiEsc'
-Plug 'inkarkat/vim-ingo-library'
-Plug 'inkarkat/vim-AutoAdapt'
-let g:AutoAdapt_FilePattern = '*.h,*.c,*.cpp,*.sh,env_setup'
-""""""""""""""""""" language support - Shell
-Plug 'Clavelito/indent-sh.vim'
-""""""""""""""""""" language support - Docker
-Plug 'ekalinin/Dockerfile.vim'
-""""""""""""""""""" language support - Python
-Plug 'vim-python/python-syntax'
-let g:python_highlight_all = 1
-"Plug 'davidhalter/jedi-vim'
-
-" Track the engine.
-"Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-"Plug 'honza/vim-snippets'
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-x>"
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
 """"""""""""""""""" language support - C/C++
-Plug 'scrooloose/nerdcommenter'
-let g:NERDSpaceDelims = 1
-let g:NERDTrimTrailingWhitespace = 1
-Plug 'vim-scripts/valgrind.vim'
-let g:valgrind_arguments=''
 Plug 'vim-scripts/taglist.vim'
-Plug 'airblade/vim-rooter'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-easytags'
-let g:easytags_async = 1
-let g:easytags_events = ['BufWritePost', 'BufReadPost']
-let gitroot = system("git rev-parse --show-superproject-working-tree --show-toplevel | head -n1 | tr -d '\\n'")
-set tags=
-setl tags=
-autocmd BufReadPre,FileReadPre * execute !empty(gitroot) ? 'setl tags=' . gitroot . "/.git/vimtags" : 'setl tags=~/.vimtags'
-let g:easytags_dynamic_files = 2
 Plug 'vim-scripts/cuteErrorMarker'
 autocmd VimEnter *.c,*.py,*.js nested :silent! call tagbar#autoopen(1)
 autocmd FileType qf wincmd J
-"let g:tagbar_width = 60
-Plug 'vim-scripts/gcov.vim'
 """"""""""""""""""" language support - csv
-Plug 'chrisbra/csv.vim'
 
 " Tools - Git
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 let g:gitgutter_escape_grep = 1
-let g:gitgutter_max_signs = 5000
+let g:gitgutter_max_signs = 100
 Plug 'tpope/vim-fugitive'
 
 " Editing Tools
 Plug 'farmergreg/vim-lastplace'
-Plug 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_cmd = 'CtrlPMRU'
 Plug 'vim-scripts/renamer.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
@@ -258,17 +199,6 @@ endif
 autocmd FileType  python highlight OverLength ctermbg=LightCyan|match OverLength /\%142v.*/
 set cursorline
 set foldlevelstart=1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" force making paths relative to `pwd`
-" this is useful if tag files have absolute paths
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-augroup force-cd-dot
-	autocmd!
-	autocmd BufEnter * :cd .
-augroup END
-set path=**;/
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " notmuch config
@@ -506,12 +436,12 @@ map  <silent> <Home>          ^
 imap <silent> <Home>          <Esc>^i
 map  <silent> <M-Up>          :call <SID>LocationPrevious()<CR>
 map  <silent> <S-Up>          :call Pre_err()<CR>
-map  <silent> <C-Up>          <Plug>GitGutterPrevHunk
-map! <silent> <C-Up>          <Plug>GitGutterPrevHunk
+"map  <silent> <C-Up>          <Plug>GitGutterPrevHunk
+"map! <silent> <C-Up>          <Plug>GitGutterPrevHunk
 map  <silent> <M-Down>        :call <SID>LocationNext()<CR>|
 map  <silent> <S-Down>        :call Next_err()<CR>
-map  <silent> <C-Down>        <Plug>GitGutterNextHunk
-map! <silent> <C-Down>        <Plug>GitGutterNextHunk
+"map  <silent> <C-Down>        <Plug>GitGutterNextHunk
+"map! <silent> <C-Down>        <Plug>GitGutterNextHunk
 
 map  <silent> <C-B>           :call Do_make__()<CR>|         " excute make in vim and open quickfix window
 nmap <silent> <C-F7>          :silent gr "<c-r>=expand("<cword>")<CR>" .\|redraw!<CR>
