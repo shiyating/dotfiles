@@ -349,7 +349,7 @@ autocmd BufNewFile,BufReadPost *.gcov     setl filetype=gcov
 autocmd BufNewFile,BufReadPost Rockerfile setl filetype=Dockerfile
 autocmd BufNewFile,BufReadPost *.go       setl shiftwidth=4 noexpandtab   tabstop=4
 autocmd BufNewFile,BufReadPost *.hbs      setl shiftwidth=4 softtabstop=4 expandtab
-autocmd BufNewFile,BufReadPost *.js       setl shiftwidth=4 softtabstop=4 expandtab
+autocmd BufNewFile,BufReadPost *.js       setl shiftwidth=2 softtabstop=2 expandtab
 autocmd BufNewFile,BufReadPost *.json     setl shiftwidth=2 softtabstop=2 expandtab
 autocmd BufNewFile,BufReadPost *.liquid   setl shiftwidth=4 softtabstop=4 expandtab
 autocmd BufNewFile,BufReadPost *.xsd      setl shiftwidth=2 softtabstop=2 expandtab
@@ -358,7 +358,7 @@ autocmd FileType               Dockerfile setl shiftwidth=2 softtabstop=2 tabsto
 autocmd FileType               Podfile    setl shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType               c          setl fo=cq        wm=0          formatoptions+=r
 autocmd FileType               css        setl shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType               html       setl shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType               html       setl shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType               jade       setl shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType               make       setl shiftwidth=2 softtabstop=2 tabstop=8 iskeyword=-,@,48-57,_,192-255
 autocmd FileType               markdown   setl shiftwidth=2 softtabstop=2 expandtab
