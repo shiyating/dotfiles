@@ -41,8 +41,6 @@
 	autosetuprebase = always
 [push]
 	default = current
-[credential]
-	helper = cache --timeout=86400
 [rerere]
 	enabled = 1
 [rebase]
@@ -59,8 +57,8 @@
 	submodule = log
 	tool = meld
 [user]
-	email = comet.jc@gmail.com
-	name = Jethro Yu
+	email = jamie_hsu@openfind.com.tw
+	name = Jamie Hsu
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
