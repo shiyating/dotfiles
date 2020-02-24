@@ -1,13 +1,8 @@
-$include /etc/inputrc
 
 "\eOA": history-search-backward
 "\eOB": history-search-forward
 "\e[A": history-search-backward
 "\e[B": history-search-forward
-set meta-flag On
-set input-meta On
-set convert-meta On
-set output-meta On
 set completion-ignore-case On
 set visible-stats On
 set show-all-if-ambiguous on
@@ -15,10 +10,9 @@ set show-all-if-unmodified on
 
 # Be 8 bit clean.
 set meta-flag on
-set input-meta on
 set output-meta on
 
 # To allow the use of 8bit-characters like the german umlauts, comment out
 # the line below. However this makes the meta key not work as a meta key,
 # which is annoying to those which don't need to type in 8-bit characters.
-#set convert-meta off
+set convert-meta off
