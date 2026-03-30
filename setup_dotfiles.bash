@@ -69,8 +69,10 @@ if ! command -v pip3; then
 	wget https://bootstrap.pypa.io/get-pip.py -q -O get-pip.py
 	retry_root python get-pip.py
 fi
-retry_root pip3 install -U pip
-retry_root pip3 install -U -r requirements_dotfiles.txt
+#retry_root pip3 install -U pip
+#retry_root pip3 install -U -r requirements_dotfiles.txt
+retry_root python3 -m pip install -U pip
+retry_root python3 -m pip install -r requirements_dotfiles.txt
 if command -v pyenv; then
 	pyenv rehash
 fi

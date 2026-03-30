@@ -185,6 +185,7 @@ _bash_history_sync() {
 # Powerline prompt
 
 srcfiles=(
+    $HOME/dotfiles/.venv/lib/python3.*/site-packages/powerline/bindings/bash/powerline.sh
 	/home/$SUDO_USER/.local/lib/python*/site-packages/powerline/bindings/bash/powerline.sh
 	$HOME/.local/lib/python*/site-packages/powerline/bindings/bash/powerline.sh
 	/usr/local/lib/python3.*/site-packages/powerline/bindings/bash/powerline.sh
@@ -193,6 +194,7 @@ srcfiles=(
 for powerline in "${srcfiles[@]}"; do
 	if [ -f "$powerline" ]; then
         echo "$powerline"
+        source "$HOME/dotfiles/.venv/bin/activate"
 		powerline-daemon -q || true
 		export POWERLINE_CONFIG_COMMAND="powerline-config"
 		export POWERLINE_BASH_CONTINUATION=1
@@ -355,3 +357,12 @@ path_unique
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/jamie_hsu/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

@@ -58,6 +58,7 @@ autocmd FileType qf wincmd J
 let g:gitgutter_escape_grep = 1
 let g:gitgutter_max_signs = 100
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 
 " Editing Tools
 Plug 'farmergreg/vim-lastplace'
